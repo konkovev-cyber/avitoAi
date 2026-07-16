@@ -10,6 +10,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 
+from pydantic import field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
@@ -62,6 +63,29 @@ class Settings(BaseSettings):
     anthropic_api_key: str = ""
     ai_provider: str = ""               # global fallback provider
     ai_model: str = ""                  # global fallback model
+
+    @field_validator("admin_telegram_id", "dashboard_port", "playwright_slow_mo", "collector_interval_sec", "min_listings_for_analysis", mode="before")
+    @classmethod
+    def empty_str_to_numeric_default(cls, v, info):
+        if v == "" or v is None:
+            defaults = {
+                "admin_telegram_id": 0,
+                "dashboard_port": 8080,
+                "playwright_slow_mo": 1500,
+                "collector_interval_sec": 30,
+                "min_listings_for_analysis": 5,
+            }
+            return defaults.get(info.field_name, 0)
+        return int(v)
+
+    @field_validator("playwright_headless", "collector_avito_enabled", "collector_youla_enabled", mode="before")
+    @classmethod
+    def empty_str_to_bool_default(cls, v, info):
+        if v == "" or v is None:
+            return True
+        if str(v).lower() in ("false", "0", "no", "n"):
+            return False
+        return True
 
     def is_ai_configured(self) -> bool:
         return bool(
