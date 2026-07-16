@@ -25,6 +25,8 @@ RELATIONSHIP_TYPES = (
     "same_as",           # один и тот же продавец на разных площадках
     "competes_with",     # конкуренты
     "supplies",          # поставщик
+    "formerly_known_as", # ребрендинг (старое → новое название)
+    "franchise",         # филиал / франчайзи
     "unknown",           # связь не определена
 )
 

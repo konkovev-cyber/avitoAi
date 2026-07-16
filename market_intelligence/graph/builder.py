@@ -113,10 +113,11 @@ class GraphBuilder:
                 # Проверяем по матчеру
                 match = self.matcher.compare_profiles(profiles[i], profiles[j])
 
-                if match.confidence >= 0.40:
-                    rel_type = "same_as" if match.confidence >= 0.65 else "unknown"
+                if match.confidence >= 0.30:
+                    rel_type = "same_as" if match.confidence >= 0.60 else "unknown"
+                    rel_id_hash = hashlib.md5(f"{a_id}_{b_id}".encode()).hexdigest()[:12]
                     rel = Relationship(
-                        id=f"rel_{rel_type}_{a_id[:8]}_{b_id[:8]}",
+                        id=f"rel_{rel_type}_{rel_id_hash}",
                         type=rel_type,
                         source_id=a_id,
                         target_id=b_id,
