@@ -63,7 +63,11 @@ def _kb(*rows) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(list(rows))
 
 def _get_user_id(update: Update) -> int:
-    return update.effective_user.id
+    """Get internal database user_id from Telegram update."""
+    tg_id = update.effective_user.id
+    DB.upsert_user(tg_id, username=update.effective_user.username, first_name=update.effective_user.first_name)
+    row = DB.get_user_by_telegram(tg_id)
+    return row["id"] if row else 0
 
 async def _edit(update: Update, text: str, markup=None):
     msg = update.callback_query.message if update.callback_query else None
