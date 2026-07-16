@@ -63,9 +63,12 @@ def _kb(*rows) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(list(rows))
 
 def _get_user_id(update: Update) -> int:
-    """Get internal database user_id from Telegram update."""
-    tg_id = update.effective_user.id
-    DB.upsert_user(tg_id, username=update.effective_user.username, first_name=update.effective_user.first_name)
+    """Get Telegram user ID."""
+    return update.effective_user.id
+
+
+def _db_uid(tg_id: int) -> int:
+    """Convert Telegram ID to internal database user_id."""
     row = DB.get_user_by_telegram(tg_id)
     return row["id"] if row else 0
 
@@ -105,8 +108,13 @@ def _ensure_user(update: Update):
 # ── Main menu ──────────────────────────────────────────────────────────────────
 
 def _main_menu_kb(user_id: int) -> InlineKeyboardMarkup:
+    """user_id = Telegram ID."""
+    internal = DB.get_internal_user_id(user_id)
+    searches = DB.get_user_searches(internal) if internal else []
+    has_any = any(s["active"] for s in searches)
+    search_btn = _btn("🔍 Найти товар", "new_search") if not has_any else _btn("🔍 Мои поиски", "menu_searches")
     rows = [
-        [_btn("🔍 Мои поиски", "menu_searches"), _btn("📡 Радар рынка", "menu_radar")],
+        [search_btn, _btn("📡 Радар рынка", "menu_radar")],
         [_btn("💾 Находки", "menu_finds"), _btn("⚙️ Настройки", "menu_settings")],
     ]
     if settings.is_admin(user_id) or DB.is_admin(user_id):
@@ -116,7 +124,7 @@ def _main_menu_kb(user_id: int) -> InlineKeyboardMarkup:
 async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, text: str = ""):
     uid = _get_user_id(update)
     user = DB.get_user_by_telegram(uid)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
 
     city = s.get("city") or "не задан"
     ai = s.get("ai_provider") or "без AI"
@@ -162,9 +170,9 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     return ST_ONBOARD_CITY
 
 async def onboard_got_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    uid = _get_user_id(update)
+    tg_id = _get_user_id(update)
     city = update.message.text.strip()
-    DB.upsert_user_settings(uid, city=city)
+    DB.upsert_user_settings_by_tg(tg_id, city=city)
     context.user_data["onboard_city"] = city
 
     await _send(update,
@@ -236,7 +244,7 @@ async def onboard_got_ai_key(update: Update, context: ContextTypes.DEFAULT_TYPE)
     provider = context.user_data.get("onboard_ai_provider", "")
     model = context.user_data.get("onboard_ai_model", "")
 
-    DB.upsert_user_settings(uid, ai_provider=provider, ai_api_key=key, ai_model=model)
+    DB.upsert_user_settings_by_tg(uid, ai_provider=provider, ai_api_key=key, ai_model=model)
     return await _finish_onboarding(update, context)
 
 async def onboard_skip_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -244,8 +252,8 @@ async def onboard_skip_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
     return await _finish_onboarding(update, context)
 
 async def _finish_onboarding(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    uid = _get_user_id(update)
-    DB.mark_onboarded(uid)
+    tg_id = update.effective_user.id
+    DB.mark_onboarded(tg_id)
     city = context.user_data.get("onboard_city", "")
     provider = context.user_data.get("onboard_ai_provider", "")
     ai_line = f"🤖 AI: <b>{provider}</b>" if provider else "🤖 AI: <i>без AI (эвристики)</i>"
@@ -254,13 +262,13 @@ async def _finish_onboarding(update: Update, context: ContextTypes.DEFAULT_TYPE)
         "✅ <b>Настройка завершена!</b>\n\n"
         f"🏙 Регион: <b>{city or 'не задан'}</b>\n"
         f"{ai_line}\n\n"
-        "Теперь создайте первый поиск или откройте настройки.\n"
+        "Теперь создайте первый поиск — нажмите <b>«🔍 Найти товар»</b> ниже.\n"
         "<i>Всё можно изменить в любой момент.</i>"
     )
     if update.callback_query:
-        await _edit(update, text, _main_menu_kb(uid))
+        await _edit(update, text, _main_menu_kb(tg_id))
     else:
-        await _send(update, text, _main_menu_kb(uid))
+        await _send(update, text, _main_menu_kb(tg_id))
     return ConversationHandler.END
 
 # ── Callback dispatcher ────────────────────────────────────────────────────────
@@ -345,8 +353,9 @@ async def show_searches(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not searches:
         text = (
             "🔍 <b>Мои поиски</b>\n\n"
-            "У вас ещё нет активных поисков.\n"
-            "Создайте первый — напишите что ищете!"
+            "Пока ничего не ищете. 👀\n\n"
+            "Нажмите <b>«➕ Создать поиск»</b> и напишите, что хотите найти.\n"
+            "<i>Пример: iPhone 15 Pro до 80000</i>"
         )
         kb = _kb(
             [_btn("➕ Создать поиск", "new_search")],
@@ -424,7 +433,7 @@ async def show_finds(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def show_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
 
     city = s.get("city") or "не задан"
     ai = s.get("ai_provider") or "без AI"
@@ -454,7 +463,7 @@ async def show_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def ask_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     current = s.get("city") or "не задан"
     await _edit(update,
         f"🏙 <b>Ваш регион</b>\n\n"
@@ -469,14 +478,14 @@ async def ask_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def got_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
     city = update.message.text.strip()
-    DB.upsert_user_settings(uid, city=city)
+    DB.upsert_user_settings_by_tg(uid, city=city)
     await _send(update, f"✅ Регион сохранён: <b>{city}</b>")
     await show_settings_msg(update, context)
     return ConversationHandler.END
 
 async def show_settings_msg(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     city = s.get("city") or "не задан"
     ai = s.get("ai_provider") or "без AI"
     hunter = "🟢 вкл" if s.get("hunter_enabled") else "🔴 выкл"
@@ -504,7 +513,7 @@ async def show_settings_msg(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def show_sources(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     avito = bool(s.get("sources_avito", 1))
     youla = bool(s.get("sources_youla", 1))
 
@@ -520,17 +529,17 @@ async def show_sources(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def toggle_source(update: Update, context: ContextTypes.DEFAULT_TYPE, source: str):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     key = f"sources_{source}"
     current = bool(s.get(key, 1))
-    DB.upsert_user_settings(uid, **{key: 0 if current else 1})
+    DB.upsert_user_settings_by_tg(uid, **{key: 0 if current else 1})
     await show_sources(update, context)
 
 # ── AI Settings ────────────────────────────────────────────────────────────────
 
 async def show_ai_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     current = s.get("ai_provider") or ""
     model = s.get("ai_model") or ""
 
@@ -558,7 +567,7 @@ async def set_ai_provider_cb(update: Update, context: ContextTypes.DEFAULT_TYPE,
     uid = _get_user_id(update)
 
     if provider == "none":
-        DB.upsert_user_settings(uid, ai_provider="", ai_api_key="", ai_model="")
+        DB.upsert_user_settings_by_tg(uid, ai_provider="", ai_api_key="", ai_model="")
         await update.callback_query.answer("AI отключён", show_alert=False)
         await show_ai_settings(update, context)
         return ConversationHandler.END
@@ -610,11 +619,11 @@ async def got_ai_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
     provider = context.user_data.pop("pending_ai_provider", "")
     model = context.user_data.pop("pending_ai_model", "")
 
-    DB.upsert_user_settings(uid, ai_provider=provider, ai_api_key=key, ai_model=model)
+    DB.upsert_user_settings_by_tg(uid, ai_provider=provider, ai_api_key=key, ai_model=model)
 
     # Quick test
     from ai.factory import get_user_ai_provider, provider_display_name
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     prov = get_user_ai_provider(s)
     if prov:
         await _send(update,
@@ -631,7 +640,7 @@ async def got_ai_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def show_notifications(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     notif = bool(s.get("notifications_enabled", 1))
     buy = bool(s.get("notify_on_buy", 1))
     maybe = bool(s.get("notify_on_maybe", 0))
@@ -657,7 +666,7 @@ async def show_notifications(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
 async def toggle_notification(update: Update, context: ContextTypes.DEFAULT_TYPE, key: str):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     field_map = {
         "enabled": "notifications_enabled",
         "buy": "notify_on_buy",
@@ -666,14 +675,14 @@ async def toggle_notification(update: Update, context: ContextTypes.DEFAULT_TYPE
     field = field_map.get(key)
     if field:
         current = bool(s.get(field, 1))
-        DB.upsert_user_settings(uid, **{field: 0 if current else 1})
+        DB.upsert_user_settings_by_tg(uid, **{field: 0 if current else 1})
     await show_notifications(update, context)
 
 # ── Thresholds ─────────────────────────────────────────────────────────────────
 
 async def show_thresholds(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     buy = s.get("threshold_buy", 70.0)
     maybe = s.get("threshold_maybe", 50.0)
 
@@ -705,7 +714,7 @@ async def set_threshold_cb(update: Update, context: ContextTypes.DEFAULT_TYPE, k
         "preset_soft": {"threshold_buy": 60.0, "threshold_maybe": 40.0},
     }
     if key in presets:
-        DB.upsert_user_settings(uid, **presets[key])
+        DB.upsert_user_settings_by_tg(uid, **presets[key])
         await update.callback_query.answer("Пресет применён ✅", show_alert=False)
         await show_thresholds(update, context)
         return ConversationHandler.END
@@ -730,7 +739,7 @@ async def got_threshold(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     t_type = context.user_data.pop("threshold_type", "buy")
     field = "threshold_buy" if t_type == "buy" else "threshold_maybe"
-    DB.upsert_user_settings(uid, **{field: val})
+    DB.upsert_user_settings_by_tg(uid, **{field: val})
     await _send(update, f"✅ Порог сохранён: <b>{int(val)}%</b>")
     await show_settings_msg(update, context)
     return ConversationHandler.END
@@ -739,7 +748,7 @@ async def got_threshold(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def show_hunter(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     enabled = bool(s.get("hunter_enabled", 0))
     interval = s.get("hunter_interval_sec", 300)
     min_score = s.get("hunter_min_score", 50.0)
@@ -768,14 +777,14 @@ async def show_hunter(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def set_hunter_cb(update: Update, context: ContextTypes.DEFAULT_TYPE, key: str):
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
 
     if key == "toggle":
         current = bool(s.get("hunter_enabled", 0))
-        DB.upsert_user_settings(uid, hunter_enabled=0 if current else 1)
+        DB.upsert_user_settings_by_tg(uid, hunter_enabled=0 if current else 1)
     elif key.startswith("int_"):
         interval = int(key[4:])
-        DB.upsert_user_settings(uid, hunter_interval_sec=interval)
+        DB.upsert_user_settings_by_tg(uid, hunter_interval_sec=interval)
 
     await show_hunter(update, context)
 
@@ -906,7 +915,7 @@ async def cmd_admin(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def cmd_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
     _ensure_user(update)
     uid = _get_user_id(update)
-    s = DB.get_user_settings(uid)
+    s = DB.get_user_settings_by_tg(uid)
     city = s.get("city") or "не задан"
     ai = s.get("ai_provider") or "без AI"
     hunter = "🟢 вкл" if s.get("hunter_enabled") else "🔴 выкл"

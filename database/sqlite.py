@@ -429,6 +429,7 @@ class SQLiteDatabase(BaseDatabase):
         return self.get_user_settings(row["user_id"])
 
     def get_user_settings(self, user_id: int) -> dict:
+        """user_id = internal users.id."""
         conn = self.connect()
         row = conn.execute(
             "SELECT * FROM user_settings WHERE user_id = ?", (user_id,)
@@ -457,7 +458,15 @@ class SQLiteDatabase(BaseDatabase):
             "notify_quiet_hours_end": 8,
         }
 
+    def get_user_settings_by_tg(self, telegram_id: int) -> dict:
+        """Convenience: accepts telegram_id, looks up internal user_id."""
+        row = self.get_user_by_telegram(telegram_id)
+        if not row:
+            return {"user_id": 0, "city": ""}
+        return self.get_user_settings(row["id"])
+
     def upsert_user_settings(self, user_id: int, **kwargs) -> None:
+        """user_id = users.id (internal ID, NOT telegram_id)."""
         conn = self.connect()
         allowed = {
             "city", "sources_avito", "sources_youla",
@@ -482,6 +491,17 @@ class SQLiteDatabase(BaseDatabase):
             values,
         )
         conn.commit()
+
+    def upsert_user_settings_by_tg(self, telegram_id: int, **kwargs) -> None:
+        """Convenience: accepts telegram_id, looks up internal user_id."""
+        row = self.get_user_by_telegram(telegram_id)
+        if row:
+            self.upsert_user_settings(row["id"], **kwargs)
+
+    def get_internal_user_id(self, telegram_id: int) -> int:
+        """Convert telegram_id to internal users.id."""
+        row = self.get_user_by_telegram(telegram_id)
+        return row["id"] if row else 0
 
     # ── Saved Finds ───────────────────────────────────────────────────────────
 
