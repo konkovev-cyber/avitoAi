@@ -22,8 +22,9 @@ templates = Jinja2Templates(directory=Path(__file__).parent / "templates")
 async def index(request: Request):
     """SaaS Landing Page."""
     return templates.TemplateResponse(
+        request,
         "landing.html",
-        {"request": request, "config": settings},
+        {"config": settings.model_dump()},
     )
 
 
@@ -57,9 +58,9 @@ async def user_dashboard(request: Request, telegram_id: int):
     radars = db.get_latest_radar(user_id, limit=10)
 
     return templates.TemplateResponse(
+        request,
         "dashboard.html",
         {
-            "request": request,
             "user": user,
             "searches": searches,
             "opportunities": opportunities,
@@ -78,9 +79,9 @@ async def admin_panel(request: Request):
     users = db.get_all_users(limit=100)
 
     return templates.TemplateResponse(
+        request,
         "admin.html",
         {
-            "request": request,
             "stats": stats,
             "users": users,
         },
