@@ -1,0 +1,52 @@
+{
+  "seller_groups": [
+    {
+      "seller_id": "SELLER_001",
+      "real_name": "Либхерр Сервис",
+      "type": "company",
+      "listings": ["L0001"],
+      "confidence": "verified",
+      "proof": ["source_yandex_maps"],
+      "notes": "Специализированный сервис Liebherr. Найден только в Яндекс Картах."
+    },
+    {
+      "seller_id": "SELLER_002",
+      "real_name": "Bosch Service Plus",
+      "type": "company",
+      "listings": ["L0002"],
+      "confidence": "verified",
+      "proof": ["source_yandex_maps"],
+      "notes": "Официальный сервисный центр Bosch."
+    },
+    {
+      "seller_id": "SELLER_003",
+      "real_name": "СЦ Анмар",
+      "type": "company",
+      "listings": ["L0003"],
+      "confidence": "verified",
+      "proof": ["source_yandex_maps"],
+      "notes": "Независимый сервисный центр."
+    },
+    {
+      "seller_id": "SELLER_004",
+      "real_name": "Ником-Сервис",
+      "type": "company",
+      "listings": ["L0004"],
+      "confidence": "verified",
+      "proof": ["source_yandex_maps"],
+      "notes": "Ремонт утюгов и бытовой техники."
+    },
+    {
+      "seller_id": "SELLER_005",
+      "real_name": "Протор-Сервис",
+      "type": "company",
+      "listings": ["L0005"],
+      "confidence": "verified",
+      "proof": ["source_yandex_maps"],
+      "notes": "Крупный сервис с наибольшим количеством отзывов."
+    }
+  ],
+  "match_hypotheses": [],
+  "complex_cases": [],
+  "unknown_cases": []
+}

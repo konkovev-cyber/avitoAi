@@ -1,0 +1,117 @@
+[
+  {
+    "listing_id": "L0001",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/libherr_servis/",
+    "title": "Либхерр Сервис",
+    "category": "Ремонт бытовой техники / Ремонт холодильников",
+    "seller_name": "Либхерр Сервис",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Салтыковская ул., 51"
+    },
+    "images": [],
+    "rating": 4.9,
+    "reviews_count": 75,
+    "working_hours": "до 21:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Специализированный сервис Liebherr. Хорошее место 2026."
+  },
+  {
+    "listing_id": "L0002",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/bosch_service_plus/",
+    "title": "Bosch Service Plus",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "Bosch Service Plus",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Боровая ул., 7, стр. 10, этаж 4, офис 412"
+    },
+    "images": [],
+    "rating": 5.0,
+    "reviews_count": 42,
+    "working_hours": "до 21:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Официальный сервис Bosch. Награда Хорошее место 2026."
+  },
+  {
+    "listing_id": "L0003",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/sts_anmar/",
+    "title": "СЦ Анмар",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "СЦ Анмар",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Радужная ул., 6, микрорайон Град Московский"
+    },
+    "images": [],
+    "rating": 5.0,
+    "reviews_count": 203,
+    "working_hours": "до 22:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Сервисный центр. Много положительных отзывов."
+  },
+  {
+    "listing_id": "L0004",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/nikom_servis/",
+    "title": "Ником-Сервис",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "Ником-Сервис",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Мурановская ул., 12, этаж цокольный"
+    },
+    "images": [],
+    "rating": 4.5,
+    "reviews_count": 477,
+    "working_hours": "до 20:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Ремонт утюгов и бытовой техники. Много отзывов."
+  },
+  {
+    "listing_id": "L0005",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/protor_servis/",
+    "title": "Протор-Сервис",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "Протор-Сервис",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Зеленоград, к1534"
+    },
+    "images": [],
+    "rating": 4.0,
+    "reviews_count": 1153,
+    "working_hours": "до 20:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Большое количество отзывов. Цена от 400₽."
+  }
+]
