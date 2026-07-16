@@ -1,0 +1,98 @@
+[
+  {
+    "review_id": "LR_001",
+    "company": "Masters",
+    "reason": "894 отзыва, нет телефона в открытых данных",
+    "opportunity_type": "contact_gap",
+    "recommended_action": "Проверить контакт, предложить CRM",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "LR_002",
+    "company": "Vidmaster",
+    "reason": "534 отзыва, нет сайта и телефона",
+    "opportunity_type": "digital_expansion",
+    "recommended_action": "Создание сайта + номер телефона",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "LR_003",
+    "company": "HardWorkers",
+    "reason": "265 отзывов, нет цифрового следа",
+    "opportunity_type": "digital_expansion",
+    "recommended_action": "Цифровое продвижение",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "LR_004",
+    "company": "Точка Ремонта",
+    "reason": "492 отзыва, только Яндекс Карты",
+    "opportunity_type": "channel_diversification",
+    "recommended_action": "Выход на Avito / Ozon",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "LR_005",
+    "company": "X-Repair",
+    "reason": "259 отзывов, только Яндекс Карты",
+    "opportunity_type": "channel_diversification",
+    "recommended_action": "Выход на маркетплейсы",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "LR_006",
+    "company": "iFix Moscow",
+    "reason": "Новый игрок, есть сайт и телефон",
+    "opportunity_type": "monitoring",
+    "recommended_action": "Отслеживать активность",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "LR_007",
+    "company": "АйХелп",
+    "reason": "368 отзывов, нет цифрового следа",
+    "opportunity_type": "digital_expansion",
+    "recommended_action": "Создание сайта",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "LR_008",
+    "company": "Планета iPhone",
+    "reason": "Весь спектр контактов — эталонный профиль",
+    "opportunity_type": "monitoring",
+    "recommended_action": "Использовать как эталон для сравнения",
+    "would_contact": null,
+    "reason_clear": null,
+    "saves_time": null,
+    "comment": "",
+    "reviewed": false
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "request_id": "CR_001",
+  "industry": "Ремонт телефонов",
+  "location": "Москва",
+  "sources": ["Yandex Maps", "Avito", "Yandex Market", "Ozon", "Wildberries", "Company websites"],
+  "goal": "Найти компании с коммерческим потенциалом для цифрового расширения",
+  "created_at": "2026-07-16T16:00:00Z"
+}
