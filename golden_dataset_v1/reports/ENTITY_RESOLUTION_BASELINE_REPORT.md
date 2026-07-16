@@ -10,14 +10,15 @@
 
 | Метрика | Значение | Статус |
 |---------|----------|--------|
-| Listings | 10 | 🟢 |
-| Seller Groups | 8 | 🟢 |
-| Cross-Source Verified Sellers | 1 | 🟢 |
-| Seller Coverage (Verified / Total) | 12.5% | 🟡 |
-| Complex Cases | 1 | 🟢 есть негативный пример |
-| Evidence Records | 8 | 🟢 |
-| Avg Evidence per Seller | 1.0 | 🟡 |
-| False Merge Rate | 0% (0/8) | 🟢 |
+| Listings | 14 | 🟢 |
+| Seller Groups | 9 | 🟢 |
+| Cross-Source Verified Sellers | 2 | 🟢 |
+| Seller Coverage (Verified / Total) | 22% | 🟡 |
+| Complex Cases | 2 | 🟢 |
+| Evidence Records | 16 | 🟢 |
+| Avg Evidence per Seller | 1.8 | 🟡 |
+| Max Evidence Density | 6 | 🟢 |
+| False Merge Rate | 0% (0/9) | 🟢 |
 | False Split Rate | 0% | 🟢 |
 
 **Главный вывод:** архитектура работает. Цепочка `Source → Listing → Evidence → Seller` проверена на позитивном и негативном кейсе.
