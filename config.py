@@ -1,4 +1,9 @@
-"""Configuration for Market Agent v2."""
+"""Configuration for Market Agent v3 — SaaS Multi-User.
+
+Only infrastructure settings here.
+ALL user-specific settings (city, AI, thresholds, etc.) are stored in DB
+and configured through the Telegram bot.
+"""
 
 from __future__ import annotations
 
@@ -10,67 +15,66 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 class Settings(BaseSettings):
     model_config = SettingsConfigDict(
+        env_prefix="MA_",
         env_file=".env",
         env_file_encoding="utf-8",
-        env_prefix="MA_",
+        extra="ignore",
     )
 
-    # Project paths
-    data_dir: Path = Path("data")
+    # ── Required ─────────────────────────────────────────────────────────────
+    telegram_bot_token: str = ""
+
+    # ── Admin ─────────────────────────────────────────────────────────────────
+    # Your personal Telegram ID — get it from @userinfobot
+    # This ID will have full admin access to the bot
+    admin_telegram_id: int = 0
+
+    # ── Database ─────────────────────────────────────────────────────────────
     db_path: Path = Path("data/market_agent.db")
 
-    # Telegram
-    telegram_bot_token: str = ""
-    telegram_chat_id: str = ""
-
-    # Collectors
-    collector_interval_sec: int = 300        # 5 min between search cycles
-    collector_avito_enabled: bool = True
-    collector_youla_enabled: bool = True
-
-    # Proxy (optional)
-    proxy_url: Optional[str] = None
-
-    # Playwright
-    playwright_headless: bool = True
-    playwright_slow_mo: int = 500            # ms
-
-    # Analyzer
-    price_lookback_days: int = 7             # how far back for market price calc
-    min_listings_for_analysis: int = 5       # min similar listings to estimate price
-    deal_score_threshold_buy: float = 70.0   # ≥70 → 🔥 immediate alert
-    deal_score_threshold_maybe: float = 50.0 # ≥50 → standard alert
-
-    # ── AI (all optional — system works without AI) ────────────────────────────
-    ai_provider: str = ""                    # "wormsoft" | "openai" | "gemini" | "anthropic" | ""
-    ai_model: str = ""                       # specific model override (empty = provider default)
-    ai_enabled: bool = False                 # explicit enable flag
-
-    # WormSoft (рекомендуется — агентские модели по себестоимости)
-    wormsoft_api_key: str = ""
-    wormsoft_base_url: str = "https://ai.wormsoft.ru/api/gpt"
-
-    # Другие провайдеры
-    openai_api_key: str = ""
-    gemini_api_key: str = ""
-    anthropic_api_key: str = ""
-
-    # ── Dashboard ─────────────────────────────────────────────────────────────
+    # ── Infrastructure (server-side, not per-user) ───────────────────────────
     dashboard_host: str = "0.0.0.0"
     dashboard_port: int = 8080
-
-    # ── Logging ───────────────────────────────────────────────────────────────
     log_level: str = "INFO"
     log_format: str = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
 
+    # ── Playwright (server-side) ──────────────────────────────────────────────
+    playwright_headless: bool = True
+    playwright_slow_mo: int = 1500       # ms to wait after page load
+
+    # ── Proxy (server-side, optional) ─────────────────────────────────────────
+    proxy_url: Optional[str] = None
+
+    # ── Collectors (infrastructure toggle, server-side) ──────────────────────
+    collector_avito_enabled: bool = True
+    collector_youla_enabled: bool = True
+    collector_interval_sec: int = 30     # loop sleep in seconds for multi-user daemon
+
+    # ── Price analysis (infrastructure settings) ──────────────────────────────
+    min_listings_for_analysis: int = 5   # min similar listings to estimate price
+
+    # ── Global AI fallback (used if user has no AI configured) ───────────────
+    # Leave empty if you want users to configure their own AI
+    wormsoft_api_key: str = ""
+    wormsoft_base_url: str = "https://ai.wormsoft.ru/api/gpt"
+    openai_api_key: str = ""
+    gemini_api_key: str = ""
+    anthropic_api_key: str = ""
+    ai_provider: str = ""               # global fallback provider
+    ai_model: str = ""                  # global fallback model
+
     def is_ai_configured(self) -> bool:
-        """Returns True if at least one AI provider key is set."""
         return bool(
             self.wormsoft_api_key
             or self.openai_api_key
             or self.gemini_api_key
             or self.anthropic_api_key
+            or self.ai_provider
         )
+
+    def is_admin(self, telegram_id: int) -> bool:
+        return self.admin_telegram_id != 0 and telegram_id == self.admin_telegram_id
 
 
 settings = Settings()
+

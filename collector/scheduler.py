@@ -37,6 +37,7 @@ class Scheduler:
         self._collectors: dict = {}
         self._running = False
         self._last_radar_build: float = 0.0
+        self._last_run_times: dict[int, float] = {}  # search_id -> timestamp
 
         # Build AI scorer if configured
         ai_scorer = None
@@ -86,18 +87,37 @@ class Scheduler:
             log.debug("No active searches, skipping cycle")
             return
 
-        # Group searches by user to check Hunter Mode per user
+        now = time.time()
         users_processed: set[int] = set()
 
         for search_row in searches:
+            search_id = search_row["id"]
             user_id = search_row["user_id"]
             u_settings = self.db.get_user_settings(user_id)
+
+            # Respect user's collector_interval_sec
+            interval = u_settings.get("collector_interval_sec", 300)
+            last_run = self._last_run_times.get(search_id, 0.0)
+            if now - last_run < interval:
+                continue
+
+            self._last_run_times[search_id] = now
 
             # Check Hunter Mode (if disabled, user still gets alerts when explicitly triggered)
             # But we continue collecting for all active searches regardless
             min_score = u_settings.get("hunter_min_score", 50.0)
             min_savings = u_settings.get("hunter_min_savings_pct", 10.0)
             notify = bool(u_settings.get("notifications_enabled", 1))
+
+            # Build query sources from user preferences
+            sources = []
+            if u_settings.get("sources_avito", 1):
+                sources.append("avito")
+            if u_settings.get("sources_youla", 1):
+                sources.append("youla")
+
+            if not sources:
+                continue
 
             query = SearchQuery(
                 user_id=user_id,
@@ -109,7 +129,7 @@ class Scheduler:
                 location=search_row.get("location"),
                 condition=search_row.get("condition", "any"),
                 purpose=search_row.get("purpose", "self"),
-                sources=["avito", "youla"],
+                sources=sources,
             )
 
             for source in query.sources:

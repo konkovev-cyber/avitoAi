@@ -1,13 +1,23 @@
-"""SQLite schema for Market Agent — v2 with AI, Hunter Mode, Market Radar."""
+"""SQLite schema for Market Agent — v3 SaaS Multi-User."""
 
-# ── Core tables (unchanged) ────────────────────────────────────────────────────
+# ── Core tables ────────────────────────────────────────────────────────────────
 
 CREATE_USERS = """
 CREATE TABLE IF NOT EXISTS users (
     id INTEGER PRIMARY KEY,
     telegram_id INTEGER UNIQUE NOT NULL,
     username TEXT,
-    created_at TEXT DEFAULT (datetime('now'))
+    first_name TEXT,
+    -- Access control
+    is_active INTEGER DEFAULT 1,        -- 0 = banned
+    is_admin INTEGER DEFAULT 0,         -- 1 = owner/admin
+    -- Subscription
+    plan TEXT DEFAULT 'free',           -- 'free' | 'pro' | 'unlimited'
+    plan_expires_at TEXT,               -- NULL = never expires
+    -- Onboarding
+    onboarded INTEGER DEFAULT 0,        -- 1 = completed setup wizard
+    created_at TEXT DEFAULT (datetime('now')),
+    last_seen_at TEXT DEFAULT (datetime('now'))
 );
 """
 
@@ -42,6 +52,7 @@ CREATE TABLE IF NOT EXISTS listings (
     seller_rating REAL,
     seller_deals_count INTEGER,
     seller_registered_at TEXT,
+    published_at TEXT,
     url TEXT UNIQUE NOT NULL,
     images TEXT,
     hash TEXT,
@@ -62,7 +73,7 @@ CREATE TABLE IF NOT EXISTS analysis (
     risk_score REAL,
     risk_factors TEXT,
     recommendation TEXT,
-    -- AI fields (nullable — populated only when AI is enabled)
+    -- AI fields (nullable)
     ai_score REAL,
     ai_explanation TEXT,
     ai_why_good TEXT,
@@ -81,25 +92,43 @@ CREATE TABLE IF NOT EXISTS alerts (
 );
 """
 
-# ── New tables ─────────────────────────────────────────────────────────────────
+# ── User Settings (full per-user config) ───────────────────────────────────────
 
 CREATE_USER_SETTINGS = """
 CREATE TABLE IF NOT EXISTS user_settings (
     id INTEGER PRIMARY KEY,
     user_id INTEGER UNIQUE REFERENCES users(id),
+
+    -- Location / Sources
+    city TEXT DEFAULT '',               -- default city for searches
+    sources_avito INTEGER DEFAULT 1,    -- 1 = enabled
+    sources_youla INTEGER DEFAULT 1,
+
+    -- Collector
+    collector_interval_sec INTEGER DEFAULT 300,
+
+    -- Deal thresholds
+    threshold_buy REAL DEFAULT 70.0,    -- score >= this → 🔥 BUY alert
+    threshold_maybe REAL DEFAULT 50.0,  -- score >= this → maybe alert
+
     -- Hunter Mode
     hunter_enabled INTEGER DEFAULT 0,
     hunter_interval_sec INTEGER DEFAULT 300,
     hunter_min_savings_pct REAL DEFAULT 10.0,
     hunter_min_score REAL DEFAULT 50.0,
+
     -- AI
-    ai_provider TEXT DEFAULT '',
+    ai_provider TEXT DEFAULT '',        -- 'wormsoft' | 'openai' | 'gemini' | 'anthropic' | ''
     ai_api_key TEXT DEFAULT '',
     ai_model TEXT DEFAULT '',
+
     -- Notifications
     notifications_enabled INTEGER DEFAULT 1,
     notify_on_buy INTEGER DEFAULT 1,
     notify_on_maybe INTEGER DEFAULT 0,
+    notify_quiet_hours_start INTEGER DEFAULT 23,  -- hour 0-23
+    notify_quiet_hours_end INTEGER DEFAULT 8,
+
     updated_at TEXT DEFAULT (datetime('now'))
 );
 """
@@ -143,7 +172,18 @@ CREATE TABLE IF NOT EXISTS ai_cache (
 );
 """
 
-# Indexes
+CREATE_BROADCASTS = """
+CREATE TABLE IF NOT EXISTS broadcasts (
+    id INTEGER PRIMARY KEY,
+    admin_id INTEGER REFERENCES users(id),
+    message TEXT NOT NULL,
+    sent_count INTEGER DEFAULT 0,
+    created_at TEXT DEFAULT (datetime('now'))
+);
+"""
+
+# ── Indexes ────────────────────────────────────────────────────────────────────
+
 CREATE_INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_listings_source ON listings(source);",
     "CREATE INDEX IF NOT EXISTS idx_listings_url ON listings(url);",
@@ -157,6 +197,31 @@ CREATE_INDEXES = [
     "CREATE INDEX IF NOT EXISTS idx_saved_user ON saved_finds(user_id);",
     "CREATE INDEX IF NOT EXISTS idx_radar_user ON market_radar(user_id);",
     "CREATE INDEX IF NOT EXISTS idx_ai_cache_key ON ai_cache(cache_key);",
+    "CREATE INDEX IF NOT EXISTS idx_users_active ON users(is_active);",
+]
+
+# ── Migration: add new columns to existing DB ──────────────────────────────────
+
+MIGRATIONS = [
+    # v2 → v3: add new user fields
+    "ALTER TABLE users ADD COLUMN first_name TEXT;",
+    "ALTER TABLE users ADD COLUMN is_active INTEGER DEFAULT 1;",
+    "ALTER TABLE users ADD COLUMN is_admin INTEGER DEFAULT 0;",
+    "ALTER TABLE users ADD COLUMN plan TEXT DEFAULT 'free';",
+    "ALTER TABLE users ADD COLUMN plan_expires_at TEXT;",
+    "ALTER TABLE users ADD COLUMN onboarded INTEGER DEFAULT 0;",
+    "ALTER TABLE users ADD COLUMN last_seen_at TEXT DEFAULT (datetime('now'));",
+    # v2 → v3: add new user_settings fields
+    "ALTER TABLE user_settings ADD COLUMN city TEXT DEFAULT '';",
+    "ALTER TABLE user_settings ADD COLUMN sources_avito INTEGER DEFAULT 1;",
+    "ALTER TABLE user_settings ADD COLUMN sources_youla INTEGER DEFAULT 1;",
+    "ALTER TABLE user_settings ADD COLUMN collector_interval_sec INTEGER DEFAULT 300;",
+    "ALTER TABLE user_settings ADD COLUMN threshold_buy REAL DEFAULT 70.0;",
+    "ALTER TABLE user_settings ADD COLUMN threshold_maybe REAL DEFAULT 50.0;",
+    "ALTER TABLE user_settings ADD COLUMN notify_quiet_hours_start INTEGER DEFAULT 23;",
+    "ALTER TABLE user_settings ADD COLUMN notify_quiet_hours_end INTEGER DEFAULT 8;",
+    # add published_at to listings
+    "ALTER TABLE listings ADD COLUMN published_at TEXT;",
 ]
 
 SCHEMA = [
@@ -169,5 +234,6 @@ SCHEMA = [
     CREATE_SAVED_FINDS,
     CREATE_MARKET_RADAR,
     CREATE_AI_CACHE,
+    CREATE_BROADCASTS,
     *CREATE_INDEXES,
 ]

@@ -75,9 +75,13 @@ class DealEngine:
         score = max(0, min(100, score))
 
         # 6. Recommendation
-        if score >= settings.deal_score_threshold_buy:
+        u_settings = self.db.get_user_settings_by_search_id(search_id)
+        threshold_buy = u_settings.get("threshold_buy", 70.0)
+        threshold_maybe = u_settings.get("threshold_maybe", 50.0)
+
+        if score >= threshold_buy:
             recommendation = "buy"
-        elif score >= settings.deal_score_threshold_maybe:
+        elif score >= threshold_maybe:
             recommendation = "maybe"
         else:
             recommendation = "skip"
@@ -98,9 +102,18 @@ class DealEngine:
         """Async evaluation: heuristics + optional AI enrichment."""
         deal = self.evaluate(listing, search_id)
 
-        # Enrich with AI if configured
-        if self.ai_scorer and self.ai_scorer.enabled:
-            deal = await self.ai_scorer.enrich(deal, listing)
+        # Enrich with AI if configured for this user
+        u_settings = self.db.get_user_settings_by_search_id(search_id)
+        from ai.factory import get_user_ai_provider
+        from analyzer.ai_scorer import AIScorer
+
+        provider = get_user_ai_provider(u_settings)
+        if provider:
+            user_ai_scorer = AIScorer(self.db, provider)
+            if user_ai_scorer.enabled:
+                deal = await user_ai_scorer.enrich(deal, listing, u_settings)
+        elif self.ai_scorer and self.ai_scorer.enabled:
+            deal = await self.ai_scorer.enrich(deal, listing, u_settings)
 
         return deal
 

@@ -12,7 +12,7 @@ from typing import Optional
 
 from config import settings
 from models import RawListing, SearchQuery, DealScore, MarketRadarSnapshot
-from .schema import SCHEMA
+from .schema import SCHEMA, MIGRATIONS
 
 log = logging.getLogger("market_agent.db")
 
@@ -39,16 +39,31 @@ class Database:
         for stmt in SCHEMA:
             conn.execute(stmt)
         conn.commit()
+        self._run_migrations()
         log.info("Database schema initialized at %s", self.db_path)
+
+    def _run_migrations(self):
+        """Apply ALTER TABLE migrations — silently skip if column already exists."""
+        conn = self.connect()
+        for sql in MIGRATIONS:
+            try:
+                conn.execute(sql)
+                conn.commit()
+            except Exception:
+                pass  # column already exists or other harmless error
 
     # ── Users ────────────────────────────────────────────────────────────────
 
-    def upsert_user(self, telegram_id: int, username: Optional[str] = None) -> int:
+    def upsert_user(self, telegram_id: int, username: Optional[str] = None,
+                    first_name: Optional[str] = None) -> int:
         conn = self.connect()
         cur = conn.execute(
-            "INSERT INTO users (telegram_id, username) VALUES (?, ?) "
-            "ON CONFLICT(telegram_id) DO UPDATE SET username=COALESCE(?, username)",
-            (telegram_id, username, username),
+            "INSERT INTO users (telegram_id, username, first_name) VALUES (?, ?, ?) "
+            "ON CONFLICT(telegram_id) DO UPDATE SET "
+            "username=COALESCE(?, username), "
+            "first_name=COALESCE(?, first_name), "
+            "last_seen_at=datetime('now')",
+            (telegram_id, username, first_name, username, first_name),
         )
         conn.commit()
         return cur.lastrowid or self.get_user_by_telegram(telegram_id)["id"]
@@ -59,6 +74,83 @@ class Database:
             "SELECT * FROM users WHERE telegram_id = ?", (telegram_id,)
         ).fetchone()
         return dict(row) if row else None
+
+    def is_banned(self, telegram_id: int) -> bool:
+        conn = self.connect()
+        row = conn.execute(
+            "SELECT is_active FROM users WHERE telegram_id = ?", (telegram_id,)
+        ).fetchone()
+        return bool(row and row["is_active"] == 0)
+
+    def is_admin(self, telegram_id: int) -> bool:
+        conn = self.connect()
+        row = conn.execute(
+            "SELECT is_admin FROM users WHERE telegram_id = ?", (telegram_id,)
+        ).fetchone()
+        return bool(row and row["is_admin"] == 1)
+
+    def set_admin(self, telegram_id: int, is_admin: bool = True):
+        conn = self.connect()
+        conn.execute(
+            "UPDATE users SET is_admin = ? WHERE telegram_id = ?",
+            (1 if is_admin else 0, telegram_id),
+        )
+        conn.commit()
+
+    def ban_user(self, telegram_id: int, banned: bool = True):
+        conn = self.connect()
+        conn.execute(
+            "UPDATE users SET is_active = ? WHERE telegram_id = ?",
+            (0 if banned else 1, telegram_id),
+        )
+        conn.commit()
+
+    def set_plan(self, telegram_id: int, plan: str, expires_at: Optional[str] = None):
+        conn = self.connect()
+        conn.execute(
+            "UPDATE users SET plan = ?, plan_expires_at = ? WHERE telegram_id = ?",
+            (plan, expires_at, telegram_id),
+        )
+        conn.commit()
+
+    def mark_onboarded(self, telegram_id: int):
+        conn = self.connect()
+        conn.execute(
+            "UPDATE users SET onboarded = 1 WHERE telegram_id = ?", (telegram_id,)
+        )
+        conn.commit()
+
+    def get_all_users(self, limit: int = 200) -> list[dict]:
+        conn = self.connect()
+        rows = conn.execute(
+            "SELECT * FROM users ORDER BY created_at DESC LIMIT ?", (limit,)
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+    def get_admin_stats(self) -> dict:
+        conn = self.connect()
+        total_users = conn.execute("SELECT COUNT(*) FROM users").fetchone()[0]
+        active_users = conn.execute("SELECT COUNT(*) FROM users WHERE is_active=1").fetchone()[0]
+        today_users = conn.execute(
+            "SELECT COUNT(*) FROM users WHERE date(created_at)=date('now')"
+        ).fetchone()[0]
+        pro_users = conn.execute(
+            "SELECT COUNT(*) FROM users WHERE plan != 'free'"
+        ).fetchone()[0]
+        total_searches = conn.execute("SELECT COUNT(*) FROM searches WHERE active=1").fetchone()[0]
+        today_alerts = conn.execute(
+            "SELECT COUNT(*) FROM alerts WHERE date(sent_at)=date('now')"
+        ).fetchone()[0]
+        total_listings = conn.execute("SELECT COUNT(*) FROM listings").fetchone()[0]
+        return {
+            "total_users": total_users,
+            "active_users": active_users,
+            "today_new_users": today_users,
+            "pro_users": pro_users,
+            "active_searches": total_searches,
+            "today_alerts": today_alerts,
+            "total_listings": total_listings,
+        }
 
     # ── Searches ─────────────────────────────────────────────────────────────
 
@@ -243,6 +335,15 @@ class Database:
 
     # ── User Settings ─────────────────────────────────────────────────────────
 
+    def get_user_settings_by_search_id(self, search_id: int) -> dict:
+        conn = self.connect()
+        row = conn.execute(
+            "SELECT user_id FROM searches WHERE id = ?", (search_id,)
+        ).fetchone()
+        if not row:
+            return self.get_user_settings(0)
+        return self.get_user_settings(row["user_id"])
+
     def get_user_settings(self, user_id: int) -> dict:
         conn = self.connect()
         row = conn.execute(
@@ -250,9 +351,15 @@ class Database:
         ).fetchone()
         if row:
             return dict(row)
-        # Return defaults
+        # Return full defaults
         return {
             "user_id": user_id,
+            "city": "",
+            "sources_avito": 1,
+            "sources_youla": 1,
+            "collector_interval_sec": 300,
+            "threshold_buy": 70.0,
+            "threshold_maybe": 50.0,
             "hunter_enabled": 0,
             "hunter_interval_sec": 300,
             "hunter_min_savings_pct": 10.0,
@@ -263,21 +370,24 @@ class Database:
             "notifications_enabled": 1,
             "notify_on_buy": 1,
             "notify_on_maybe": 0,
+            "notify_quiet_hours_start": 23,
+            "notify_quiet_hours_end": 8,
         }
 
     def upsert_user_settings(self, user_id: int, **kwargs) -> None:
         conn = self.connect()
-        # Build update clause dynamically
         allowed = {
-            "hunter_enabled", "hunter_interval_sec", "hunter_min_savings_pct",
-            "hunter_min_score", "ai_provider", "ai_api_key", "ai_model",
+            "city", "sources_avito", "sources_youla",
+            "collector_interval_sec", "threshold_buy", "threshold_maybe",
+            "hunter_enabled", "hunter_interval_sec",
+            "hunter_min_savings_pct", "hunter_min_score",
+            "ai_provider", "ai_api_key", "ai_model",
             "notifications_enabled", "notify_on_buy", "notify_on_maybe",
+            "notify_quiet_hours_start", "notify_quiet_hours_end",
         }
         updates = {k: v for k, v in kwargs.items() if k in allowed}
         if not updates:
             return
-
-        # Try insert first, then update
         conn.execute(
             "INSERT OR IGNORE INTO user_settings (user_id) VALUES (?)", (user_id,)
         )

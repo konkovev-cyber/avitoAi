@@ -113,6 +113,12 @@ def cmd_dashboard():
 
 
 def main():
+    if sys.platform == "win32":
+        try:
+            sys.stdout.reconfigure(encoding="utf-8")
+            sys.stderr.reconfigure(encoding="utf-8")
+        except Exception:
+            pass
     setup_logging()
 
     parser = argparse.ArgumentParser(

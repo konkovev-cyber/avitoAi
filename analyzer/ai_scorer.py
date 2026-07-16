@@ -35,7 +35,7 @@ class AIScorer:
         raw = f"{listing.url}|{listing.price}|{market_price:.0f}"
         return hashlib.sha256(raw.encode()).hexdigest()[:24]
 
-    async def enrich(self, deal: DealScore, listing: RawListing) -> DealScore:
+    async def enrich(self, deal: DealScore, listing: RawListing, user_settings: Optional[dict] = None) -> DealScore:
         """Add AI analysis to an existing DealScore. Returns enriched DealScore."""
         if not self.enabled:
             return deal
@@ -82,10 +82,12 @@ class AIScorer:
                 blended = deal.score * 0.6 + analysis.ai_score * 0.4
                 deal.score = round(min(100, max(0, blended)), 1)
                 # Update recommendation based on blended score
-                from config import settings
-                if deal.score >= settings.deal_score_threshold_buy:
+                u_set = user_settings or {}
+                threshold_buy = u_set.get("threshold_buy", 70.0)
+                threshold_maybe = u_set.get("threshold_maybe", 50.0)
+                if deal.score >= threshold_buy:
                     deal.recommendation = "buy"
-                elif deal.score >= settings.deal_score_threshold_maybe:
+                elif deal.score >= threshold_maybe:
                     deal.recommendation = "maybe"
 
             # Cache the result
