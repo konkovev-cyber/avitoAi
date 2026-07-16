@@ -344,57 +344,244 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 # ── Searches ───────────────────────────────────────────────────────────────────
 
 async def ask_search_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
-    """Ask user what they want to search for."""
+    """Step 1: Ask what to search for."""
+    await update.callback_query.answer()
+    context.user_data["search"] = {}  # reset any previous search data
     await update.callback_query.edit_message_text(
         "🔍 <b>Что ищем?</b>\n\n"
-        "Напишите товар и цену.\n"
-        "<i>Пример: iPhone 15 Pro до 80000, MacBook Pro M2, RTX 4090</i>",
+        "Напишите товар:\n"
+        "<i>Например: MacBook Pro M2, iPhone 15 Pro, RTX 4090</i>",
         parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("◀ Отмена", callback_data="menu_main")]
-        ]),
+        reply_markup=_kb([_btn("❌ Отмена", "search_cancel")]),
     )
     return ST_SEARCH_TEXT
 
 
-async def got_search_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Receive search query and create search."""
-    tg_id = _get_user_id(update)
+async def got_search_text(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Step 2: Got text → ask optional params."""
     text = update.message.text.strip()
-    user = DB.get_user_by_telegram(tg_id)
-    if not user:
-        await update.message.reply_text("❌ Ошибка. Напишите /start")
+    if len(text) < 2:
+        await update.message.reply_text(
+            "Слишком короткий запрос. Напишите хотя бы 2-3 слова.",
+            reply_markup=_kb([_btn("❌ Отмена", "search_cancel")]),
+        )
+        return ST_SEARCH_TEXT
+    context.user_data["search"]["query"] = text
+
+    kb = _kb(
+        [_btn("💰 Цена", "search_ask_price")],
+        [_btn("📍 Город", "search_ask_city")],
+        [_btn("📦 Состояние", "search_ask_condition")],
+        [_btn("✅ Создать поиск", "search_create")],
+        [_btn("❌ Отмена", "search_cancel")],
+    )
+    await update.message.reply_text(
+        f"🔍 <b>{text}</b>\n\n"
+        "Добавьте дополнительные параметры или сразу создайте поиск.",
+        parse_mode="HTML",
+        reply_markup=kb,
+    )
+    return ST_SEARCH_CITY
+
+
+async def ask_search_city_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Ask city (inline from optional params)."""
+    context.user_data["search"]["input_mode"] = "city"
+    await update.callback_query.edit_message_text(
+        "📍 <b>Город</b>\n\n"
+        "Напишите город (или <i>пропустите</i>):",
+        parse_mode="HTML",
+        reply_markup=_kb(
+            [_btn("⏭ Пропустить", "search_skip_city")],
+            [_btn("❌ Отмена", "search_cancel")],
+        ),
+    )
+    return ST_SEARCH_PRICE_MIN  # reuse for city input
+
+
+async def got_search_city(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Save city or price depending on input_mode."""
+    se = context.user_data.get("search", {})
+    mode = se.pop("input_mode", "city")
+    if mode == "price":
+        return await got_search_price(update, context)
+    city = update.message.text.strip()
+    se["city"] = city
+    await update.message.reply_text(
+        f"📍 Город: <b>{city}</b> — сохранён.",
+        parse_mode="HTML",
+    )
+    return await _show_search_params(update, context)
+
+
+async def skip_search_city(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Skip city input."""
+    await update.callback_query.answer()
+    return await _show_search_params(update, context, edit=True)
+
+
+async def ask_search_price_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Ask max price (inline from optional params)."""
+    await update.callback_query.edit_message_text(
+        "💰 <b>Максимальная цена</b>\n\n"
+        "Укажите бюджет в рублях (или <i>пропустите</i>):\n"
+        "<i>Например: 80000</i>",
+        parse_mode="HTML",
+        reply_markup=_kb(
+            [_btn("⏭ Пропустить", "search_skip_price")],
+            [_btn("❌ Отмена", "search_cancel")],
+        ),
+    )
+    return ST_SEARCH_PRICE_MIN
+
+
+async def got_search_price(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Save max price and return to params menu."""
+    raw = update.message.text.strip().replace(" ", "").replace(",", ".")
+    try:
+        price = float(raw)
+        context.user_data["search"]["max_price"] = price
+        await update.message.reply_text(
+            f"💰 Цена до <b>{price:,.0f} ₽</b> — сохранена.",
+            parse_mode="HTML",
+        )
+    except ValueError:
+        await update.message.reply_text("❌ Введите число (например: 80000)")
+        return ST_SEARCH_PRICE_MIN
+    return await _show_search_params(update, context)
+
+
+async def skip_search_price(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Skip price input."""
+    await update.callback_query.answer()
+    return await _show_search_params(update, context, edit=True)
+
+
+async def ask_search_condition_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Ask condition (inline from optional params)."""
+    await update.callback_query.edit_message_text(
+        "📦 <b>Состояние</b>\n\n"
+        "Выберите желаемое состояние:",
+        parse_mode="HTML",
+        reply_markup=_kb(
+            [_btn("✨ Новый", "search_cond_new")],
+            [_btn("👍 Как новый", "search_cond_likenew")],
+            [_btn("📦 Б/у", "search_cond_used")],
+            [_btn("⏭ Не важно", "search_cond_any")],
+            [_btn("❌ Отмена", "search_cancel")],
+        ),
+    )
+    return ST_SEARCH_CONDITION
+
+
+async def got_search_condition_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Save condition and return to params menu."""
+    await update.callback_query.answer()
+    data = update.callback_query.data
+    cond_map = {
+        "search_cond_new": "Новый",
+        "search_cond_likenew": "Как новый",
+        "search_cond_used": "Б/у",
+        "search_cond_any": None,
+    }
+    cond = cond_map.get(data)
+    context.user_data["search"]["condition"] = cond or "any"
+    if cond:
+        await update.callback_query.edit_message_text(
+            f"📦 Состояние: <b>{cond}</b>",
+            parse_mode="HTML",
+        )
+    return await _show_search_params(update, context, edit=True)
+
+
+async def _show_search_params(
+    update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False
+) -> int:
+    """Show current search params and options to add more or create."""
+    search = context.user_data.get("search", {})
+    query = search.get("query", "?")
+    city = search.get("city")
+    price = search.get("max_price")
+    condition = search.get("condition")
+
+    lines = [f"🔍 <b>{query}</b>\n"]
+    if price:
+        lines.append(f"💰 До <b>{price:,.0f} ₽</b>")
+    if city:
+        lines.append(f"📍 <b>{city}</b>")
+    if condition and condition != "any":
+        lines.append(f"📦 <b>{condition.capitalize()}</b>")
+    lines.append("")
+
+    kb = _kb(
+        [_btn("💰 Цена", "search_ask_price")],
+        [_btn("📍 Город", "search_ask_city")],
+        [_btn("📦 Состояние", "search_ask_condition")],
+        [_btn("✅ Создать поиск", "search_create")],
+        [_btn("❌ Отмена", "search_cancel")],
+    )
+
+    text = "\n".join(lines) + "Добавьте параметры или создайте поиск:"
+    if edit:
+        await update.callback_query.edit_message_text(text, parse_mode="HTML", reply_markup=kb)
+    else:
+        await update.effective_chat.send_message(text, parse_mode="HTML", reply_markup=kb)
+    return ST_SEARCH_CITY
+
+
+async def create_search_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Create the search and finish."""
+    await update.callback_query.answer()
+    search = context.user_data.get("search", {})
+    if not search.get("query"):
+        await update.callback_query.edit_message_text(
+            "❌ Не указан товар. Начните заново.",
+            reply_markup=_kb([_btn("🏠 В меню", "menu_main")]),
+        )
         return ConversationHandler.END
 
-    internal_id = user["id"]
+    tg_id = _get_user_id(update)
+    user = DB.get_user_by_telegram(tg_id)
+    if not user:
+        return ConversationHandler.END
 
-    # Parse query
-    import re
-    max_price = None
-    m = re.search(r'до\s+([\d\s]+)', text)
-    if m:
-        try:
-            max_price = float(m.group(1).replace(" ", ""))
-        except ValueError:
-            pass
-
-    query = SearchQuery(
-        user_id=internal_id,
-        query=text,
-        keywords=text.split(),
-        max_price=max_price,
+    query_obj = SearchQuery(
+        user_id=user["id"],
+        query=search["query"],
+        keywords=search["query"].split(),
+        max_price=search.get("max_price"),
+        location=search.get("city"),
     )
-    search_id = DB.create_search(query)
+    search_id = DB.create_search(query_obj)
 
-    price_str = f"до {max_price:,.0f}₽" if max_price else "без ограничений"
-    await update.message.reply_text(
+    params = []
+    if search.get("max_price"):
+        params.append(f"до {search['max_price']:,.0f} ₽")
+    if search.get("city"):
+        params.append(search["city"])
+
+    await update.callback_query.edit_message_text(
         f"✅ <b>Поиск создан!</b>\n\n"
-        f"🔍 {text}\n"
-        f"💰 {price_str}\n\n"
-        f"<i>Я начну искать и пришлю лучшие находки.</i>",
+        f"🔍 {search['query']}\n"
+        + (f"{' · '.join(params)}\n" if params else "")
+        + "\n"
+        "<i>Я начну искать и пришлю находки вам в Telegram.</i>",
         parse_mode="HTML",
         reply_markup=_main_menu_kb(tg_id),
     )
+    context.user_data.pop("search", None)
+    return ConversationHandler.END
+
+
+async def cancel_search(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
+    """Cancel search creation."""
+    if update.callback_query:
+        await update.callback_query.answer()
+        await update.callback_query.edit_message_text(
+            "🔍 Поиск отменён.",
+            reply_markup=_kb([_btn("🏠 В меню", "menu_main")]),
+        )
+    context.user_data.pop("search", None)
     return ConversationHandler.END
 
 async def show_searches(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1096,6 +1283,7 @@ def build_app() -> Application:
             CallbackQueryHandler(ask_broadcast, pattern="^admin_broadcast$"),
         ],
         states={
+            # Onboarding
             ST_ONBOARD_CITY: [MessageHandler(filters.TEXT & ~filters.COMMAND, onboard_got_city)],
             ST_ONBOARD_AI_CHOOSE: [CallbackQueryHandler(onboard_ai_choose, pattern="^ob_ai_")],
             ST_ONBOARD_AI_MODEL: [CallbackQueryHandler(onboard_ai_model, pattern="^ob_model_")],
@@ -1105,6 +1293,7 @@ def build_app() -> Application:
                 CallbackQueryHandler(ai_model_selected, pattern="^set_ai_model_"),
                 MessageHandler(filters.TEXT & ~filters.COMMAND, got_ai_key),
             ],
+            # Settings conversations
             ST_WAIT_CITY: [MessageHandler(filters.TEXT & ~filters.COMMAND, got_city)],
             ST_WAIT_AI_KEY: [
                 MessageHandler(filters.TEXT & ~filters.COMMAND, got_ai_key),
@@ -1113,13 +1302,33 @@ def build_app() -> Application:
             ST_WAIT_THRESHOLD: [MessageHandler(filters.TEXT & ~filters.COMMAND, got_threshold)],
             ST_ADMIN_BROADCAST: [MessageHandler(filters.TEXT & ~filters.COMMAND, do_broadcast)],
             # Search flow
-            ST_SEARCH_TEXT: [MessageHandler(filters.TEXT & ~filters.COMMAND, got_search_text)],
+            ST_SEARCH_TEXT: [
+                MessageHandler(filters.TEXT & ~filters.COMMAND, got_search_text),
+                CallbackQueryHandler(cancel_search, pattern="^search_cancel$"),
+            ],
+            ST_SEARCH_CITY: [
+                CallbackQueryHandler(ask_search_price_cb, pattern="^search_ask_price$"),
+                CallbackQueryHandler(ask_search_city_cb, pattern="^search_ask_city$"),
+                CallbackQueryHandler(ask_search_condition_cb, pattern="^search_ask_condition$"),
+                CallbackQueryHandler(create_search_cb, pattern="^search_create$"),
+                CallbackQueryHandler(cancel_search, pattern="^search_cancel$"),
+            ],
+            ST_SEARCH_PRICE_MIN: [
+                MessageHandler(filters.TEXT & ~filters.COMMAND, got_search_city),
+                CallbackQueryHandler(skip_search_city, pattern="^search_skip_city$"),
+                CallbackQueryHandler(cancel_search, pattern="^search_cancel$"),
+            ],
+            ST_SEARCH_CONDITION: [
+                CallbackQueryHandler(got_search_condition_cb, pattern="^search_cond_"),
+            ],
         },
         fallbacks=[
             CommandHandler("start", cmd_start),
+            CallbackQueryHandler(cancel_search, pattern="^search_cancel$"),
             CallbackQueryHandler(handle_callback),
         ],
         allow_reentry=True,
+        conversation_timeout=600,  # 10 min timeout
     )
 
     app.add_handler(conv)
