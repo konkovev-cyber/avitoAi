@@ -121,7 +121,7 @@ async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, tex
 
     greeting = text or (
         f"🏠 <b>Market Agent</b> {plan_badge}\n\n"
-        f"🏙 Город: <code>{city}</code>\n"
+        f"🏙 Регион: <code>{city}</code>\n"
         f"🤖 AI: <code>{ai}</code>\n\n"
         "Выберите раздел:"
     )
@@ -151,8 +151,8 @@ async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🧠 <b>AI Router</b> — нейросети анализируют описание, выявляют скрытые риски и дают оценку сделки (Score).\n"
         "💧 <b>Определяю ликвидность</b> — оцениваю, насколько быстро товар уходит с рынка.\n\n"
         "Давайте настроим бота за 2 шага.\n\n"
-        "🏙 <b>Шаг 1/2: Твой город</b>\n"
-        "Напишите название города (например: <code>Москва</code>):",
+        "🏙 <b>Шаг 1/2: Твой регион</b>\n"
+        "Город, край или страна (например: <code>Москва</code>, <code>Краснодарский край</code>, <code>Россия</code>):",
         ReplyKeyboardRemove(),
     )
     return ST_ONBOARD_CITY
@@ -164,7 +164,7 @@ async def onboard_got_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data["onboard_city"] = city
 
     await _send(update,
-        f"✅ Город: <b>{city}</b>\n\n"
+        f"✅ Регион: <b>{city}</b>\n\n"
         "🤖 <b>Шаг 2/2: AI-анализ</b>\n\n"
         "AI объясняет каждую находку и оценивает риски.\n"
         "<i>Без AI бот работает, но без объяснений.</i>",
@@ -248,7 +248,7 @@ async def _finish_onboarding(update: Update, context: ContextTypes.DEFAULT_TYPE)
 
     text = (
         "✅ <b>Настройка завершена!</b>\n\n"
-        f"🏙 Город: <b>{city or 'не задан'}</b>\n"
+        f"🏙 Регион: <b>{city or 'не задан'}</b>\n"
         f"{ai_line}\n\n"
         "Теперь создайте первый поиск или откройте настройки.\n"
         "<i>Всё можно изменить в любой момент.</i>"
@@ -431,14 +431,14 @@ async def show_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = (
         "⚙️ <b>Настройки</b>\n\n"
-        f"🏙 Город: <b>{city}</b>\n"
+        f"🏙 Регион: <b>{city}</b>\n"
         f"📦 Источники: Авито {avito} · Юла {youla}\n"
         f"🤖 AI: <b>{ai}</b>\n"
         f"🔔 Уведомления: {notif}\n"
         f"🎯 Режим охотника: {hunter}"
     )
     await _edit(update, text, _kb(
-        [_btn("🏙 Город", "settings_city"), _btn("📦 Источники", "settings_sources")],
+        [_btn("🏙 Регион", "settings_city"), _btn("📦 Источники", "settings_sources")],
         [_btn("🤖 AI провайдер", "settings_ai")],
         [_btn("🔔 Уведомления", "settings_notifications")],
         [_btn("📊 Пороги сделок", "settings_thresholds")],
@@ -453,10 +453,10 @@ async def ask_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     s = DB.get_user_settings(uid)
     current = s.get("city") or "не задан"
     await _edit(update,
-        f"🏙 <b>Ваш город</b>\n\n"
+        f"🏙 <b>Ваш регион</b>\n\n"
         f"Текущий: <code>{current}</code>\n\n"
-        "Напишите название города.\n"
-        "<i>Примеры: Москва, Краснодар, Горячий Ключ</i>",
+        "Город, край или страна.\n"
+        "<i>Примеры: Москва, Краснодарский край, Россия</i>",
         _kb([_btn("◀ Отмена", "menu_settings")]),
     )
     context.user_data["wait_for"] = "city"
@@ -466,7 +466,7 @@ async def got_city(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
     city = update.message.text.strip()
     DB.upsert_user_settings(uid, city=city)
-    await _send(update, f"✅ Город сохранён: <b>{city}</b>")
+    await _send(update, f"✅ Регион сохранён: <b>{city}</b>")
     await show_settings_msg(update, context)
     return ConversationHandler.END
 
@@ -481,14 +481,14 @@ async def show_settings_msg(update: Update, context: ContextTypes.DEFAULT_TYPE):
     youla = "✅" if s.get("sources_youla", 1) else "❌"
     text = (
         "⚙️ <b>Настройки</b>\n\n"
-        f"🏙 Город: <b>{city}</b>\n"
+        f"🏙 Регион: <b>{city}</b>\n"
         f"📦 Источники: Авито {avito} · Юла {youla}\n"
         f"🤖 AI: <b>{ai}</b>\n"
         f"🔔 Уведомления: {notif}\n"
         f"🎯 Режим охотника: {hunter}"
     )
     await update.effective_chat.send_message(text, parse_mode="HTML", reply_markup=_kb(
-        [_btn("🏙 Город", "settings_city"), _btn("📦 Источники", "settings_sources")],
+        [_btn("🏙 Регион", "settings_city"), _btn("📦 Источники", "settings_sources")],
         [_btn("🤖 AI провайдер", "settings_ai")],
         [_btn("🔔 Уведомления", "settings_notifications")],
         [_btn("📊 Пороги сделок", "settings_thresholds")],
@@ -911,14 +911,14 @@ async def cmd_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
     youla = "✅" if s.get("sources_youla", 1) else "❌"
     text = (
         "⚙️ <b>Настройки</b>\n\n"
-        f"🏙 Город: <b>{city}</b>\n"
+        f"🏙 Регион: <b>{city}</b>\n"
         f"📦 Источники: Авито {avito} · Юла {youla}\n"
         f"🤖 AI: <b>{ai}</b>\n"
         f"🔔 Уведомления: {notif}\n"
         f"🎯 Режим охотника: {hunter}"
     )
     await _send(update, text, _kb(
-        [_btn("🏙 Город", "settings_city"), _btn("📦 Источники", "settings_sources")],
+        [_btn("🏙 Регион", "settings_city"), _btn("📦 Источники", "settings_sources")],
         [_btn("🤖 AI провайдер", "settings_ai")],
         [_btn("🔔 Уведомления", "settings_notifications")],
         [_btn("📊 Пороги сделок", "settings_thresholds")],
