@@ -274,5 +274,51 @@
     "working_hours": "Пн-Вс 8:00-23:00",
     "collection_date": "2026-07-16T15:15:00Z",
     "notes": "Юридические реквизиты с сайта: ИНН 510704817991, ОГРН 323508100040821."
+  },
+  {
+    "listing_id": "L0013",
+    "source": "company_website",
+    "url": "https://samsung-service-center.ru",
+    "title": "Сервисный центр Samsung в Москве",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "ИП Чиликов Алексей Александрович",
+    "contacts": {
+      "phone": "+7 (495) 065-87-09",
+      "email": "info@samsung-service-center.ru",
+      "website": "samsung-service-center.ru"
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Новинский бульвар, 31"
+    },
+    "images": [],
+    "rating": null,
+    "reviews_count": null,
+    "working_hours": "c 09:00 до 21:00",
+    "collection_date": "2026-07-16T15:30:00Z",
+    "notes": "★ Evidence Density = 5. ИНН 720506602266, ОГРН 323774600182280, email info@samsung-service-center.ru. НЕ официальный сервис Samsung. Другая компания, чем L0006."
+  },
+  {
+    "listing_id": "L0014",
+    "source": "company_website",
+    "url": "https://samsung-service-center.ru",
+    "title": "Samsung-сервис — ИНН/ОГРН (реквизиты)",
+    "category": "Юридические данные",
+    "seller_name": "ИП Чиликов Алексей Александрович",
+    "contacts": {
+      "phone": "+7 (495) 065-87-09",
+      "email": "info@samsung-service-center.ru",
+      "website": "samsung-service-center.ru"
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Новинский бульвар, 31"
+    },
+    "images": [],
+    "rating": null,
+    "reviews_count": null,
+    "working_hours": "c 09:00 до 21:00",
+    "collection_date": "2026-07-16T15:30:00Z",
+    "notes": "Юридические реквизиты: ИНН 720506602266, ОГРН 323774600182280. ИП Чиликов А.А."
   }
 ]

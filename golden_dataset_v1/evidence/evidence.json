@@ -118,5 +118,45 @@
     "linked_objects": ["L0001", "L0011"],
     "description": "Адреса различаются: Яндекс Карты (Салтыковская 51) ≠ Сайт (Перерва 11). Возможен переезд или 2 локации. Объединены по ИНН/ОГРН.",
     "collection_date": "2026-07-16T15:15:00Z"
+  },
+  {
+    "evidence_id": "E013",
+    "type": "inn_extracted",
+    "source": "company_website",
+    "value": "720506602266",
+    "strength": 0.40,
+    "linked_objects": ["L0013", "L0014"],
+    "description": "ИНН 720506602266 — ИП Чиликов Алексей Александрович, samsung-service-center.ru",
+    "collection_date": "2026-07-16T15:30:00Z"
+  },
+  {
+    "evidence_id": "E014",
+    "type": "phone_extracted",
+    "source": "company_website",
+    "value": "+7 (495) 065-87-09",
+    "strength": 0.35,
+    "linked_objects": ["L0013"],
+    "description": "Телефон сервисного центра Samsung (Новинский б-р)",
+    "collection_date": "2026-07-16T15:30:00Z"
+  },
+  {
+    "evidence_id": "E015",
+    "type": "email_extracted",
+    "source": "company_website",
+    "value": "info@samsung-service-center.ru",
+    "strength": 0.25,
+    "linked_objects": ["L0013"],
+    "description": "Email сервисного центра Samsung",
+    "collection_date": "2026-07-16T15:30:00Z"
+  },
+  {
+    "evidence_id": "E016",
+    "type": "negative_match",
+    "source": "yandex_maps + company_website",
+    "value": "same_brand_different_entity",
+    "strength": -0.40,
+    "linked_objects": ["L0006", "L0013"],
+    "description": "Два сервиса с брендом Samsung, разные адреса, телефоны и ИНН — разные компании.",
+    "collection_date": "2026-07-16T15:30:00Z"
   }
 ]

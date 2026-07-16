@@ -4,7 +4,11 @@
       "seller_id": "SELLER_001",
       "real_name": "Либхерр Сервис (ИП/ООО)",
       "type": "company",
-      "listings": ["L0001", "L0011", "L0012"],
+      "listings": [
+        "L0001",
+        "L0011",
+        "L0012"
+      ],
       "confidence": "verified",
       "proof": [
         "cross_source_match",
@@ -14,70 +18,120 @@
         "same_phone: +7 495 797 12 17"
       ],
       "evidence_density": 6,
-      "notes": "Кросс-источник: Яндекс Карты (Салтыковская, 51) + Сайт (Перерва, 11). Адреса разные — возможно переезд или офис + сервис."
+      "notes": "Кросс-источник: Яндекс Карты (Салтыковская, 51) + Сайт (Перерва, 11). ИНН и ОГРН совпадают. Адреса различаются — возможные объяснения: юр. адрес vs фактический, переезд, несколько точек приёма. Требует human review для уточнения."
     },
     {
       "seller_id": "SELLER_002",
       "real_name": "Bosch Service Plus",
       "type": "company",
-      "listings": ["L0002"],
+      "listings": [
+        "L0002"
+      ],
       "confidence": "verified",
-      "proof": ["source_yandex_maps"],
+      "proof": [
+        "source_yandex_maps"
+      ],
       "notes": "Официальный сервисный центр Bosch."
     },
     {
       "seller_id": "SELLER_003",
       "real_name": "СЦ Анмар",
       "type": "company",
-      "listings": ["L0003"],
+      "listings": [
+        "L0003"
+      ],
       "confidence": "verified",
-      "proof": ["source_yandex_maps"],
+      "proof": [
+        "source_yandex_maps"
+      ],
       "notes": "Независимый сервисный центр."
     },
     {
       "seller_id": "SELLER_004",
       "real_name": "Ником-Сервис",
       "type": "company",
-      "listings": ["L0004"],
+      "listings": [
+        "L0004"
+      ],
       "confidence": "verified",
-      "proof": ["source_yandex_maps"],
+      "proof": [
+        "source_yandex_maps"
+      ],
       "notes": "Ремонт утюгов и бытовой техники."
     },
     {
       "seller_id": "SELLER_005",
       "real_name": "Импорт-Сервис (Лыткарино)",
       "type": "company",
-      "listings": ["L0007"],
+      "listings": [
+        "L0007"
+      ],
       "confidence": "verified",
-      "proof": ["source_yandex_maps"],
+      "proof": [
+        "source_yandex_maps"
+      ],
       "notes": "Хорошее место 2026. Лыткарино, МО."
     },
     {
       "seller_id": "SELLER_006",
       "real_name": "Samsung Сервисный центр",
       "type": "company",
-      "listings": ["L0006"],
+      "listings": [
+        "L0006"
+      ],
       "confidence": "verified",
-      "proof": ["source_yandex_maps"],
+      "proof": [
+        "source_yandex_maps"
+      ],
       "notes": "5485 отзывов. Варшавское шоссе."
     },
     {
       "seller_id": "SELLER_007",
       "real_name": "СтирКом (ИП/ООО)",
       "type": "company",
-      "listings": ["L0005", "L0009"],
+      "listings": [
+        "L0005",
+        "L0009"
+      ],
       "confidence": "verified",
-      "proof": ["cross_source_match", "same_address", "same_website"],
+      "proof": [
+        "cross_source_match",
+        "same_address",
+        "same_website"
+      ],
       "notes": "Кросс-источник: Яндекс Карты + сайт. Адрес совпадает."
     },
     {
       "seller_id": "SELLER_008",
       "real_name": "ООО «ИМПОРТ-СЕРВИС» (СПб)",
       "type": "company",
-      "listings": ["L0010"],
+      "listings": [
+        "L0010"
+      ],
       "confidence": "verified",
-      "proof": ["company_website", "inn_verification"],
+      "proof": [
+        "company_website",
+        "inn_verification"
+      ],
       "notes": "ИНН 7810674120. 20+ лет, СПб. Другая компания, не SELLER_005."
+    },
+    {
+      "seller_id": "SELLER_009",
+      "real_name": "ИП Чиликов А.А. (Samsung-сервис)",
+      "type": "company",
+      "listings": [
+        "L0013",
+        "L0014"
+      ],
+      "confidence": "verified",
+      "proof": [
+        "company_website",
+        "inn: 720506602266",
+        "ogrn: 323774600182280",
+        "same_phone"
+      ],
+      "evidence_density": 5,
+      "notes": "Сайт samsung-service-center.ru. ИП Чиликов А.А. НЕ официальный сервис Samsung."
     }
   ],
   "match_hypotheses": [
@@ -91,7 +145,7 @@
         "same_website: stirkom.ru (вес 0.30)",
         "same_name: Стирком.ру / СтирКом (вес 0.15)"
       ],
-      "total_before_negative": 0.70,
+      "total_before_negative": 0.7,
       "negative_signals": [],
       "decision": "STRONG_MATCH",
       "requires_review": false
@@ -101,8 +155,22 @@
     {
       "case_id": "CC_001",
       "type": "same_name_different_entity",
-      "entities": ["SELLER_005 (Лыткарино)", "SELLER_008 (СПб)"],
+      "entities": [
+        "SELLER_005 (Лыткарино)",
+        "SELLER_008 (СПб)"
+      ],
       "description": "Оба продавца называются «Импорт-Сервис», но находятся в разных городах, имеют разные телефоны и адреса. SELLER_008 — ООО с ИНН 7810674120.",
+      "confidence": 0.95,
+      "decision": "DIFFERENT_SELLERS"
+    },
+    {
+      "case_id": "CC_002",
+      "type": "same_brand_different_entity",
+      "entities": [
+        "SELLER_006 (L0006 — Яндекс Карты)",
+        "SELLER_009 (L0013/L0014 — сайт)"
+      ],
+      "description": "Оба сервиса называют себя «Samsung Сервисный центр», но имеют разные адреса (Варшавское ш. vs Новинский б-р), разные телефоны и разные ИНН. SELLER_009 — ИП Чиликов, неофициальный сервис.",
       "confidence": 0.95,
       "decision": "DIFFERENT_SELLERS"
     }
@@ -111,7 +179,7 @@
     {
       "listing_id": "L0008",
       "reason": "Запчасти бытовой техники — магазин запчастей, а не услуги. Может быть связан с другими продавцами или независим.",
-      "confidence": 0.30
+      "confidence": 0.3
     }
   ]
 }
