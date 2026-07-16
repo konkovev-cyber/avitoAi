@@ -1,0 +1,5432 @@
+[
+  {
+    "id": "opp_87bc3757",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Bosch Service Plus"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Bosch Service Plus нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_9e1ab2a0",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "СЦ Анмар"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У СЦ Анмар нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_f7347318",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Ником-Сервис"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Ником-Сервис нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_34314cef",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Samsung Сервисный центр"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Samsung Сервисный центр нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_8f5aeb93",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Импорт-Сервис"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Импорт-Сервис нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_d4fe2157",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Запчасти бытовой техники"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Запчасти бытовой техники нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_49f67772",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Протор-Сервис"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Протор-Сервис нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_5c5dc913",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ВсеРемонт24"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У ВсеРемонт24 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_72a26344",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Лазерком"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Лазерком нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_8b504426",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Абсолютсервис"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Абсолютсервис нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_3c505db1",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "132 Ремонт"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У 132 Ремонт нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_b0416ef7",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ГлавРемБыт"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У ГлавРемБыт нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_57b0ca74",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дело ремонта"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дело ремонта нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_0608204f",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Рембыттехника"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Рембыттехника нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_61fa1f13",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Альфа Ремонт"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Альфа Ремонт нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_544d73eb",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Альфа Сервис"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Альфа Сервис нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_feac32af",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Сервис"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Сервис нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_1ddee7a9",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Tech-Master Store"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Tech-Master Store нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_3fff1587",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_47d94147",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Иван"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Иван нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_91891f36",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Дмитрий"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Дмитрий нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_67f59571",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Александр"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Александр нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_a7fc7fde",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Профи-Профи_20"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Профи-Профи_20 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_cc5f9198",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Сервис-Ремонт_21"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Сервис-Ремонт_21 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_2d92a2df",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Ремонт-Сервис_22"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Ремонт-Сервис_22 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_3912e1fd",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер-Город_23"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер-Город_23 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_e6011abc",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Эксперт-Техно_24"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Эксперт-Техно_24 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_5f2c489c",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Холод_25"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Холод_25 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_ef2570ab",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Эксперт_26"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Эксперт_26 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_99ad2952",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Быт-Техно_27"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Быт-Техно_27 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_dbba162b",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дом-Эксперт_28"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дом-Эксперт_28 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_1641747d",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Холод_29"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Холод_29 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_05e005b3",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Быт-Эксперт_30"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Быт-Эксперт_30 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_f7ee4e79",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Ремонт_31"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Ремонт_31 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_40a0c087",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Сервис-Сервис_32"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Сервис-Сервис_32 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_35f7862e",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Быт-Мастер_33"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Быт-Мастер_33 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_f4ac5ab9",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Эксперт_34"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Эксперт_34 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_3d6d0b40",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дом-Дом_35"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дом-Дом_35 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_d65be0d7",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Ремонт_36"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Ремонт_36 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_d6298b99",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Ремонт_37"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Ремонт_37 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_ea4a704c",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Профи-Дом_38"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Профи-Дом_38 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_4f5e9f54",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Техно-Мастер_39"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Техно-Мастер_39 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_12fde957",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Техно_40"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Техно_40 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_eaffcce7",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Сервис_41"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Сервис_41 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_9dabee6d",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Холод_42"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Холод_42 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_790a7b21",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дом-Профи_43"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дом-Профи_43 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_d9839fa7",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дом-Сервис_44"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дом-Сервис_44 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_5c947d42",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Город_45"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Город_45 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_afd71ae1",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер-Ремонт_46"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер-Ремонт_46 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_3be573dc",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Сервис_47"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Сервис_47 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_7247dadc",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Техно_48"
+    ],
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Техно_48 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_550eff10",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Быт-Ремонт_49"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Быт-Ремонт_49 нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_7ed928ab",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_51678f65",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_62c4db85",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_b1ec6b21",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Антон нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_b45504b4",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_709bdfa0",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_141e07b1",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_9364cd8f",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_8c8d6a27",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_445fbaec",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_da600fe0",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Павел нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_f4689367",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Павел нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_2b0079b9",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_7454a67e",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_67e04cc9",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Павел нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_7e6b5745",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Павел нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_71db82bb",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_0f8ab094",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_7a7d3ae6",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_315e1b7f",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Антон нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_dbd73ae3",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_6daa7817",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_353be9a6",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Антон нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_28d3d10a",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Антон нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_20dc43bc",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Сергей нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_dd4c301d",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Павел нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_8b717e06",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Антон нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_fb0e05e0",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Павел нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_a871da6a",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Антон нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_19c2c261",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер Олег нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_60669302",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Home нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_2a79d196",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Smart нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_7154a9bb",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Tech нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_164ab97d",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Pro нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_0658ddaa",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Home нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_138c8ea0",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Tech нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_e71f26fc",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Smart нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_a8910046",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Pro нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_02d70e8b",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Fix нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_c6f793cc",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Tech нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_97c811d7",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Fix нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_393cb2e8",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Home нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_362c4341",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Smart нет сайта при наличии активности",
+    "recommendation": "Проверить потребность в цифровом канале"
+  },
+  {
+    "id": "opp_230fcd56",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Bosch Service Plus"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Bosch Service Plus зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_5cbfd3b7",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "СЦ Анмар"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "СЦ Анмар зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_0f56241f",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Ником-Сервис"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Ником-Сервис зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_56d65f6e",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Samsung Сервисный центр"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Samsung Сервисный центр зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_236fbcad",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Импорт-Сервис"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Импорт-Сервис зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_2ea78e07",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Запчасти бытовой техники"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Запчасти бытовой техники зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_5fef3705",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Протор-Сервис"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Протор-Сервис зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_4ec8a8ed",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Лазерком"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Лазерком зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_b9296ced",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Абсолютсервис"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Абсолютсервис зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_3d9422fa",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "132 Ремонт"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "132 Ремонт зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_faef8ba1",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ГлавРемБыт"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "ГлавРемБыт зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_52782083",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Дело ремонта"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Дело ремонта зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_f6435117",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Рембыттехника"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Рембыттехника зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_5e47c013",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Альфа Сервис"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Альфа Сервис зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_598b6271",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Стирком.ру"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Стирком.ру зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_02f6ae4a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ИП Чиликов А.А."
+    ],
+    "evidence": [
+      "Присутствие только на site",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "ИП Чиликов А.А. зависит от site",
+    "recommendation": "Расширить присутствие за пределы site"
+  },
+  {
+    "id": "opp_b9aa10af",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ООО ИМПОРТ-СЕРВИС"
+    ],
+    "evidence": [
+      "Присутствие только на site",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "ООО ИМПОРТ-СЕРВИС зависит от site",
+    "recommendation": "Расширить присутствие за пределы site"
+  },
+  {
+    "id": "opp_dea21cac",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Холод-Сервис"
+    ],
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Холод-Сервис зависит от ymk",
+    "recommendation": "Расширить присутствие за пределы ymk"
+  },
+  {
+    "id": "opp_bcadaf12",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_74407f8a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Иван"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Иван зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_b925dcfa",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Дмитрий"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Дмитрий зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_f48f02dd",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Александр"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Александр зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_3faeb4c8",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Холод-Холод_25"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Холод-Холод_25 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_9e20674a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Холод-Эксперт_26"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Холод-Эксперт_26 зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_f63f4a46",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Дом-Эксперт_28"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Дом-Эксперт_28 зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_3e6a6c0d",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Город-Холод_29"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Город-Холод_29 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_bb68afed",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Быт-Эксперт_30"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Быт-Эксперт_30 зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_bab2ce86",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Город-Ремонт_31"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Город-Ремонт_31 зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_48f689f7",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Сервис-Сервис_32"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Сервис-Сервис_32 зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_01c90fdd",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Холод-Эксперт_34"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Холод-Эксперт_34 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_aef75790",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Город-Ремонт_36"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Город-Ремонт_36 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_25407d3b",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Холод-Ремонт_37"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Холод-Ремонт_37 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_f89dd079",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Город-Техно_40"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Город-Техно_40 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_6bd7bee2",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Город-Холод_42"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Город-Холод_42 зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_d5d6f8dc",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Дом-Профи_43"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Дом-Профи_43 зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_0fbb7f90",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Холод-Сервис_47"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Холод-Сервис_47 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_1dc4381a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Быт-Ремонт_49"
+    ],
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Быт-Ремонт_49 зависит от ym",
+    "recommendation": "Расширить присутствие за пределы ym"
+  },
+  {
+    "id": "opp_c839e3f4",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_ca6b8cf0",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_974b3a00",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_987cf914",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Антон зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_e7da5285",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_17c9a35d",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_976f3149",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_74388f8a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_856add02",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_c0564392",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_cdf08112",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Павел зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_a41a1415",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Павел зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_ba71dbb8",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_0273ea94",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_a8cbdd41",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Павел зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_1ba29f7f",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Павел зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_05bade47",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_540aa7d4",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_f0e39a12",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_5fe05c1f",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Антон зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_f5a6398b",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_ad1137ee",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_5d6cd71d",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Антон зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_013829db",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Антон зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_13e57823",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Сергей зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_05bf1f51",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Павел зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_8c31ed78",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Антон зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_4f207029",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Павел зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_a5c35ea4",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Антон зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_58c35bb6",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Мастер Олег зависит от av",
+    "recommendation": "Расширить присутствие за пределы av"
+  },
+  {
+    "id": "opp_8ef7dad2",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Home зависит от wb",
+    "recommendation": "Расширить присутствие за пределы wb"
+  },
+  {
+    "id": "opp_40ef9cbc",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Smart зависит от wb",
+    "recommendation": "Расширить присутствие за пределы wb"
+  },
+  {
+    "id": "opp_84339127",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Tech зависит от ymk",
+    "recommendation": "Расширить присутствие за пределы ymk"
+  },
+  {
+    "id": "opp_032a78f8",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Pro зависит от ymk",
+    "recommendation": "Расширить присутствие за пределы ymk"
+  },
+  {
+    "id": "opp_8df5a422",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Home зависит от ymk",
+    "recommendation": "Расширить присутствие за пределы ymk"
+  },
+  {
+    "id": "opp_994b6078",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Tech зависит от ymk",
+    "recommendation": "Расширить присутствие за пределы ymk"
+  },
+  {
+    "id": "opp_282f52f5",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Smart зависит от oz",
+    "recommendation": "Расширить присутствие за пределы oz"
+  },
+  {
+    "id": "opp_c505b704",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Pro зависит от ymk",
+    "recommendation": "Расширить присутствие за пределы ymk"
+  },
+  {
+    "id": "opp_d4115a51",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Fix зависит от wb",
+    "recommendation": "Расширить присутствие за пределы wb"
+  },
+  {
+    "id": "opp_41677b72",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Tech зависит от ymk",
+    "recommendation": "Расширить присутствие за пределы ymk"
+  },
+  {
+    "id": "opp_fb5735f6",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Fix зависит от oz",
+    "recommendation": "Расширить присутствие за пределы oz"
+  },
+  {
+    "id": "opp_b2bce52f",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Home зависит от wb",
+    "recommendation": "Расширить присутствие за пределы wb"
+  },
+  {
+    "id": "opp_53c040f4",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены"
+    ],
+    "message": "Store-Smart зависит от wb",
+    "recommendation": "Расширить присутствие за пределы wb"
+  },
+  {
+    "id": "opp_2e9b062b",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "ВсеРемонт24"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У ВсеРемонт24 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_98b7623b",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Альфа Ремонт"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Альфа Ремонт нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_b41c9e1e",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Tech-Master Store"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Tech-Master Store нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_199213bd",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Профи-Профи_20"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Профи-Профи_20 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_54d1b9c3",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Сервис-Ремонт_21"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Сервис-Ремонт_21 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_5ed746a6",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Ремонт-Сервис_22"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Ремонт-Сервис_22 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_4bff4bd7",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Мастер-Город_23"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Мастер-Город_23 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_268141d2",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Эксперт-Техно_24"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Эксперт-Техно_24 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_26ee9d76",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Быт-Техно_27"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Быт-Техно_27 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_d11be313",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Быт-Мастер_33"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Быт-Мастер_33 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_6e06c361",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Дом-Дом_35"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Дом-Дом_35 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_09e5b30d",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Профи-Дом_38"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Профи-Дом_38 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_3316de29",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Техно-Мастер_39"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Техно-Мастер_39 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_17cccb1b",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Город-Сервис_41"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Город-Сервис_41 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_a4bb1d8e",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Дом-Сервис_44"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Дом-Сервис_44 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_b4f45fad",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Холод-Город_45"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Холод-Город_45 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_cf42867f",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Мастер-Ремонт_46"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Мастер-Ремонт_46 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_5cb118df",
+    "type": "multi_source_conflict",
+    "severity": "low",
+    "confidence": 0.45,
+    "entity_names": [
+      "Город-Техно_48"
+    ],
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном"
+    ],
+    "message": "У Город-Техно_48 нет телефона при наличии в нескольких источниках",
+    "recommendation": "Проверить полноту данных источника"
+  },
+  {
+    "id": "opp_252256da",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Bosch Service Plus"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Bosch Service Plus представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_23a65e96",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "СЦ Анмар"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "СЦ Анмар представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_bba55af6",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Ником-Сервис"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Ником-Сервис представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_c2361822",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Samsung Сервисный центр"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Samsung Сервисный центр представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_e33dfb74",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Импорт-Сервис"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Импорт-Сервис представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_d25b16d3",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Запчасти бытовой техники"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Запчасти бытовой техники представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_27b9a772",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Протор-Сервис"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Протор-Сервис представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_4ff41f0a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Лазерком"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Лазерком представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_95169a9f",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Абсолютсервис"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Абсолютсервис представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_3dec3417",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "132 Ремонт"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "132 Ремонт представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_6b290562",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ГлавРемБыт"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "ГлавРемБыт представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_e89ef733",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Дело ремонта"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Дело ремонта представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_597ab3cb",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Рембыттехника"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Рембыттехника представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_5a70dd7e",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Альфа Сервис"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Альфа Сервис представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_fa10a4b5",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Стирком.ру"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Стирком.ру представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_09bbdba2",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ИП Чиликов А.А."
+    ],
+    "evidence": [
+      "Весь бизнес на site",
+      "Диверсификация отсутствует"
+    ],
+    "message": "ИП Чиликов А.А. представлен только на site",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_1d8a8421",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ООО ИМПОРТ-СЕРВИС"
+    ],
+    "evidence": [
+      "Весь бизнес на site",
+      "Диверсификация отсутствует"
+    ],
+    "message": "ООО ИМПОРТ-СЕРВИС представлен только на site",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_a7cfb313",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Холод-Сервис"
+    ],
+    "evidence": [
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Холод-Сервис представлен только на ymk",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_4ec5a6d7",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_5bb81bdc",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Иван"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Иван представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_1f852f38",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Дмитрий"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Дмитрий представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_30085669",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Александр"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Александр представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_f24584d2",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Холод-Холод_25"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Холод-Холод_25 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_7518fe81",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Холод-Эксперт_26"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Холод-Эксперт_26 представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_71c44c02",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Дом-Эксперт_28"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Дом-Эксперт_28 представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_a02eec2a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Город-Холод_29"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Город-Холод_29 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_75235614",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Быт-Эксперт_30"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Быт-Эксперт_30 представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_4b0989b7",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Город-Ремонт_31"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Город-Ремонт_31 представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_59d913a7",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Сервис-Сервис_32"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Сервис-Сервис_32 представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_b4d377cb",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Холод-Эксперт_34"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Холод-Эксперт_34 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_4a766cf9",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Город-Ремонт_36"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Город-Ремонт_36 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_2ef103a7",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Холод-Ремонт_37"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Холод-Ремонт_37 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_f6e14f54",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Город-Техно_40"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Город-Техно_40 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_9fbb16e7",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Город-Холод_42"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Город-Холод_42 представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_22554378",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Дом-Профи_43"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Дом-Профи_43 представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_64cbd7fd",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Холод-Сервис_47"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Холод-Сервис_47 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_a1ce06a5",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Быт-Ремонт_49"
+    ],
+    "evidence": [
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Быт-Ремонт_49 представлен только на ym",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_7962eb47",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_c63b3c3f",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_81a7449e",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_689812ce",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Антон представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_ad000cab",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_2d053e0a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_82bcb422",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_7feba777",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_744a6566",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_7e2f7443",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_38a9f456",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Павел представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_78093409",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Павел представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_02a6095c",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_0ad5c8ed",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_4c7d7064",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Павел представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_64b55ce1",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Павел представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_4cc95962",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_5737844b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_75b0c0e5",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_358db1e8",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Антон представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_8be71612",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_31f045de",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_08c200ab",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Антон представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_9f9b9e8b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Антон представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_b5bad5ec",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Сергей"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Сергей представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_9dc2a6a0",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Павел представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_4c48e4e4",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Антон представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_361267b9",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Павел"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Павел представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_07272cfb",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Антон"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Антон представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_b03f3a22",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Олег"
+    ],
+    "evidence": [
+      "Весь бизнес на av",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Мастер Олег представлен только на av",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_17b428ef",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Home представлен только на wb",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_64bc2598",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Smart представлен только на wb",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_5d20af6c",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Tech представлен только на ymk",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_95aa79a6",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Pro представлен только на ymk",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_975d63cf",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Home представлен только на ymk",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_ae1b49b1",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Tech представлен только на ymk",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_2be83576",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Весь бизнес на oz",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Smart представлен только на oz",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_8fa07f81",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Pro представлен только на ymk",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_dfce7559",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Fix представлен только на wb",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_190f7088",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Tech представлен только на ymk",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_53efdb35",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Весь бизнес на oz",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Fix представлен только на oz",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_a15ee38e",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Home представлен только на wb",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_a860aec9",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует"
+    ],
+    "message": "Store-Smart представлен только на wb",
+    "recommendation": "Проанализировать возможность выхода на другие площадки"
+  },
+  {
+    "id": "opp_c2aa8a01",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Bosch Service Plus"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Bosch Service Plus нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_b0564261",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "СЦ Анмар"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У СЦ Анмар нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_71955a1b",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Ником-Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Ником-Сервис нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_51690132",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Samsung Сервисный центр"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Samsung Сервисный центр нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_f342d2d7",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Импорт-Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Импорт-Сервис нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_29ff7bac",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Запчасти бытовой техники"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Запчасти бытовой техники нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_1006190d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Протор-Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Протор-Сервис нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_92a8d58f",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "ВсеРемонт24"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У ВсеРемонт24 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_a1fc2810",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Лазерком"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Лазерком нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_4a4e376e",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Абсолютсервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Абсолютсервис нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_629d12d8",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "132 Ремонт"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У 132 Ремонт нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_73b1af64",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "ГлавРемБыт"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У ГлавРемБыт нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_fb6c7c9f",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Дело ремонта"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Дело ремонта нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_0cfcfa8d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Рембыттехника"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Рембыттехника нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_a2d5a45d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Альфа Ремонт"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Альфа Ремонт нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_05b3c88a",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Альфа Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Альфа Сервис нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_2e2c7239",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Tech-Master Store"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Tech-Master Store нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_545a67eb",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Профи-Профи_20"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Профи-Профи_20 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_ac93fbfc",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Сервис-Ремонт_21"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Сервис-Ремонт_21 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_c868b843",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Ремонт-Сервис_22"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Ремонт-Сервис_22 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_377a315e",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Мастер-Город_23"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Мастер-Город_23 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_80de0ccb",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Эксперт-Техно_24"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Эксперт-Техно_24 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_fba08cd3",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Холод-Холод_25"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Холод-Холод_25 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_6480910f",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Дом-Эксперт_28"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Дом-Эксперт_28 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_66514b63",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Город-Холод_29"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Город-Холод_29 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_5a37c8cf",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Город-Ремонт_31"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Город-Ремонт_31 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_b7612e59",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Сервис-Сервис_32"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Сервис-Сервис_32 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_bf95e29d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Быт-Мастер_33"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Быт-Мастер_33 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_8ef96828",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Холод-Эксперт_34"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Холод-Эксперт_34 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_f7a2b0f3",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Холод-Ремонт_37"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Холод-Ремонт_37 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_73bf4b9c",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Профи-Дом_38"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Профи-Дом_38 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_4e5881ce",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Техно-Мастер_39"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Техно-Мастер_39 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_896e1390",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Город-Сервис_41"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Город-Сервис_41 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_4fdd76fa",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Город-Холод_42"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Город-Холод_42 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_cb3ae8d0",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Дом-Профи_43"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Дом-Профи_43 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_c8d1a922",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Холод-Город_45"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Холод-Город_45 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_74480c7c",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Мастер-Ремонт_46"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Мастер-Ремонт_46 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_d7f88cd5",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Холод-Сервис_47"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Холод-Сервис_47 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_22003034",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Быт-Ремонт_49"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Быт-Ремонт_49 нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_32756278",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Store-Home нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_2993cfc3",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Store-Pro нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_825459b2",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Store-Tech нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_b617437d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Store-Fix нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_96fb7379",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Телефон не обнаружен"
+    ],
+    "message": "У Store-Smart нет телефона",
+    "recommendation": "CRM/телефония для приёма заказов"
+  },
+  {
+    "id": "opp_27a469ce",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Bosch Service Plus"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Bosch Service Plus нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_cf5038d3",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "СЦ Анмар"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У СЦ Анмар нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_a22b0f80",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Ником-Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Ником-Сервис нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_fd4c2c05",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Samsung Сервисный центр"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Samsung Сервисный центр нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_4f8e1f26",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Импорт-Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Импорт-Сервис нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_96bb7535",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Запчасти бытовой техники"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Запчасти бытовой техники нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_defa26f0",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Протор-Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Протор-Сервис нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_9a5f354f",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ВсеРемонт24"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У ВсеРемонт24 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_c457a282",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Лазерком"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Лазерком нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_50a3ca36",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Абсолютсервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Абсолютсервис нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_03f66046",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "132 Ремонт"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У 132 Ремонт нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_4730322e",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ГлавРемБыт"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У ГлавРемБыт нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_2b43a61e",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дело ремонта"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дело ремонта нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_1cf9fa41",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Рембыттехника"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Рембыттехника нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_fe3e2475",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Альфа Ремонт"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Альфа Ремонт нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_37e33656",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Альфа Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Альфа Сервис нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_5506a9dd",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Сервис"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Сервис нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_99a74d08",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Tech-Master Store"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Tech-Master Store нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_6be834df",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Профи-Профи_20"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Профи-Профи_20 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_da662baa",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Сервис-Ремонт_21"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Сервис-Ремонт_21 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_ebe8fa1a",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Ремонт-Сервис_22"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Ремонт-Сервис_22 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_73ad03b7",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер-Город_23"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер-Город_23 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_bac86ea2",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Эксперт-Техно_24"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Эксперт-Техно_24 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_8ac19f4e",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Холод_25"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Холод_25 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_3e594c39",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дом-Эксперт_28"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дом-Эксперт_28 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_d613b7c5",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Холод_29"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Холод_29 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_1cc2bacf",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Ремонт_31"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Ремонт_31 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_814c2e5f",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Сервис-Сервис_32"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Сервис-Сервис_32 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_2b3e75e1",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Быт-Мастер_33"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Быт-Мастер_33 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_547ed613",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Эксперт_34"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Эксперт_34 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_3cd28fd5",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Ремонт_37"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Ремонт_37 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_e351805b",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Профи-Дом_38"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Профи-Дом_38 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_6dcdf47d",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Техно-Мастер_39"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Техно-Мастер_39 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_e4c3b421",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Сервис_41"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Сервис_41 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_eb5d40e4",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Город-Холод_42"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Город-Холод_42 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_d8cd594e",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Дом-Профи_43"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Дом-Профи_43 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_9f003de6",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Город_45"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Город_45 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_059d5c21",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер-Ремонт_46"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Мастер-Ремонт_46 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_fc7c41a7",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Холод-Сервис_47"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Холод-Сервис_47 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_8c572c5c",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Быт-Ремонт_49"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Быт-Ремонт_49 нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_91e1a879",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Home"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Home нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_c25fba6f",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Pro"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Pro нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_1ebccd66",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Tech"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Tech нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_84064143",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Fix"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Fix нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  },
+  {
+    "id": "opp_cb56ed41",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-Smart"
+    ],
+    "evidence": [
+      "Продавец верифицирован",
+      "Сайт не обнаружен"
+    ],
+    "message": "У Store-Smart нет сайта",
+    "recommendation": "Создание / продвижение сайта"
+  }
+]

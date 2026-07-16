@@ -1,0 +1,112 @@
+[
+  {
+    "review_id": "VR_001",
+    "entity_id": "ym_001",
+    "entity_name": "Либхерр Сервис",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_002",
+    "entity_id": "ym_002",
+    "entity_name": "Bosch Service Plus",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_003",
+    "entity_id": "ym_003",
+    "entity_name": "СЦ Анмар",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_004",
+    "entity_id": "ym_004",
+    "entity_name": "Ником-Сервис",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_005",
+    "entity_id": "ym_005",
+    "entity_name": "Стирком.ру",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_006",
+    "entity_id": "ym_006",
+    "entity_name": "Samsung Сервисный центр (Варшавское ш.)",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_007",
+    "entity_id": "ym_007",
+    "entity_name": "Импорт-Сервис (Лыткарино)",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_008",
+    "entity_id": "ym_008",
+    "entity_name": "Запчасти бытовой техники",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_009",
+    "entity_id": "ym_009",
+    "entity_name": "Протор-Сервис",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  },
+  {
+    "review_id": "VR_010",
+    "entity_id": "ym_010",
+    "entity_name": "ВсеРемонт24",
+    "real_entity": null,
+    "evidence_sufficient": null,
+    "opportunity_useful": null,
+    "lead_actionable": null,
+    "comment": "",
+    "reviewed": false
+  }
+]

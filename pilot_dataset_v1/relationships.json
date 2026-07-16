@@ -1,0 +1,176 @@
+[
+  {
+    "id": "rel_same_ym_001_mk_002",
+    "type": "same_as",
+    "source": "ym_001",
+    "target": "mk_002",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_005_mk_081",
+    "type": "same_as",
+    "source": "ym_005",
+    "target": "mk_081",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_010_ym_017",
+    "type": "same_as",
+    "source": "ym_010",
+    "target": "ym_017",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_017_ym_005",
+    "type": "same_as",
+    "source": "ym_017",
+    "target": "ym_005",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_mk_002_ym_010",
+    "type": "same_as",
+    "source": "mk_002",
+    "target": "ym_010",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_020_ym_001",
+    "type": "same_as",
+    "source": "ym_020",
+    "target": "ym_001",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_021_av_073",
+    "type": "same_as",
+    "source": "ym_021",
+    "target": "av_073",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_022_ym_029",
+    "type": "same_as",
+    "source": "ym_022",
+    "target": "ym_029",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_023_av_072",
+    "type": "same_as",
+    "source": "ym_023",
+    "target": "av_072",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_same_ym_024_ym_045",
+    "type": "same_as",
+    "source": "ym_024",
+    "target": "ym_045",
+    "confidence": 0.7,
+    "evidence": [
+      "phone_match",
+      "address_match"
+    ]
+  },
+  {
+    "id": "rel_sells_mk_001",
+    "type": "sells",
+    "source": "mk_001",
+    "target": "ym_005",
+    "confidence": 0.5,
+    "evidence": []
+  },
+  {
+    "id": "rel_sells_mk_080",
+    "type": "sells",
+    "source": "mk_080",
+    "target": "ym_004",
+    "confidence": 0.5,
+    "evidence": []
+  },
+  {
+    "id": "rel_sells_mk_081",
+    "type": "sells",
+    "source": "mk_081",
+    "target": "ym_005",
+    "confidence": 0.5,
+    "evidence": []
+  },
+  {
+    "id": "rel_sells_mk_082",
+    "type": "sells",
+    "source": "mk_082",
+    "target": "ym_004",
+    "confidence": 0.5,
+    "evidence": []
+  },
+  {
+    "id": "rel_sells_mk_083",
+    "type": "sells",
+    "source": "mk_083",
+    "target": "ym_004",
+    "confidence": 0.5,
+    "evidence": []
+  },
+  {
+    "id": "rel_sells_mk_084",
+    "type": "sells",
+    "source": "mk_084",
+    "target": "ym_005",
+    "confidence": 0.5,
+    "evidence": []
+  },
+  {
+    "id": "rel_sells_mk_085",
+    "type": "sells",
+    "source": "mk_085",
+    "target": "ym_003",
+    "confidence": 0.5,
+    "evidence": []
+  },
+  {
+    "id": "rel_sells_mk_086",
+    "type": "sells",
+    "source": "mk_086",
+    "target": "ym_002",
+    "confidence": 0.5,
+    "evidence": []
+  }
+]

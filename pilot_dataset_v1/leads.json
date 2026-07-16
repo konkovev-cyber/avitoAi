@@ -1,0 +1,3613 @@
+[
+  {
+    "id": "lead_digital_expansion_0d3d6f3b",
+    "type": "digital_expansion",
+    "score": 60,
+    "entity_name": "Bosch Service Plus",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_ed8901c7",
+    "type": "digital_expansion",
+    "score": 60,
+    "entity_name": "СЦ Анмар",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_7a194b63",
+    "type": "digital_expansion",
+    "score": 66,
+    "entity_name": "Ником-Сервис",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_b47420f6",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Samsung Сервисный центр",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_fe638014",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Импорт-Сервис",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_64697290",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Запчасти бытовой техники",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_525cd5f2",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Протор-Сервис",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_91f4dfbe",
+    "type": "digital_expansion",
+    "score": 68,
+    "entity_name": "ВсеРемонт24",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_4f477edb",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Лазерком",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_5f3b34b3",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Абсолютсервис",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_5a9c6e7e",
+    "type": "digital_expansion",
+    "score": 49,
+    "entity_name": "132 Ремонт",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_2be80db3",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "ГлавРемБыт",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_d708a228",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Дело ремонта",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_e712b344",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Рембыттехника",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_9e2c947b",
+    "type": "digital_expansion",
+    "score": 68,
+    "entity_name": "Альфа Ремонт",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_6c9fe349",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Альфа Сервис",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_78766b61",
+    "type": "digital_expansion",
+    "score": 64,
+    "entity_name": "Холод-Сервис",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_f27006a0",
+    "type": "digital_expansion",
+    "score": 64,
+    "entity_name": "Tech-Master Store",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_de403dfd",
+    "type": "digital_expansion",
+    "score": 42,
+    "entity_name": "Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_e77fb197",
+    "type": "digital_expansion",
+    "score": 42,
+    "entity_name": "Иван",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_8c1409b6",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Дмитрий",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_f3c52d77",
+    "type": "digital_expansion",
+    "score": 42,
+    "entity_name": "Александр",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_851a0beb",
+    "type": "digital_expansion",
+    "score": 61,
+    "entity_name": "Профи-Профи_20",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_cbca6e3e",
+    "type": "digital_expansion",
+    "score": 65,
+    "entity_name": "Сервис-Ремонт_21",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_5e7f33f2",
+    "type": "digital_expansion",
+    "score": 61,
+    "entity_name": "Ремонт-Сервис_22",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_4605cd0d",
+    "type": "digital_expansion",
+    "score": 61,
+    "entity_name": "Мастер-Город_23",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_4335a4a3",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Эксперт-Техно_24",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_bc577a54",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Холод-Холод_25",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_ed913274",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Холод-Эксперт_26",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_a06f39ec",
+    "type": "digital_expansion",
+    "score": 39,
+    "entity_name": "Быт-Техно_27",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_2e6c2e2a",
+    "type": "digital_expansion",
+    "score": 49,
+    "entity_name": "Дом-Эксперт_28",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_be45ea57",
+    "type": "digital_expansion",
+    "score": 56,
+    "entity_name": "Город-Холод_29",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_bb4f776f",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Быт-Эксперт_30",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_e05c10ac",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Город-Ремонт_31",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_d9f672e0",
+    "type": "digital_expansion",
+    "score": 61,
+    "entity_name": "Сервис-Сервис_32",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_ab7b4844",
+    "type": "digital_expansion",
+    "score": 66,
+    "entity_name": "Быт-Мастер_33",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_012f0853",
+    "type": "digital_expansion",
+    "score": 49,
+    "entity_name": "Холод-Эксперт_34",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_a181921b",
+    "type": "digital_expansion",
+    "score": 51,
+    "entity_name": "Дом-Дом_35",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_24688003",
+    "type": "digital_expansion",
+    "score": 46,
+    "entity_name": "Город-Ремонт_36",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_0fbe5aab",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Холод-Ремонт_37",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_580c0e94",
+    "type": "digital_expansion",
+    "score": 58,
+    "entity_name": "Профи-Дом_38",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_bcef5060",
+    "type": "digital_expansion",
+    "score": 62,
+    "entity_name": "Техно-Мастер_39",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_3f87e9fb",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Город-Техно_40",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_1f75dea8",
+    "type": "digital_expansion",
+    "score": 54,
+    "entity_name": "Город-Сервис_41",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_69ed68c6",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Город-Холод_42",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_4858fd53",
+    "type": "digital_expansion",
+    "score": 61,
+    "entity_name": "Дом-Профи_43",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_42784073",
+    "type": "digital_expansion",
+    "score": 47,
+    "entity_name": "Дом-Сервис_44",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_0f84fb1d",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Холод-Город_45",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_b5997e94",
+    "type": "digital_expansion",
+    "score": 58,
+    "entity_name": "Мастер-Ремонт_46",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_df751987",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Холод-Сервис_47",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_b3cec8b4",
+    "type": "digital_expansion",
+    "score": 51,
+    "entity_name": "Город-Техно_48",
+    "evidence": [
+      "Активность на 2 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_2c4c928b",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Быт-Ремонт_49",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_ea824222",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_697275fe",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_fa586211",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_209976ad",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_5b31ff81",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_b3d1f7d0",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_81351d17",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_17138f98",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_304aa7c4",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_fe3495ab",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_fe7699f9",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_91070092",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_640954fd",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_eb036e4c",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_b2bc9d2f",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_a6fce662",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_44d378fd",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_cf33a9e0",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_d5c141cf",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_0ed61654",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_c2546b79",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_804b2cfd",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_e0d4ffdc",
+    "type": "digital_expansion",
+    "score": 37,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_0d23807a",
+    "type": "digital_expansion",
+    "score": 37,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_c323d54c",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_17637563",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_1e99d646",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_f052bd22",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_f228686f",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_4f3915b1",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_bfd01b57",
+    "type": "digital_expansion",
+    "score": 41,
+    "entity_name": "Store-Home",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_892bac1a",
+    "type": "digital_expansion",
+    "score": 48,
+    "entity_name": "Store-Smart",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_8bc9c46a",
+    "type": "digital_expansion",
+    "score": 41,
+    "entity_name": "Store-Tech",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_1ea5e8a1",
+    "type": "digital_expansion",
+    "score": 41,
+    "entity_name": "Store-Pro",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_bb05652a",
+    "type": "digital_expansion",
+    "score": 52,
+    "entity_name": "Store-Home",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_5ac21402",
+    "type": "digital_expansion",
+    "score": 45,
+    "entity_name": "Store-Tech",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_07bc32e6",
+    "type": "digital_expansion",
+    "score": 41,
+    "entity_name": "Store-Smart",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_18f3cd19",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-Pro",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_2910ca30",
+    "type": "digital_expansion",
+    "score": 42,
+    "entity_name": "Store-Fix",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_2e94726b",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Store-Tech",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_c00bbc72",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "Store-Fix",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_1548c83f",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-Home",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_digital_expansion_8264deb0",
+    "type": "digital_expansion",
+    "score": 49,
+    "entity_name": "Store-Smart",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале",
+      "Продавец верифицирован",
+      "💡 Создание / продвижение сайта"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_0d3d6f3b",
+    "type": "channel_diversification",
+    "score": 56,
+    "entity_name": "Bosch Service Plus",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_ed8901c7",
+    "type": "channel_diversification",
+    "score": 56,
+    "entity_name": "СЦ Анмар",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_7a194b63",
+    "type": "channel_diversification",
+    "score": 62,
+    "entity_name": "Ником-Сервис",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_b47420f6",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "Samsung Сервисный центр",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_fe638014",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Импорт-Сервис",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_64697290",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Запчасти бытовой техники",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_525cd5f2",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Протор-Сервис",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_4f477edb",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Лазерком",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_5f3b34b3",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Абсолютсервис",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_5a9c6e7e",
+    "type": "channel_diversification",
+    "score": 45,
+    "entity_name": "132 Ремонт",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_2be80db3",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "ГлавРемБыт",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_d708a228",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Дело ремонта",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_e712b344",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Рембыттехника",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_6c9fe349",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Альфа Сервис",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_be5ff47d",
+    "type": "channel_diversification",
+    "score": 64,
+    "entity_name": "Стирком.ру",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_5820cd09",
+    "type": "channel_diversification",
+    "score": 68,
+    "entity_name": "ИП Чиликов А.А.",
+    "evidence": [
+      "Присутствие только на site",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы site",
+      "Весь бизнес на site",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_9ffc7072",
+    "type": "channel_diversification",
+    "score": 68,
+    "entity_name": "ООО ИМПОРТ-СЕРВИС",
+    "evidence": [
+      "Присутствие только на site",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы site",
+      "Весь бизнес на site",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_78766b61",
+    "type": "channel_diversification",
+    "score": 60,
+    "entity_name": "Холод-Сервис",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk",
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_de403dfd",
+    "type": "channel_diversification",
+    "score": 43,
+    "entity_name": "Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_e77fb197",
+    "type": "channel_diversification",
+    "score": 43,
+    "entity_name": "Иван",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_8c1409b6",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Дмитрий",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_f3c52d77",
+    "type": "channel_diversification",
+    "score": 43,
+    "entity_name": "Александр",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_bc577a54",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "Холод-Холод_25",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_ed913274",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Холод-Эксперт_26",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_2e6c2e2a",
+    "type": "channel_diversification",
+    "score": 45,
+    "entity_name": "Дом-Эксперт_28",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_be45ea57",
+    "type": "channel_diversification",
+    "score": 52,
+    "entity_name": "Город-Холод_29",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_bb4f776f",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Быт-Эксперт_30",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_e05c10ac",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "Город-Ремонт_31",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_d9f672e0",
+    "type": "channel_diversification",
+    "score": 57,
+    "entity_name": "Сервис-Сервис_32",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_012f0853",
+    "type": "channel_diversification",
+    "score": 45,
+    "entity_name": "Холод-Эксперт_34",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_24688003",
+    "type": "channel_diversification",
+    "score": 47,
+    "entity_name": "Город-Ремонт_36",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_0fbe5aab",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "Холод-Ремонт_37",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_3f87e9fb",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Город-Техно_40",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_69ed68c6",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Город-Холод_42",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_4858fd53",
+    "type": "channel_diversification",
+    "score": 57,
+    "entity_name": "Дом-Профи_43",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_df751987",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Холод-Сервис_47",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_2c4c928b",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Быт-Ремонт_49",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym",
+      "Весь бизнес на ym",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_ea824222",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_697275fe",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_fa586211",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_209976ad",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_5b31ff81",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_b3d1f7d0",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_81351d17",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_17138f98",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_304aa7c4",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_fe3495ab",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_fe7699f9",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_91070092",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_640954fd",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_eb036e4c",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_b2bc9d2f",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_a6fce662",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_44d378fd",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_cf33a9e0",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_d5c141cf",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_0ed61654",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_c2546b79",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_804b2cfd",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_e0d4ffdc",
+    "type": "channel_diversification",
+    "score": 38,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_0d23807a",
+    "type": "channel_diversification",
+    "score": 38,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_c323d54c",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Сергей",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_17637563",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_1e99d646",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_f052bd22",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Павел",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_f228686f",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Антон",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_4f3915b1",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Олег",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av",
+      "Весь бизнес на av",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_bfd01b57",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "Store-Home",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb",
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_892bac1a",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-Smart",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb",
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_8bc9c46a",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "Store-Tech",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk",
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_1ea5e8a1",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "Store-Pro",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk",
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_bb05652a",
+    "type": "channel_diversification",
+    "score": 48,
+    "entity_name": "Store-Home",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk",
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_5ac21402",
+    "type": "channel_diversification",
+    "score": 46,
+    "entity_name": "Store-Tech",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk",
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_07bc32e6",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "Store-Smart",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz",
+      "Весь бизнес на oz",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_18f3cd19",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-Pro",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk",
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_2910ca30",
+    "type": "channel_diversification",
+    "score": 43,
+    "entity_name": "Store-Fix",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb",
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_2e94726b",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "Store-Tech",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk",
+      "Весь бизнес на ymk",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_c00bbc72",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "Store-Fix",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz",
+      "Весь бизнес на oz",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_1548c83f",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-Home",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb",
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_channel_diversification_8264deb0",
+    "type": "channel_diversification",
+    "score": 45,
+    "entity_name": "Store-Smart",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb",
+      "Весь бизнес на wb",
+      "Диверсификация отсутствует",
+      "💡 Проанализировать возможность выхода на другие площадки"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_91f4dfbe",
+    "type": "local_presence_gap",
+    "score": 56,
+    "entity_name": "ВсеРемонт24",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_9e2c947b",
+    "type": "local_presence_gap",
+    "score": 56,
+    "entity_name": "Альфа Ремонт",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_f27006a0",
+    "type": "local_presence_gap",
+    "score": 52,
+    "entity_name": "Tech-Master Store",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_851a0beb",
+    "type": "local_presence_gap",
+    "score": 49,
+    "entity_name": "Профи-Профи_20",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_cbca6e3e",
+    "type": "local_presence_gap",
+    "score": 53,
+    "entity_name": "Сервис-Ремонт_21",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_5e7f33f2",
+    "type": "local_presence_gap",
+    "score": 49,
+    "entity_name": "Ремонт-Сервис_22",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_4605cd0d",
+    "type": "local_presence_gap",
+    "score": 49,
+    "entity_name": "Мастер-Город_23",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_4335a4a3",
+    "type": "local_presence_gap",
+    "score": 45,
+    "entity_name": "Эксперт-Техно_24",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_a06f39ec",
+    "type": "local_presence_gap",
+    "score": 32,
+    "entity_name": "Быт-Техно_27",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_ab7b4844",
+    "type": "local_presence_gap",
+    "score": 54,
+    "entity_name": "Быт-Мастер_33",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_a181921b",
+    "type": "local_presence_gap",
+    "score": 44,
+    "entity_name": "Дом-Дом_35",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_580c0e94",
+    "type": "local_presence_gap",
+    "score": 46,
+    "entity_name": "Профи-Дом_38",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_bcef5060",
+    "type": "local_presence_gap",
+    "score": 50,
+    "entity_name": "Техно-Мастер_39",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_1f75dea8",
+    "type": "local_presence_gap",
+    "score": 42,
+    "entity_name": "Город-Сервис_41",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_42784073",
+    "type": "local_presence_gap",
+    "score": 40,
+    "entity_name": "Дом-Сервис_44",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_0f84fb1d",
+    "type": "local_presence_gap",
+    "score": 45,
+    "entity_name": "Холод-Город_45",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_b5997e94",
+    "type": "local_presence_gap",
+    "score": 46,
+    "entity_name": "Мастер-Ремонт_46",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  },
+  {
+    "id": "lead_local_presence_gap_b3cec8b4",
+    "type": "local_presence_gap",
+    "score": 44,
+    "entity_name": "Город-Техно_48",
+    "evidence": [
+      "Найден в 2 источниках",
+      "Телефон не обнаружен ни в одном",
+      "💡 Проверить полноту данных источника"
+    ],
+    "rules_triggered": [
+      "RULE_004"
+    ],
+    "recommended_action": "Проверить возможность расширения географии",
+    "priority": "low",
+    "status": "new"
+  }
+]

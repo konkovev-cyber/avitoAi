@@ -1,0 +1,1422 @@
+[
+  {
+    "id": "ym_001",
+    "name": "Либхерр Сервис",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_001",
+      "site_ym_001"
+    ],
+    "evidence_count": 5,
+    "phone": "+7 495 797 12 17",
+    "website": "liebherr-service.ru",
+    "inn": "510704817991",
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_002",
+    "name": "Bosch Service Plus",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_002"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_003",
+    "name": "СЦ Анмар",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_003"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_004",
+    "name": "Ником-Сервис",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_004"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_005",
+    "name": "Стирком.ру",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_005",
+      "site_ym_005"
+    ],
+    "evidence_count": 4,
+    "phone": "+7 (915) 338-18-07",
+    "website": "stirkom.ru",
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_006",
+    "name": "Samsung Сервисный центр",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_006"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_007",
+    "name": "Импорт-Сервис",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_007"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_008",
+    "name": "Запчасти бытовой техники",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_008"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_009",
+    "name": "Протор-Сервис",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_009"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_010",
+    "name": "ВсеРемонт24",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_010",
+      "av_ym_010"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_011",
+    "name": "Лазерком",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_011"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_012",
+    "name": "Абсолютсервис",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_012"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_013",
+    "name": "132 Ремонт",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_013"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_014",
+    "name": "ГлавРемБыт",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_014"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_015",
+    "name": "Дело ремонта",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_015"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_016",
+    "name": "Рембыттехника",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_016"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_017",
+    "name": "Альфа Ремонт",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_017",
+      "av_ym_017"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_018",
+    "name": "Альфа Сервис",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_018"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_019",
+    "name": "Стирком.ру",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_019"
+    ],
+    "evidence_count": 2,
+    "phone": "+7 (915) 338-18-07",
+    "website": "stirkom.ru",
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "site_001",
+    "name": "ИП Чиликов А.А.",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "site_site_001"
+    ],
+    "evidence_count": 3,
+    "phone": "+7 (495) 065-87-09",
+    "website": "samsung-service-center.ru",
+    "inn": "720506602266",
+    "confidence": 0.95
+  },
+  {
+    "id": "site_002",
+    "name": "ООО ИМПОРТ-СЕРВИС",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "site_site_002"
+    ],
+    "evidence_count": 3,
+    "phone": "8 (812) 702-33-33",
+    "website": "import-service.ru",
+    "inn": "7810674120",
+    "confidence": 0.95
+  },
+  {
+    "id": "mk_001",
+    "name": "Холод-Сервис",
+    "type": "store",
+    "status": "verified",
+    "sources": [
+      "ymk_mk_001"
+    ],
+    "evidence_count": 2,
+    "phone": "+7 (495) 111-22-33",
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "mk_002",
+    "name": "Tech-Master Store",
+    "type": "store",
+    "status": "verified",
+    "sources": [
+      "oz_mk_002",
+      "wb_mk_002"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "av_001",
+    "name": "Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_001"
+    ],
+    "evidence_count": 1,
+    "phone": "+7 (999) 123-45-67",
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_002",
+    "name": "Иван",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_002"
+    ],
+    "evidence_count": 1,
+    "phone": "+7 (999) 777-77-77",
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_003",
+    "name": "Мастер Дмитрий",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_003"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_004",
+    "name": "Александр",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_004"
+    ],
+    "evidence_count": 1,
+    "phone": "+7 (999) 555-55-55",
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_020",
+    "name": "Профи-Профи_20",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_020",
+      "av_ym_020"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_021",
+    "name": "Сервис-Ремонт_21",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_021",
+      "site_ym_021"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_022",
+    "name": "Ремонт-Сервис_22",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_022",
+      "av_ym_022"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_023",
+    "name": "Мастер-Город_23",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_023",
+      "site_ym_023"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_024",
+    "name": "Эксперт-Техно_24",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_024",
+      "site_ym_024"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_025",
+    "name": "Холод-Холод_25",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_025"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_026",
+    "name": "Холод-Эксперт_26",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "av_ym_026"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_027",
+    "name": "Быт-Техно_27",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "ym_ym_027",
+      "site_ym_027"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_028",
+    "name": "Дом-Эксперт_28",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "av_ym_028"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_029",
+    "name": "Город-Холод_29",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_029"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_030",
+    "name": "Быт-Эксперт_30",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "av_ym_030"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_031",
+    "name": "Город-Ремонт_31",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "av_ym_031"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_032",
+    "name": "Сервис-Сервис_32",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "av_ym_032"
+    ],
+    "evidence_count": 4,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_033",
+    "name": "Быт-Мастер_33",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_033",
+      "av_ym_033"
+    ],
+    "evidence_count": 4,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_034",
+    "name": "Холод-Эксперт_34",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_034"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_035",
+    "name": "Дом-Дом_35",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "ym_ym_035",
+      "site_ym_035"
+    ],
+    "evidence_count": 4,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_036",
+    "name": "Город-Ремонт_36",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "ym_ym_036"
+    ],
+    "evidence_count": 4,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_037",
+    "name": "Холод-Ремонт_37",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_037"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_038",
+    "name": "Профи-Дом_38",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_038",
+      "site_ym_038"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_039",
+    "name": "Техно-Мастер_39",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_039",
+      "site_ym_039"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_040",
+    "name": "Город-Техно_40",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "ym_ym_040"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_041",
+    "name": "Город-Сервис_41",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_041",
+      "av_ym_041"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_042",
+    "name": "Город-Холод_42",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "av_ym_042"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_043",
+    "name": "Дом-Профи_43",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "av_ym_043"
+    ],
+    "evidence_count": 4,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_044",
+    "name": "Дом-Сервис_44",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "ym_ym_044",
+      "site_ym_044"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_045",
+    "name": "Холод-Город_45",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_045",
+      "av_ym_045"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_046",
+    "name": "Мастер-Ремонт_46",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_046",
+      "av_ym_046"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_047",
+    "name": "Холод-Сервис_47",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_047"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "ym_048",
+    "name": "Город-Техно_48",
+    "type": "company",
+    "status": "candidate",
+    "sources": [
+      "ym_ym_048",
+      "site_ym_048"
+    ],
+    "evidence_count": 4,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "ym_049",
+    "name": "Быт-Ремонт_49",
+    "type": "company",
+    "status": "verified",
+    "sources": [
+      "ym_ym_049"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "av_050",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_050"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_051",
+    "name": "Мастер Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_051"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_052",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_052"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_053",
+    "name": "Мастер Антон",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_053"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_054",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_054"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_055",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_055"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_056",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_056"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_057",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_057"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_058",
+    "name": "Мастер Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_058"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_059",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_059"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_060",
+    "name": "Мастер Павел",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_060"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_061",
+    "name": "Мастер Павел",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_061"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_062",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_062"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_063",
+    "name": "Мастер Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_063"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_064",
+    "name": "Мастер Павел",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_064"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_065",
+    "name": "Мастер Павел",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_065"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_066",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_066"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_067",
+    "name": "Мастер Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_067"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_068",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_068"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_069",
+    "name": "Мастер Антон",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_069"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_070",
+    "name": "Мастер Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_070"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_071",
+    "name": "Мастер Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_071"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_072",
+    "name": "Мастер Антон",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_072"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_073",
+    "name": "Мастер Антон",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_073"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_074",
+    "name": "Мастер Сергей",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_074"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_075",
+    "name": "Мастер Павел",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_075"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_076",
+    "name": "Мастер Антон",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_076"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_077",
+    "name": "Мастер Павел",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_077"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_078",
+    "name": "Мастер Антон",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_078"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "av_079",
+    "name": "Мастер Олег",
+    "type": "seller",
+    "status": "candidate",
+    "sources": [
+      "av_av_079"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_080",
+    "name": "Store-Home",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "wb_mk_080"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_081",
+    "name": "Store-Smart",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "wb_mk_081"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_082",
+    "name": "Store-Tech",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "ymk_mk_082"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_083",
+    "name": "Store-Pro",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "ymk_mk_083"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_084",
+    "name": "Store-Home",
+    "type": "store",
+    "status": "verified",
+    "sources": [
+      "ymk_mk_084"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "mk_085",
+    "name": "Store-Tech",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "ymk_mk_085"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_086",
+    "name": "Store-Smart",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "oz_mk_086"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_087",
+    "name": "Store-Pro",
+    "type": "store",
+    "status": "verified",
+    "sources": [
+      "ymk_mk_087"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "mk_088",
+    "name": "Store-Fix",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "wb_mk_088"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_089",
+    "name": "Store-Tech",
+    "type": "store",
+    "status": "verified",
+    "sources": [
+      "ymk_mk_089"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "mk_090",
+    "name": "Store-Fix",
+    "type": "store",
+    "status": "verified",
+    "sources": [
+      "oz_mk_090"
+    ],
+    "evidence_count": 3,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  },
+  {
+    "id": "mk_091",
+    "name": "Store-Home",
+    "type": "store",
+    "status": "candidate",
+    "sources": [
+      "wb_mk_091"
+    ],
+    "evidence_count": 2,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.6
+  },
+  {
+    "id": "mk_092",
+    "name": "Store-Smart",
+    "type": "store",
+    "status": "verified",
+    "sources": [
+      "wb_mk_092"
+    ],
+    "evidence_count": 1,
+    "phone": null,
+    "website": null,
+    "inn": null,
+    "confidence": 0.95
+  }
+]
