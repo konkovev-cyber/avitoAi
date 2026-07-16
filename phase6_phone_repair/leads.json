@@ -1,0 +1,2994 @@
+[
+  {
+    "id": "lead_digital_expansion_abfb80b5",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Masters",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_55389ddf",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Точка Ремонта",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_3488769f",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "HardWorkers",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_b0f36aad",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "АйХелп",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_a526a955",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Vidmaster",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_888239d2",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "X-Repair",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_6a750e27",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Samsung Сервисный Центр (ремонт телефонов)",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_325b20cc",
+    "type": "digital_expansion",
+    "score": 49,
+    "entity_name": "Ремонт телефонов (Сухановская)",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_afbb8748",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "PhoneHelp_11",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_3206509c",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "SmartService_13",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_281b0f2e",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "MobilePro_14",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_401048f6",
+    "type": "digital_expansion",
+    "score": 42,
+    "entity_name": "DigitalFix_15",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_46184de6",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "ApplePro_17",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_6f02c9c0",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "iFix_18",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_466eeb7b",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "PhoneHelp_19",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_3b134587",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "SmartService_21",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_c11d8c0b",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "MobilePro_22",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_fffae03a",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "DigitalFix_23",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_6cfdc90d",
+    "type": "digital_expansion",
+    "score": 61,
+    "entity_name": "ApplePro_25",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_c0bb7cc1",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "iFix_26",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_ae37727a",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "PhoneHelp_27",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_81b330f3",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "SmartService_29",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_b9863756",
+    "type": "digital_expansion",
+    "score": 42,
+    "entity_name": "MobilePro_30",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_db5eda39",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "DigitalFix_31",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_e28fe8be",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "ApplePro_33",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_fb1d269b",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "iFix_34",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_933670c1",
+    "type": "digital_expansion",
+    "score": 65,
+    "entity_name": "PhoneHelp_35",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_b4cc2175",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "SmartService_37",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_19568ef2",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "MobilePro_38",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_0fba8f8a",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "DigitalFix_39",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_4a9c77b8",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "ApplePro_41",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_fa2bd79f",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "iFix_42",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_d8f32d4b",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "PhoneHelp_43",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_19708bbc",
+    "type": "digital_expansion",
+    "score": 42,
+    "entity_name": "SmartService_45",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_7239c7bc",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "MobilePro_46",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_c261b8b4",
+    "type": "digital_expansion",
+    "score": 57,
+    "entity_name": "DigitalFix_47",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_a961da3f",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "ApplePro_49",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_68ffdd0d",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_5cb9bf86",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_c4d26c40",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_a1fb13f8",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_431af93f",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_b1bece17",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_e6e24ba9",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_10d6af52",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_ad1e60d3",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_faeb9d3f",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_e7ee0c07",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_59014dbe",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_6a73e42a",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_a5e4be65",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_90076109",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_e919dd80",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_186e071c",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_9d44617b",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_2812255e",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_3a40f6d0",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_5b692ef4",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_0b3fe164",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_32325be9",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_a4f36c84",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_5d1adb9b",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_443c8f28",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_c56ab067",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_822423b4",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_f3a0d051",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_71ed2b0d",
+    "type": "digital_expansion",
+    "score": 34,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_5427a542",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_5ec108f9",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_f9ca5195",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_b93c8bce",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_17c1442b",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_be6e8e66",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_cac3e2f0",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_a0a1c3d7",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_bfc6f7b7",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_edb0ed19",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_eab25f79",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_551230cc",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_1e7628ca",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_8d3e60e8",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_3107d0d4",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_84dd8606",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_f0797c24",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_53e0fe99",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_a161559c",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_ea47d4a0",
+    "type": "digital_expansion",
+    "score": 38,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_digital_expansion_45839518",
+    "type": "digital_expansion",
+    "score": 53,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Активность на 1 площадках",
+      "Сайт не обнаружен",
+      "💡 Проверить потребность в цифровом канале"
+    ],
+    "rules_triggered": [
+      "RULE_001"
+    ],
+    "recommended_action": "Предложить создание сайта / цифрового канала",
+    "priority": "high"
+  },
+  {
+    "id": "lead_channel_diversification_abfb80b5",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Masters",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_55389ddf",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Точка Ремонта",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_3488769f",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "HardWorkers",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_b0f36aad",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "АйХелп",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a526a955",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Vidmaster",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_888239d2",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "X-Repair",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_6a750e27",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Samsung Сервисный Центр (ремонт телефонов)",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_325b20cc",
+    "type": "channel_diversification",
+    "score": 45,
+    "entity_name": "Ремонт телефонов (Сухановская)",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_6f4b97b0",
+    "type": "channel_diversification",
+    "score": 71,
+    "entity_name": "Планета iPhone (сайт)",
+    "evidence": [
+      "Присутствие только на site",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы site"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_afbb8748",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "PhoneHelp_11",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a22e8196",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "TechLab_12",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_3206509c",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "SmartService_13",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_281b0f2e",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "MobilePro_14",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_401048f6",
+    "type": "channel_diversification",
+    "score": 43,
+    "entity_name": "DigitalFix_15",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_dc19fe95",
+    "type": "channel_diversification",
+    "score": 56,
+    "entity_name": "GSM_16",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_46184de6",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "ApplePro_17",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_6f02c9c0",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "iFix_18",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_466eeb7b",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "PhoneHelp_19",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_8ecf4f85",
+    "type": "channel_diversification",
+    "score": 68,
+    "entity_name": "TechLab_20",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_3b134587",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "SmartService_21",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_c11d8c0b",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "MobilePro_22",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_fffae03a",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "DigitalFix_23",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_16157421",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "GSM_24",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_6cfdc90d",
+    "type": "channel_diversification",
+    "score": 57,
+    "entity_name": "ApplePro_25",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_c0bb7cc1",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "iFix_26",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_ae37727a",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "PhoneHelp_27",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_493ef20e",
+    "type": "channel_diversification",
+    "score": 56,
+    "entity_name": "TechLab_28",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_81b330f3",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "SmartService_29",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_b9863756",
+    "type": "channel_diversification",
+    "score": 43,
+    "entity_name": "MobilePro_30",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_db5eda39",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "DigitalFix_31",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_26e1f4ec",
+    "type": "channel_diversification",
+    "score": 60,
+    "entity_name": "GSM_32",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_e28fe8be",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "ApplePro_33",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_fb1d269b",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "iFix_34",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_933670c1",
+    "type": "channel_diversification",
+    "score": 61,
+    "entity_name": "PhoneHelp_35",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_19abbdf5",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "TechLab_36",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_b4cc2175",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "SmartService_37",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_19568ef2",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "MobilePro_38",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_0fba8f8a",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "DigitalFix_39",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_51e55fd6",
+    "type": "channel_diversification",
+    "score": 64,
+    "entity_name": "GSM_40",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_4a9c77b8",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "ApplePro_41",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_fa2bd79f",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "iFix_42",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_d8f32d4b",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "PhoneHelp_43",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a94e3d90",
+    "type": "channel_diversification",
+    "score": 60,
+    "entity_name": "TechLab_44",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_19708bbc",
+    "type": "channel_diversification",
+    "score": 43,
+    "entity_name": "SmartService_45",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_7239c7bc",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "MobilePro_46",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_c261b8b4",
+    "type": "channel_diversification",
+    "score": 53,
+    "entity_name": "DigitalFix_47",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_ccf9815c",
+    "type": "channel_diversification",
+    "score": 42,
+    "entity_name": "GSM_48",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a961da3f",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "ApplePro_49",
+    "evidence": [
+      "Присутствие только на ym",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ym"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_68ffdd0d",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_5cb9bf86",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_c4d26c40",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a1fb13f8",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_431af93f",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_b1bece17",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_e6e24ba9",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_10d6af52",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_ad1e60d3",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_faeb9d3f",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_e7ee0c07",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_59014dbe",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_6a73e42a",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a5e4be65",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_90076109",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_e919dd80",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_186e071c",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_9d44617b",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_2812255e",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_3a40f6d0",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_5b692ef4",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_0b3fe164",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_32325be9",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a4f36c84",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_5d1adb9b",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_443c8f28",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_c56ab067",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPhone",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_822423b4",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер iPad",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_f3a0d051",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Apple",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_71ed2b0d",
+    "type": "channel_diversification",
+    "score": 35,
+    "entity_name": "Мастер Samsung",
+    "evidence": [
+      "Присутствие только на av",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы av"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_5427a542",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_5ec108f9",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_f9ca5195",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_b93c8bce",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_17c1442b",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_be6e8e66",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_cac3e2f0",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a0a1c3d7",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_bfc6f7b7",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_edb0ed19",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_eab25f79",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_551230cc",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_1e7628ca",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_8d3e60e8",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_3107d0d4",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_84dd8606",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_f0797c24",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_53e0fe99",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-PhoneFix",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_a161559c",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-SmartLab",
+    "evidence": [
+      "Присутствие только на wb",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы wb"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_ea47d4a0",
+    "type": "channel_diversification",
+    "score": 39,
+    "entity_name": "Store-TechPro",
+    "evidence": [
+      "Присутствие только на oz",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы oz"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  },
+  {
+    "id": "lead_channel_diversification_45839518",
+    "type": "channel_diversification",
+    "score": 49,
+    "entity_name": "Store-iRepair",
+    "evidence": [
+      "Присутствие только на ymk",
+      "Другие площадки не обнаружены",
+      "💡 Расширить присутствие за пределы ymk"
+    ],
+    "rules_triggered": [
+      "RULE_002"
+    ],
+    "recommended_action": "Проанализировать возможность выхода на другие площадки",
+    "priority": "medium"
+  }
+]

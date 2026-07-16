@@ -1,0 +1,9 @@
+[
+  {
+    "id": "rel_same_iphone",
+    "type": "same_as",
+    "source": "ph_007",
+    "target": "ph_010",
+    "confidence": 0.9
+  }
+]

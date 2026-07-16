@@ -1,0 +1,3662 @@
+[
+  {
+    "id": "opp_60ba1b21",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Masters"
+    ],
+    "message": "У Masters нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_42326a87",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Точка Ремонта"
+    ],
+    "message": "У Точка Ремонта нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_e142cc73",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "HardWorkers"
+    ],
+    "message": "У HardWorkers нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_bfe50078",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "АйХелп"
+    ],
+    "message": "У АйХелп нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_cb5aa1d5",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Vidmaster"
+    ],
+    "message": "У Vidmaster нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_45289972",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "X-Repair"
+    ],
+    "message": "У X-Repair нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_9e864b86",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Samsung Сервисный Центр (ремонт телефонов)"
+    ],
+    "message": "У Samsung Сервисный Центр (ремонт телефонов) нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_25c01841",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Ремонт телефонов (Сухановская)"
+    ],
+    "message": "У Ремонт телефонов (Сухановская) нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_ecdb37db",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_11"
+    ],
+    "message": "У PhoneHelp_11 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_d87e4696",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_13"
+    ],
+    "message": "У SmartService_13 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_60d425a2",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_14"
+    ],
+    "message": "У MobilePro_14 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_963c25cf",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_15"
+    ],
+    "message": "У DigitalFix_15 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_caadbf36",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_17"
+    ],
+    "message": "У ApplePro_17 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_87345fca",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "iFix_18"
+    ],
+    "message": "У iFix_18 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_d7e5f6ce",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_19"
+    ],
+    "message": "У PhoneHelp_19 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_18aade6c",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_21"
+    ],
+    "message": "У SmartService_21 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_36a66b5f",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_22"
+    ],
+    "message": "У MobilePro_22 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_dfd80487",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_23"
+    ],
+    "message": "У DigitalFix_23 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_3ee3bb59",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_25"
+    ],
+    "message": "У ApplePro_25 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_1afc8baa",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "iFix_26"
+    ],
+    "message": "У iFix_26 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_39903033",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_27"
+    ],
+    "message": "У PhoneHelp_27 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_ce98db51",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_29"
+    ],
+    "message": "У SmartService_29 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_ffe8f085",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_30"
+    ],
+    "message": "У MobilePro_30 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_7ad09351",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_31"
+    ],
+    "message": "У DigitalFix_31 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_897bd955",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_33"
+    ],
+    "message": "У ApplePro_33 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_859fe55d",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "iFix_34"
+    ],
+    "message": "У iFix_34 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_1c91e783",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_35"
+    ],
+    "message": "У PhoneHelp_35 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_4ce29536",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_37"
+    ],
+    "message": "У SmartService_37 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_1aca8d79",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_38"
+    ],
+    "message": "У MobilePro_38 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_7d372f60",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_39"
+    ],
+    "message": "У DigitalFix_39 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_4a72cc1c",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_41"
+    ],
+    "message": "У ApplePro_41 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_f7e248a6",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "iFix_42"
+    ],
+    "message": "У iFix_42 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_e2852349",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_43"
+    ],
+    "message": "У PhoneHelp_43 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_5509bbfa",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_45"
+    ],
+    "message": "У SmartService_45 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_49c6610c",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_46"
+    ],
+    "message": "У MobilePro_46 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_f2200a65",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_47"
+    ],
+    "message": "У DigitalFix_47 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_283629e9",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_49"
+    ],
+    "message": "У ApplePro_49 нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_8d604322",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_a71279e3",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_a4e3fb8d",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "У Мастер iPhone нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_2de42704",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "У Мастер iPad нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_25832f42",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_57c08509",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_6a27fd64",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "У Мастер iPhone нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_5f0944d6",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "У Мастер iPad нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_b9eca177",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_53d02531",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_3376d8af",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "У Мастер iPhone нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_ddc54d54",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "У Мастер iPad нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_bd2dbd77",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_bde5cf28",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_52a15821",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "У Мастер iPhone нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_8e2037c8",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "У Мастер iPad нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_9a472667",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_7e8d6524",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_87710497",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "У Мастер iPhone нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_b1dd4937",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "У Мастер iPad нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_ce7666dc",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_fb7cec9b",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_c81c6f57",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "У Мастер iPhone нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_9a5e0bf4",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "У Мастер iPad нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_dfe08786",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_5ff83ed1",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_3b5fbdda",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "У Мастер iPhone нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_cd070207",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "У Мастер iPad нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_60ef0f84",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "У Мастер Apple нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_8fc076e9",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "У Мастер Samsung нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_1d4462a5",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_709731c4",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "У Store-PhoneFix нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_271f8d56",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_254ae4d3",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "У Store-TechPro нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_0031d292",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_be311abe",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "У Store-PhoneFix нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_910aa754",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_455a5a85",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "У Store-TechPro нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_3a7707de",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_4ac2e8ed",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "У Store-PhoneFix нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_024437c3",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_ed96aa90",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "У Store-TechPro нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_328b390c",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_8413cf9c",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "У Store-PhoneFix нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_667ea05f",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_1dc9a6b1",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "У Store-TechPro нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_d73e5502",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_40154e50",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "У Store-PhoneFix нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_81718898",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_a9cc9110",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "У Store-TechPro нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_01b27141",
+    "type": "weak_digital_presence",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта при наличии активности"
+  },
+  {
+    "id": "opp_dd7ee778",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Masters"
+    ],
+    "message": "Masters зависит от ym"
+  },
+  {
+    "id": "opp_2b7d008d",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Точка Ремонта"
+    ],
+    "message": "Точка Ремонта зависит от ym"
+  },
+  {
+    "id": "opp_840ec927",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "HardWorkers"
+    ],
+    "message": "HardWorkers зависит от ym"
+  },
+  {
+    "id": "opp_7f98c0a7",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "АйХелп"
+    ],
+    "message": "АйХелп зависит от ym"
+  },
+  {
+    "id": "opp_026868df",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Vidmaster"
+    ],
+    "message": "Vidmaster зависит от ym"
+  },
+  {
+    "id": "opp_9d4f7575",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "X-Repair"
+    ],
+    "message": "X-Repair зависит от ym"
+  },
+  {
+    "id": "opp_626c5515",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Samsung Сервисный Центр (ремонт телефонов)"
+    ],
+    "message": "Samsung Сервисный Центр (ремонт телефонов) зависит от ym"
+  },
+  {
+    "id": "opp_5c127f2a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Ремонт телефонов (Сухановская)"
+    ],
+    "message": "Ремонт телефонов (Сухановская) зависит от ym"
+  },
+  {
+    "id": "opp_d7eeb77e",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Планета iPhone (сайт)"
+    ],
+    "message": "Планета iPhone (сайт) зависит от site"
+  },
+  {
+    "id": "opp_2d7ef829",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "PhoneHelp_11"
+    ],
+    "message": "PhoneHelp_11 зависит от ym"
+  },
+  {
+    "id": "opp_4c59d668",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "TechLab_12"
+    ],
+    "message": "TechLab_12 зависит от av"
+  },
+  {
+    "id": "opp_a7453d68",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "SmartService_13"
+    ],
+    "message": "SmartService_13 зависит от ym"
+  },
+  {
+    "id": "opp_6f38ec37",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "MobilePro_14"
+    ],
+    "message": "MobilePro_14 зависит от ym"
+  },
+  {
+    "id": "opp_37bd47f9",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "DigitalFix_15"
+    ],
+    "message": "DigitalFix_15 зависит от av"
+  },
+  {
+    "id": "opp_6635340a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "GSM_16"
+    ],
+    "message": "GSM_16 зависит от ym"
+  },
+  {
+    "id": "opp_f4ecb479",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ApplePro_17"
+    ],
+    "message": "ApplePro_17 зависит от ym"
+  },
+  {
+    "id": "opp_d4ae1db6",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "iFix_18"
+    ],
+    "message": "iFix_18 зависит от av"
+  },
+  {
+    "id": "opp_72672f79",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "PhoneHelp_19"
+    ],
+    "message": "PhoneHelp_19 зависит от ym"
+  },
+  {
+    "id": "opp_488dce24",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "TechLab_20"
+    ],
+    "message": "TechLab_20 зависит от ym"
+  },
+  {
+    "id": "opp_4f419fe4",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "SmartService_21"
+    ],
+    "message": "SmartService_21 зависит от av"
+  },
+  {
+    "id": "opp_110a4280",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "MobilePro_22"
+    ],
+    "message": "MobilePro_22 зависит от ym"
+  },
+  {
+    "id": "opp_f1901e10",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "DigitalFix_23"
+    ],
+    "message": "DigitalFix_23 зависит от ym"
+  },
+  {
+    "id": "opp_74f6b37a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "GSM_24"
+    ],
+    "message": "GSM_24 зависит от av"
+  },
+  {
+    "id": "opp_622a5c18",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ApplePro_25"
+    ],
+    "message": "ApplePro_25 зависит от ym"
+  },
+  {
+    "id": "opp_af57c154",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "iFix_26"
+    ],
+    "message": "iFix_26 зависит от ym"
+  },
+  {
+    "id": "opp_3ebab360",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "PhoneHelp_27"
+    ],
+    "message": "PhoneHelp_27 зависит от av"
+  },
+  {
+    "id": "opp_ccf9dadc",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "TechLab_28"
+    ],
+    "message": "TechLab_28 зависит от ym"
+  },
+  {
+    "id": "opp_baa8dea6",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "SmartService_29"
+    ],
+    "message": "SmartService_29 зависит от ym"
+  },
+  {
+    "id": "opp_38b43d84",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "MobilePro_30"
+    ],
+    "message": "MobilePro_30 зависит от av"
+  },
+  {
+    "id": "opp_5e3383d2",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "DigitalFix_31"
+    ],
+    "message": "DigitalFix_31 зависит от ym"
+  },
+  {
+    "id": "opp_9d58f78c",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "GSM_32"
+    ],
+    "message": "GSM_32 зависит от ym"
+  },
+  {
+    "id": "opp_13ad1e7e",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ApplePro_33"
+    ],
+    "message": "ApplePro_33 зависит от av"
+  },
+  {
+    "id": "opp_8ae31de0",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "iFix_34"
+    ],
+    "message": "iFix_34 зависит от ym"
+  },
+  {
+    "id": "opp_e61b4663",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "PhoneHelp_35"
+    ],
+    "message": "PhoneHelp_35 зависит от ym"
+  },
+  {
+    "id": "opp_e93d1aa9",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "TechLab_36"
+    ],
+    "message": "TechLab_36 зависит от av"
+  },
+  {
+    "id": "opp_b4a1336c",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "SmartService_37"
+    ],
+    "message": "SmartService_37 зависит от ym"
+  },
+  {
+    "id": "opp_9f1f9abe",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "MobilePro_38"
+    ],
+    "message": "MobilePro_38 зависит от ym"
+  },
+  {
+    "id": "opp_769bb79d",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "DigitalFix_39"
+    ],
+    "message": "DigitalFix_39 зависит от av"
+  },
+  {
+    "id": "opp_550523e8",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "GSM_40"
+    ],
+    "message": "GSM_40 зависит от ym"
+  },
+  {
+    "id": "opp_48423517",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ApplePro_41"
+    ],
+    "message": "ApplePro_41 зависит от ym"
+  },
+  {
+    "id": "opp_40e04e96",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "iFix_42"
+    ],
+    "message": "iFix_42 зависит от av"
+  },
+  {
+    "id": "opp_5d5a1e13",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "PhoneHelp_43"
+    ],
+    "message": "PhoneHelp_43 зависит от ym"
+  },
+  {
+    "id": "opp_763b1ddb",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "TechLab_44"
+    ],
+    "message": "TechLab_44 зависит от ym"
+  },
+  {
+    "id": "opp_88f46e54",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "SmartService_45"
+    ],
+    "message": "SmartService_45 зависит от av"
+  },
+  {
+    "id": "opp_fd29b7fe",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "MobilePro_46"
+    ],
+    "message": "MobilePro_46 зависит от ym"
+  },
+  {
+    "id": "opp_fb63606d",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "DigitalFix_47"
+    ],
+    "message": "DigitalFix_47 зависит от ym"
+  },
+  {
+    "id": "opp_19609dde",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "GSM_48"
+    ],
+    "message": "GSM_48 зависит от av"
+  },
+  {
+    "id": "opp_cba227c2",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "ApplePro_49"
+    ],
+    "message": "ApplePro_49 зависит от ym"
+  },
+  {
+    "id": "opp_195686a6",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_0ba06d44",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_4ac718b0",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone зависит от av"
+  },
+  {
+    "id": "opp_468d3be5",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad зависит от av"
+  },
+  {
+    "id": "opp_62712695",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_7fc0178b",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_92704411",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone зависит от av"
+  },
+  {
+    "id": "opp_2d2870fb",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad зависит от av"
+  },
+  {
+    "id": "opp_f5714ce7",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_0cbe98c2",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_64ea0866",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone зависит от av"
+  },
+  {
+    "id": "opp_78ff6a69",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad зависит от av"
+  },
+  {
+    "id": "opp_a7a231cd",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_1e765100",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_d510a4a3",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone зависит от av"
+  },
+  {
+    "id": "opp_17b0d77c",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad зависит от av"
+  },
+  {
+    "id": "opp_93a2160b",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_b7ae78ca",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_1cd16d0b",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone зависит от av"
+  },
+  {
+    "id": "opp_146d893c",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad зависит от av"
+  },
+  {
+    "id": "opp_942e4eee",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_16ca0dc6",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_53d913f8",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone зависит от av"
+  },
+  {
+    "id": "opp_f639cf9d",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad зависит от av"
+  },
+  {
+    "id": "opp_baa341e8",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_340e8692",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_733ba575",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone зависит от av"
+  },
+  {
+    "id": "opp_715b02a6",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad зависит от av"
+  },
+  {
+    "id": "opp_b1456c36",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple зависит от av"
+  },
+  {
+    "id": "opp_c56e7d1f",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung зависит от av"
+  },
+  {
+    "id": "opp_79a26006",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair зависит от wb"
+  },
+  {
+    "id": "opp_74df491a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix зависит от oz"
+  },
+  {
+    "id": "opp_1cb4ccd3",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab зависит от ymk"
+  },
+  {
+    "id": "opp_3760795d",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro зависит от wb"
+  },
+  {
+    "id": "opp_cbda4ccb",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair зависит от oz"
+  },
+  {
+    "id": "opp_e11db574",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix зависит от ymk"
+  },
+  {
+    "id": "opp_743dcc77",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab зависит от wb"
+  },
+  {
+    "id": "opp_fa605d0a",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro зависит от oz"
+  },
+  {
+    "id": "opp_fd780bf3",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair зависит от ymk"
+  },
+  {
+    "id": "opp_90b00acd",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix зависит от wb"
+  },
+  {
+    "id": "opp_58fba409",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab зависит от oz"
+  },
+  {
+    "id": "opp_fe8b0c76",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro зависит от ymk"
+  },
+  {
+    "id": "opp_830812d2",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair зависит от wb"
+  },
+  {
+    "id": "opp_b6cc0829",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix зависит от oz"
+  },
+  {
+    "id": "opp_dceeac81",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab зависит от ymk"
+  },
+  {
+    "id": "opp_41fdeb2a",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro зависит от wb"
+  },
+  {
+    "id": "opp_f7df2a30",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair зависит от oz"
+  },
+  {
+    "id": "opp_c088a7cb",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix зависит от ymk"
+  },
+  {
+    "id": "opp_56625d78",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab зависит от wb"
+  },
+  {
+    "id": "opp_8f422b98",
+    "type": "marketplace_dependency",
+    "severity": "medium",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro зависит от oz"
+  },
+  {
+    "id": "opp_749cb79d",
+    "type": "marketplace_dependency",
+    "severity": "high",
+    "confidence": 0.65,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair зависит от ymk"
+  },
+  {
+    "id": "opp_54373ee6",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Masters"
+    ],
+    "message": "Masters представлен только на ym"
+  },
+  {
+    "id": "opp_fca77728",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Точка Ремонта"
+    ],
+    "message": "Точка Ремонта представлен только на ym"
+  },
+  {
+    "id": "opp_d127f1c9",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "HardWorkers"
+    ],
+    "message": "HardWorkers представлен только на ym"
+  },
+  {
+    "id": "opp_1fd9e686",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "АйХелп"
+    ],
+    "message": "АйХелп представлен только на ym"
+  },
+  {
+    "id": "opp_8a6480a5",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Vidmaster"
+    ],
+    "message": "Vidmaster представлен только на ym"
+  },
+  {
+    "id": "opp_3fbd181e",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "X-Repair"
+    ],
+    "message": "X-Repair представлен только на ym"
+  },
+  {
+    "id": "opp_eef8d928",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Samsung Сервисный Центр (ремонт телефонов)"
+    ],
+    "message": "Samsung Сервисный Центр (ремонт телефонов) представлен только на ym"
+  },
+  {
+    "id": "opp_9ea58207",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Ремонт телефонов (Сухановская)"
+    ],
+    "message": "Ремонт телефонов (Сухановская) представлен только на ym"
+  },
+  {
+    "id": "opp_1305f9f0",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Планета iPhone (сайт)"
+    ],
+    "message": "Планета iPhone (сайт) представлен только на site"
+  },
+  {
+    "id": "opp_8b5d6817",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "PhoneHelp_11"
+    ],
+    "message": "PhoneHelp_11 представлен только на ym"
+  },
+  {
+    "id": "opp_a9f13951",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "TechLab_12"
+    ],
+    "message": "TechLab_12 представлен только на av"
+  },
+  {
+    "id": "opp_6080a8d3",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "SmartService_13"
+    ],
+    "message": "SmartService_13 представлен только на ym"
+  },
+  {
+    "id": "opp_c5719a47",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "MobilePro_14"
+    ],
+    "message": "MobilePro_14 представлен только на ym"
+  },
+  {
+    "id": "opp_07ac7ac4",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "DigitalFix_15"
+    ],
+    "message": "DigitalFix_15 представлен только на av"
+  },
+  {
+    "id": "opp_847c8dbb",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "GSM_16"
+    ],
+    "message": "GSM_16 представлен только на ym"
+  },
+  {
+    "id": "opp_b1c56e32",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ApplePro_17"
+    ],
+    "message": "ApplePro_17 представлен только на ym"
+  },
+  {
+    "id": "opp_6df8bc89",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "iFix_18"
+    ],
+    "message": "iFix_18 представлен только на av"
+  },
+  {
+    "id": "opp_79eac29b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "PhoneHelp_19"
+    ],
+    "message": "PhoneHelp_19 представлен только на ym"
+  },
+  {
+    "id": "opp_24b3a4b0",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "TechLab_20"
+    ],
+    "message": "TechLab_20 представлен только на ym"
+  },
+  {
+    "id": "opp_6609a102",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "SmartService_21"
+    ],
+    "message": "SmartService_21 представлен только на av"
+  },
+  {
+    "id": "opp_392fe0b2",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "MobilePro_22"
+    ],
+    "message": "MobilePro_22 представлен только на ym"
+  },
+  {
+    "id": "opp_7965a41b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "DigitalFix_23"
+    ],
+    "message": "DigitalFix_23 представлен только на ym"
+  },
+  {
+    "id": "opp_b3ea8a8b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "GSM_24"
+    ],
+    "message": "GSM_24 представлен только на av"
+  },
+  {
+    "id": "opp_f9e6dd6a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ApplePro_25"
+    ],
+    "message": "ApplePro_25 представлен только на ym"
+  },
+  {
+    "id": "opp_4ce7c3b7",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "iFix_26"
+    ],
+    "message": "iFix_26 представлен только на ym"
+  },
+  {
+    "id": "opp_9bd2e7c3",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "PhoneHelp_27"
+    ],
+    "message": "PhoneHelp_27 представлен только на av"
+  },
+  {
+    "id": "opp_46f38196",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "TechLab_28"
+    ],
+    "message": "TechLab_28 представлен только на ym"
+  },
+  {
+    "id": "opp_60631bff",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "SmartService_29"
+    ],
+    "message": "SmartService_29 представлен только на ym"
+  },
+  {
+    "id": "opp_296b71c0",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "MobilePro_30"
+    ],
+    "message": "MobilePro_30 представлен только на av"
+  },
+  {
+    "id": "opp_871c0de5",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "DigitalFix_31"
+    ],
+    "message": "DigitalFix_31 представлен только на ym"
+  },
+  {
+    "id": "opp_c35d2ab3",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "GSM_32"
+    ],
+    "message": "GSM_32 представлен только на ym"
+  },
+  {
+    "id": "opp_38a615ee",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ApplePro_33"
+    ],
+    "message": "ApplePro_33 представлен только на av"
+  },
+  {
+    "id": "opp_1344b4d7",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "iFix_34"
+    ],
+    "message": "iFix_34 представлен только на ym"
+  },
+  {
+    "id": "opp_3c4d8530",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "PhoneHelp_35"
+    ],
+    "message": "PhoneHelp_35 представлен только на ym"
+  },
+  {
+    "id": "opp_6b6ec9a9",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "TechLab_36"
+    ],
+    "message": "TechLab_36 представлен только на av"
+  },
+  {
+    "id": "opp_c973f01b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "SmartService_37"
+    ],
+    "message": "SmartService_37 представлен только на ym"
+  },
+  {
+    "id": "opp_f384ad1b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "MobilePro_38"
+    ],
+    "message": "MobilePro_38 представлен только на ym"
+  },
+  {
+    "id": "opp_71e846bc",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "DigitalFix_39"
+    ],
+    "message": "DigitalFix_39 представлен только на av"
+  },
+  {
+    "id": "opp_95e1f735",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "GSM_40"
+    ],
+    "message": "GSM_40 представлен только на ym"
+  },
+  {
+    "id": "opp_6f3d335c",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ApplePro_41"
+    ],
+    "message": "ApplePro_41 представлен только на ym"
+  },
+  {
+    "id": "opp_6b9af387",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "iFix_42"
+    ],
+    "message": "iFix_42 представлен только на av"
+  },
+  {
+    "id": "opp_df65d3c8",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "PhoneHelp_43"
+    ],
+    "message": "PhoneHelp_43 представлен только на ym"
+  },
+  {
+    "id": "opp_b6079d16",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "TechLab_44"
+    ],
+    "message": "TechLab_44 представлен только на ym"
+  },
+  {
+    "id": "opp_10e3b200",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "SmartService_45"
+    ],
+    "message": "SmartService_45 представлен только на av"
+  },
+  {
+    "id": "opp_bae72edc",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "MobilePro_46"
+    ],
+    "message": "MobilePro_46 представлен только на ym"
+  },
+  {
+    "id": "opp_a4756174",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "DigitalFix_47"
+    ],
+    "message": "DigitalFix_47 представлен только на ym"
+  },
+  {
+    "id": "opp_47318c14",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "GSM_48"
+    ],
+    "message": "GSM_48 представлен только на av"
+  },
+  {
+    "id": "opp_17064252",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "ApplePro_49"
+    ],
+    "message": "ApplePro_49 представлен только на ym"
+  },
+  {
+    "id": "opp_08815802",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_100f1ea1",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_67320fd9",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone представлен только на av"
+  },
+  {
+    "id": "opp_1897f6a0",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad представлен только на av"
+  },
+  {
+    "id": "opp_ae2ce8b8",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_dad1395a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_eda54e41",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone представлен только на av"
+  },
+  {
+    "id": "opp_0615f013",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad представлен только на av"
+  },
+  {
+    "id": "opp_b605f219",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_f487bc6d",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_45aefa52",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone представлен только на av"
+  },
+  {
+    "id": "opp_23694165",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad представлен только на av"
+  },
+  {
+    "id": "opp_c5042875",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_5316a21f",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_cbed4209",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone представлен только на av"
+  },
+  {
+    "id": "opp_9f33582a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad представлен только на av"
+  },
+  {
+    "id": "opp_fc122d32",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_aae2d0dd",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_e36b2736",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone представлен только на av"
+  },
+  {
+    "id": "opp_fedc6b57",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad представлен только на av"
+  },
+  {
+    "id": "opp_67f0663f",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_02b45784",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_fec9caea",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone представлен только на av"
+  },
+  {
+    "id": "opp_dd67f8fc",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad представлен только на av"
+  },
+  {
+    "id": "opp_767d3d2b",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_74b827c6",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_98419b05",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPhone"
+    ],
+    "message": "Мастер iPhone представлен только на av"
+  },
+  {
+    "id": "opp_8ea53a62",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер iPad"
+    ],
+    "message": "Мастер iPad представлен только на av"
+  },
+  {
+    "id": "opp_0a17f012",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Apple"
+    ],
+    "message": "Мастер Apple представлен только на av"
+  },
+  {
+    "id": "opp_8445b44c",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Мастер Samsung"
+    ],
+    "message": "Мастер Samsung представлен только на av"
+  },
+  {
+    "id": "opp_e0ae0529",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair представлен только на wb"
+  },
+  {
+    "id": "opp_f118dcb6",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix представлен только на oz"
+  },
+  {
+    "id": "opp_b438448c",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab представлен только на ymk"
+  },
+  {
+    "id": "opp_59052164",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro представлен только на wb"
+  },
+  {
+    "id": "opp_11e2e050",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair представлен только на oz"
+  },
+  {
+    "id": "opp_48617902",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix представлен только на ymk"
+  },
+  {
+    "id": "opp_b4586ef9",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab представлен только на wb"
+  },
+  {
+    "id": "opp_8e04bd37",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro представлен только на oz"
+  },
+  {
+    "id": "opp_2865d2e0",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair представлен только на ymk"
+  },
+  {
+    "id": "opp_10040f0a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix представлен только на wb"
+  },
+  {
+    "id": "opp_eb59ff22",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab представлен только на oz"
+  },
+  {
+    "id": "opp_d471fd43",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro представлен только на ymk"
+  },
+  {
+    "id": "opp_33d538bb",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair представлен только на wb"
+  },
+  {
+    "id": "opp_be7573da",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix представлен только на oz"
+  },
+  {
+    "id": "opp_608c410f",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab представлен только на ymk"
+  },
+  {
+    "id": "opp_69b2df93",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro представлен только на wb"
+  },
+  {
+    "id": "opp_4c986b31",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair представлен только на oz"
+  },
+  {
+    "id": "opp_c357c07a",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-PhoneFix"
+    ],
+    "message": "Store-PhoneFix представлен только на ymk"
+  },
+  {
+    "id": "opp_4d11b33c",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "Store-SmartLab представлен только на wb"
+  },
+  {
+    "id": "opp_9985888c",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-TechPro"
+    ],
+    "message": "Store-TechPro представлен только на oz"
+  },
+  {
+    "id": "opp_f02b4ed6",
+    "type": "single_source_risk",
+    "severity": "medium",
+    "confidence": 0.6,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "Store-iRepair представлен только на ymk"
+  },
+  {
+    "id": "opp_b592a4ce",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Masters"
+    ],
+    "message": "У Masters нет телефона"
+  },
+  {
+    "id": "opp_c914f91f",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Точка Ремонта"
+    ],
+    "message": "У Точка Ремонта нет телефона"
+  },
+  {
+    "id": "opp_1b8183de",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "HardWorkers"
+    ],
+    "message": "У HardWorkers нет телефона"
+  },
+  {
+    "id": "opp_e58cb808",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "АйХелп"
+    ],
+    "message": "У АйХелп нет телефона"
+  },
+  {
+    "id": "opp_2eb8f19d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Vidmaster"
+    ],
+    "message": "У Vidmaster нет телефона"
+  },
+  {
+    "id": "opp_5a15b050",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "X-Repair"
+    ],
+    "message": "У X-Repair нет телефона"
+  },
+  {
+    "id": "opp_3d395b00",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Samsung Сервисный Центр (ремонт телефонов)"
+    ],
+    "message": "У Samsung Сервисный Центр (ремонт телефонов) нет телефона"
+  },
+  {
+    "id": "opp_efa5f4b2",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Ремонт телефонов (Сухановская)"
+    ],
+    "message": "У Ремонт телефонов (Сухановская) нет телефона"
+  },
+  {
+    "id": "opp_4191e177",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "PhoneHelp_11"
+    ],
+    "message": "У PhoneHelp_11 нет телефона"
+  },
+  {
+    "id": "opp_3279c95f",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "SmartService_13"
+    ],
+    "message": "У SmartService_13 нет телефона"
+  },
+  {
+    "id": "opp_6abfc178",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "MobilePro_14"
+    ],
+    "message": "У MobilePro_14 нет телефона"
+  },
+  {
+    "id": "opp_82c2e8e4",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "GSM_16"
+    ],
+    "message": "У GSM_16 нет телефона"
+  },
+  {
+    "id": "opp_4674afd8",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "ApplePro_17"
+    ],
+    "message": "У ApplePro_17 нет телефона"
+  },
+  {
+    "id": "opp_1faf929f",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "PhoneHelp_19"
+    ],
+    "message": "У PhoneHelp_19 нет телефона"
+  },
+  {
+    "id": "opp_03def9ce",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "MobilePro_22"
+    ],
+    "message": "У MobilePro_22 нет телефона"
+  },
+  {
+    "id": "opp_b396be87",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "DigitalFix_23"
+    ],
+    "message": "У DigitalFix_23 нет телефона"
+  },
+  {
+    "id": "opp_855df8e2",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "iFix_26"
+    ],
+    "message": "У iFix_26 нет телефона"
+  },
+  {
+    "id": "opp_64e9e2e7",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "TechLab_28"
+    ],
+    "message": "У TechLab_28 нет телефона"
+  },
+  {
+    "id": "opp_4eeb637c",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "SmartService_29"
+    ],
+    "message": "У SmartService_29 нет телефона"
+  },
+  {
+    "id": "opp_9c29700e",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "DigitalFix_31"
+    ],
+    "message": "У DigitalFix_31 нет телефона"
+  },
+  {
+    "id": "opp_756742ed",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "GSM_32"
+    ],
+    "message": "У GSM_32 нет телефона"
+  },
+  {
+    "id": "opp_bd4b21dd",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "iFix_34"
+    ],
+    "message": "У iFix_34 нет телефона"
+  },
+  {
+    "id": "opp_c5fa79b5",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "SmartService_37"
+    ],
+    "message": "У SmartService_37 нет телефона"
+  },
+  {
+    "id": "opp_077a800d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "MobilePro_38"
+    ],
+    "message": "У MobilePro_38 нет телефона"
+  },
+  {
+    "id": "opp_fd0f925b",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "ApplePro_41"
+    ],
+    "message": "У ApplePro_41 нет телефона"
+  },
+  {
+    "id": "opp_374af1db",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "PhoneHelp_43"
+    ],
+    "message": "У PhoneHelp_43 нет телефона"
+  },
+  {
+    "id": "opp_e40dc7e7",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "TechLab_44"
+    ],
+    "message": "У TechLab_44 нет телефона"
+  },
+  {
+    "id": "opp_0e23a4f5",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "MobilePro_46"
+    ],
+    "message": "У MobilePro_46 нет телефона"
+  },
+  {
+    "id": "opp_2a5e8e74",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "DigitalFix_47"
+    ],
+    "message": "У DigitalFix_47 нет телефона"
+  },
+  {
+    "id": "opp_563d2825",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "ApplePro_49"
+    ],
+    "message": "У ApplePro_49 нет телефона"
+  },
+  {
+    "id": "opp_bc61bd7c",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет телефона"
+  },
+  {
+    "id": "opp_c61d46e3",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет телефона"
+  },
+  {
+    "id": "opp_6e0fed9b",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет телефона"
+  },
+  {
+    "id": "opp_eae0f141",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет телефона"
+  },
+  {
+    "id": "opp_e2fb5cc6",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет телефона"
+  },
+  {
+    "id": "opp_b2c42dee",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет телефона"
+  },
+  {
+    "id": "opp_be3bb79a",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет телефона"
+  },
+  {
+    "id": "opp_fbc9fc6d",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет телефона"
+  },
+  {
+    "id": "opp_73a73f83",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет телефона"
+  },
+  {
+    "id": "opp_4b27f6b2",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет телефона"
+  },
+  {
+    "id": "opp_abb59721",
+    "type": "no_phone",
+    "severity": "high",
+    "confidence": 0.75,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет телефона"
+  },
+  {
+    "id": "opp_f6e3b3b8",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Masters"
+    ],
+    "message": "У Masters нет сайта"
+  },
+  {
+    "id": "opp_532912eb",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Точка Ремонта"
+    ],
+    "message": "У Точка Ремонта нет сайта"
+  },
+  {
+    "id": "opp_0553b9de",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "HardWorkers"
+    ],
+    "message": "У HardWorkers нет сайта"
+  },
+  {
+    "id": "opp_ffa770e8",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "АйХелп"
+    ],
+    "message": "У АйХелп нет сайта"
+  },
+  {
+    "id": "opp_1be1fa3e",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Vidmaster"
+    ],
+    "message": "У Vidmaster нет сайта"
+  },
+  {
+    "id": "opp_de05f4d2",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "X-Repair"
+    ],
+    "message": "У X-Repair нет сайта"
+  },
+  {
+    "id": "opp_b7817332",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Samsung Сервисный Центр (ремонт телефонов)"
+    ],
+    "message": "У Samsung Сервисный Центр (ремонт телефонов) нет сайта"
+  },
+  {
+    "id": "opp_29eb6f96",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Ремонт телефонов (Сухановская)"
+    ],
+    "message": "У Ремонт телефонов (Сухановская) нет сайта"
+  },
+  {
+    "id": "opp_9eb87981",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_11"
+    ],
+    "message": "У PhoneHelp_11 нет сайта"
+  },
+  {
+    "id": "opp_b990819f",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_13"
+    ],
+    "message": "У SmartService_13 нет сайта"
+  },
+  {
+    "id": "opp_fccec142",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_14"
+    ],
+    "message": "У MobilePro_14 нет сайта"
+  },
+  {
+    "id": "opp_0d9297cb",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_17"
+    ],
+    "message": "У ApplePro_17 нет сайта"
+  },
+  {
+    "id": "opp_4d7c5d8d",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_19"
+    ],
+    "message": "У PhoneHelp_19 нет сайта"
+  },
+  {
+    "id": "opp_509e7e4c",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_22"
+    ],
+    "message": "У MobilePro_22 нет сайта"
+  },
+  {
+    "id": "opp_62500682",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_23"
+    ],
+    "message": "У DigitalFix_23 нет сайта"
+  },
+  {
+    "id": "opp_ed10ed09",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_25"
+    ],
+    "message": "У ApplePro_25 нет сайта"
+  },
+  {
+    "id": "opp_2dbe6571",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "iFix_26"
+    ],
+    "message": "У iFix_26 нет сайта"
+  },
+  {
+    "id": "opp_e04a8bd2",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_29"
+    ],
+    "message": "У SmartService_29 нет сайта"
+  },
+  {
+    "id": "opp_7876f38d",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_31"
+    ],
+    "message": "У DigitalFix_31 нет сайта"
+  },
+  {
+    "id": "opp_55171ae1",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "iFix_34"
+    ],
+    "message": "У iFix_34 нет сайта"
+  },
+  {
+    "id": "opp_2622402c",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_35"
+    ],
+    "message": "У PhoneHelp_35 нет сайта"
+  },
+  {
+    "id": "opp_2a2bceff",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "SmartService_37"
+    ],
+    "message": "У SmartService_37 нет сайта"
+  },
+  {
+    "id": "opp_ad9aca1a",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_38"
+    ],
+    "message": "У MobilePro_38 нет сайта"
+  },
+  {
+    "id": "opp_7aa97173",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_41"
+    ],
+    "message": "У ApplePro_41 нет сайта"
+  },
+  {
+    "id": "opp_98964e02",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "PhoneHelp_43"
+    ],
+    "message": "У PhoneHelp_43 нет сайта"
+  },
+  {
+    "id": "opp_26cb72bb",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "MobilePro_46"
+    ],
+    "message": "У MobilePro_46 нет сайта"
+  },
+  {
+    "id": "opp_08d4e5a4",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "DigitalFix_47"
+    ],
+    "message": "У DigitalFix_47 нет сайта"
+  },
+  {
+    "id": "opp_e2efa09d",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "ApplePro_49"
+    ],
+    "message": "У ApplePro_49 нет сайта"
+  },
+  {
+    "id": "opp_6761e9f9",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта"
+  },
+  {
+    "id": "opp_59379626",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта"
+  },
+  {
+    "id": "opp_80a9e52d",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта"
+  },
+  {
+    "id": "opp_ec214241",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта"
+  },
+  {
+    "id": "opp_05c23dd4",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта"
+  },
+  {
+    "id": "opp_cde80afe",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта"
+  },
+  {
+    "id": "opp_e61e78e0",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта"
+  },
+  {
+    "id": "opp_f7fdd561",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта"
+  },
+  {
+    "id": "opp_487eba43",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта"
+  },
+  {
+    "id": "opp_cead7a62",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-SmartLab"
+    ],
+    "message": "У Store-SmartLab нет сайта"
+  },
+  {
+    "id": "opp_9918aa13",
+    "type": "no_website",
+    "severity": "medium",
+    "confidence": 0.7,
+    "entity_names": [
+      "Store-iRepair"
+    ],
+    "message": "У Store-iRepair нет сайта"
+  }
+]
