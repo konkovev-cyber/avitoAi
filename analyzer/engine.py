@@ -37,6 +37,9 @@ class DealEngine:
         self.price_model = PriceModel(db)
         self.risk_scorer = RiskScorer()
         self.ai_scorer = ai_scorer  # Optional[AIScorer]
+        
+        from ai.router import AIRouter
+        self.ai_router = AIRouter(db)
 
     def evaluate(self, listing: RawListing, search_id: int) -> DealScore:
         """Synchronous heuristic-only evaluation. Returns DealScore."""
@@ -102,18 +105,9 @@ class DealEngine:
         """Async evaluation: heuristics + optional AI enrichment."""
         deal = self.evaluate(listing, search_id)
 
-        # Enrich with AI if configured for this user
+        # Enrich with AI via AI Router
         u_settings = self.db.get_user_settings_by_search_id(search_id)
-        from ai.factory import get_user_ai_provider
-        from analyzer.ai_scorer import AIScorer
-
-        provider = get_user_ai_provider(u_settings)
-        if provider:
-            user_ai_scorer = AIScorer(self.db, provider)
-            if user_ai_scorer.enabled:
-                deal = await user_ai_scorer.enrich(deal, listing, u_settings)
-        elif self.ai_scorer and self.ai_scorer.enabled:
-            deal = await self.ai_scorer.enrich(deal, listing, u_settings)
+        deal = await self.ai_router.analyze_listing(listing, deal, u_settings)
 
         return deal
 

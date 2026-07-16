@@ -956,19 +956,22 @@ async def send_deal_alert(
     ai_why_good = alert_data.get("ai_why_good") or []
     ai_risks = alert_data.get("ai_risks") or []
     url = alert_data.get("url", "")
-    confidence = alert_data.get("ai_score") or deal_score
+    confidence = alert_data.get("confidence") or (alert_data.get("ai_score") or deal_score)
+    if confidence > 1.0:
+        confidence = confidence / 100.0
+    market_liquidity = alert_data.get("market_liquidity", "medium")
 
     card = format_alert(
         title=title, price=price, market_price=market_price,
         deal_score=deal_score, price_delta_pct=price_delta_pct,
         risk_score=risk_score, recommendation=recommendation,
         ai_explanation=ai_explanation, ai_why_good=ai_why_good,
-        ai_risks=ai_risks,
+        ai_risks=ai_risks, confidence=confidence, market_liquidity=market_liquidity
     )
 
     header = (
         "🔥 <b>Новая находка!</b>\n\n"
-        f"Уверенность: <b>{confidence:.0f}%</b>\n"
+        f"Уверенность: <b>{confidence * 100:.0f}%</b>\n"
         f"Рекомендация: {'🟢 Стоит посмотреть' if recommendation == 'buy' else '🟡 Интересно'}\n\n"
     )
 

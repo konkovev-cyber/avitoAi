@@ -273,8 +273,9 @@ class SQLiteDatabase(BaseDatabase):
             """INSERT INTO analysis
             (listing_id, search_id, market_price, price_delta_pct,
              deal_score, risk_score, risk_factors, recommendation,
-             ai_score, ai_explanation, ai_why_good, ai_risks, ai_provider)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+             ai_score, ai_explanation, ai_why_good, ai_risks, ai_provider,
+             confidence, market_liquidity)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 listing_id,
                 search_id,
@@ -289,6 +290,8 @@ class SQLiteDatabase(BaseDatabase):
                 json.dumps(deal.ai_why_good) if deal.ai_why_good else None,
                 json.dumps(deal.ai_risks) if deal.ai_risks else None,
                 deal.ai_provider,
+                deal.confidence,
+                deal.market_liquidity,
             ),
         )
         conn.commit()
@@ -311,7 +314,8 @@ class SQLiteDatabase(BaseDatabase):
                       an.deal_score, an.recommendation, an.price_delta_pct,
                       an.market_price, an.risk_score, an.risk_factors,
                       an.ai_score, an.ai_explanation, an.ai_why_good,
-                      an.ai_risks, an.ai_provider, an.id as analysis_id
+                      an.ai_risks, an.ai_provider, an.confidence,
+                      an.market_liquidity, an.id as analysis_id
             FROM alerts a
             JOIN analysis an ON a.analysis_id = an.id
             JOIN listings l ON an.listing_id = l.id

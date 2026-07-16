@@ -232,6 +232,8 @@ class Scheduler:
                 "ai_risks": deal.ai_risks or [],
                 "ai_score": deal.ai_score or deal.score,
                 "url": listing.url,
+                "confidence": deal.confidence,
+                "market_liquidity": deal.market_liquidity,
             }
             await send_deal_alert(self.bot_app, telegram_id, alert_data)
         except Exception as e:

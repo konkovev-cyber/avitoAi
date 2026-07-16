@@ -7,7 +7,8 @@ def format_alert(title: str, price: float, market_price: float,
                  deal_score: float, price_delta_pct: float,
                  risk_score: float, recommendation: str,
                  ai_explanation: str = "", ai_why_good: list = None,
-                 ai_risks: list = None, url: str = "") -> str:
+                 ai_risks: list = None, url: str = "",
+                 confidence: float = 0.5, market_liquidity: str = "medium") -> str:
     """Format a deal alert card for Telegram (HTML)."""
     ai_why_good = ai_why_good or []
     ai_risks = ai_risks or []
@@ -17,6 +18,8 @@ def format_alert(title: str, price: float, market_price: float,
 
     savings = market_price - price
     savings_str = f"-{savings:,.0f} ₽ ({abs(price_delta_pct):.0f}%)" if savings > 0 else ""
+
+    liquidity_ru = {"high": "Высокая 🔥", "medium": "Средняя ℹ️", "low": "Низкая ⚠️"}.get(market_liquidity, market_liquidity)
 
     lines = [
         f"{score_emoji} <b>ВЫГОДНАЯ НАХОДКА</b>",
@@ -32,7 +35,9 @@ def format_alert(title: str, price: float, market_price: float,
     lines += [
         "",
         f"⭐ AI оценка: <b>{deal_score:.0f}/100</b>",
-        f"{rec_emoji} Уверенность AI: <b>{risk_score:.0f}</b>",
+        f"🎯 Уверенность: <b>{confidence * 100:.0f}%</b>",
+        f"💧 Ликвидность: <b>{liquidity_ru}</b>",
+        f"🛡️ Риск-балл: <b>{risk_score:.0f}/100</b>",
     ]
 
     if ai_explanation:

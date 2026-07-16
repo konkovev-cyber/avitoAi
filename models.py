@@ -66,6 +66,8 @@ class DealScore(BaseModel):
     risk_score: float = 0.0
     risk_factors: list[str] = Field(default_factory=list)
     recommendation: str = "skip"           # 'buy' | 'maybe' | 'skip'
+    confidence: float = 0.5                 # 0.0 - 1.0 confidence score
+    market_liquidity: str = "medium"        # 'high' | 'medium' | 'low'
 
     # AI layer (populated when AI is enabled)
     ai_score: Optional[float] = None

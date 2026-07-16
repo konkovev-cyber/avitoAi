@@ -79,6 +79,8 @@ CREATE TABLE IF NOT EXISTS analysis (
     ai_why_good TEXT,
     ai_risks TEXT,
     ai_provider TEXT,
+    confidence REAL DEFAULT 0.5,
+    market_liquidity TEXT DEFAULT 'medium',
     analyzed_at TEXT DEFAULT (datetime('now'))
 );
 """
@@ -222,6 +224,9 @@ MIGRATIONS = [
     "ALTER TABLE user_settings ADD COLUMN notify_quiet_hours_end INTEGER DEFAULT 8;",
     # add published_at to listings
     "ALTER TABLE listings ADD COLUMN published_at TEXT;",
+    # add confidence & market_liquidity to analysis
+    "ALTER TABLE analysis ADD COLUMN confidence REAL DEFAULT 0.5;",
+    "ALTER TABLE analysis ADD COLUMN market_liquidity TEXT DEFAULT 'medium';",
 ]
 
 SCHEMA = [
