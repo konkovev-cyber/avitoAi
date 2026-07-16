@@ -341,7 +341,65 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.callback_query.answer(f"План {plan} установлен", show_alert=True)
         await show_admin_users(update, context)
 
+    # New search
+    elif data == "new_search":
+        await ask_search_query(update, context)
+        return ST_SEARCH_TEXT
+
 # ── Searches ───────────────────────────────────────────────────────────────────
+
+async def ask_search_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Ask user what they want to search for."""
+    await update.callback_query.edit_message_text(
+        "🔍 <b>Что ищем?</b>\n\n"
+        "Напишите товар и цену.\n"
+        "<i>Пример: iPhone 15 Pro до 80000, MacBook Pro M2, RTX 4090</i>",
+        parse_mode="HTML",
+        reply_markup=InlineKeyboardMarkup([
+            [InlineKeyboardButton("◀ Отмена", callback_data="menu_main")]
+        ]),
+    )
+
+
+async def got_search_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Receive search query and create search."""
+    tg_id = _get_user_id(update)
+    text = update.message.text.strip()
+    user = DB.get_user_by_telegram(tg_id)
+    if not user:
+        await update.message.reply_text("❌ Ошибка. Напишите /start")
+        return ConversationHandler.END
+
+    internal_id = user["id"]
+
+    # Parse query
+    import re
+    max_price = None
+    m = re.search(r'до\s+([\d\s]+)', text)
+    if m:
+        try:
+            max_price = float(m.group(1).replace(" ", ""))
+        except ValueError:
+            pass
+
+    query = SearchQuery(
+        user_id=internal_id,
+        query=text,
+        keywords=text.split(),
+        max_price=max_price,
+    )
+    search_id = DB.create_search(query)
+
+    price_str = f"до {max_price:,.0f}₽" if max_price else "без ограничений"
+    await update.message.reply_text(
+        f"✅ <b>Поиск создан!</b>\n\n"
+        f"🔍 {text}\n"
+        f"💰 {price_str}\n\n"
+        f"<i>Я начну искать и пришлю лучшие находки.</i>",
+        parse_mode="HTML",
+        reply_markup=_main_menu_kb(tg_id),
+    )
+    return ConversationHandler.END
 
 async def show_searches(update: Update, context: ContextTypes.DEFAULT_TYPE):
     uid = _get_user_id(update)
@@ -1057,6 +1115,8 @@ def build_app() -> Application:
             ],
             ST_WAIT_THRESHOLD: [MessageHandler(filters.TEXT & ~filters.COMMAND, got_threshold)],
             ST_ADMIN_BROADCAST: [MessageHandler(filters.TEXT & ~filters.COMMAND, do_broadcast)],
+            # Search flow
+            ST_SEARCH_TEXT: [MessageHandler(filters.TEXT & ~filters.COMMAND, got_search_text)],
         },
         fallbacks=[
             CommandHandler("start", cmd_start),
