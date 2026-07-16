@@ -94,10 +94,33 @@
   {
     "listing_id": "L0005",
     "source": "yandex_maps",
-    "url": "https://yandex.ru/maps/org/protor_servis/",
-    "title": "Протор-Сервис",
+    "url": "https://yandex.ru/maps/org/stirkom_ru/",
+    "title": "Стирком.ру",
+    "category": "Ремонт бытовой техники / Ремонт стиральных машин",
+    "seller_name": "Стирком.ру",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": "stirkom.ru"
+    },
+    "location": {
+      "city": "Жуковский",
+      "address": "Кооперативная ул., 3"
+    },
+    "images": [],
+    "rating": 5.0,
+    "reviews_count": 242,
+    "working_hours": "до 21:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Хорошее место 2026. Ремонт стиральных и посудомоечных машин."
+  },
+  {
+    "listing_id": "L0006",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/samsung_service_center/",
+    "title": "Samsung Сервисный центр",
     "category": "Ремонт бытовой техники",
-    "seller_name": "Протор-Сервис",
+    "seller_name": "Samsung Сервисный центр",
     "contacts": {
       "phone": null,
       "email": null,
@@ -105,13 +128,82 @@
     },
     "location": {
       "city": "Москва",
-      "address": "Зеленоград, к1534"
+      "address": "Варшавское ш., 26, стр. 7, этаж 1"
     },
     "images": [],
-    "rating": 4.0,
-    "reviews_count": 1153,
-    "working_hours": "до 20:00",
+    "rating": 5.0,
+    "reviews_count": 5485,
+    "working_hours": "до 21:00",
     "collection_date": "2026-07-16T14:00:00Z",
-    "notes": "Большое количество отзывов. Цена от 400₽."
+    "notes": "Официальный/авторизованный сервис Samsung. Максимум отзывов."
+  },
+  {
+    "listing_id": "L0007",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/import_servis/",
+    "title": "Импорт-Сервис",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "Импорт-Сервис",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Лыткарино",
+      "address": "2-й микрорайон, 7-й квартал, 2"
+    },
+    "images": [],
+    "rating": 4.5,
+    "reviews_count": 126,
+    "working_hours": "до 18:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Хорошее место 2026. Ремонт холодильников."
+  },
+  {
+    "listing_id": "L0008",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/zapchasti_bt/",
+    "title": "Запчасти бытовой техники",
+    "category": "Запчасти и аксессуары для бытовой техники",
+    "seller_name": "Запчасти бытовой техники",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "ул. Гиляровского, 65, стр. 2"
+    },
+    "images": [],
+    "rating": 5.0,
+    "reviews_count": 454,
+    "working_hours": "до 19:00",
+    "collection_date": "2026-07-16T14:00:00Z",
+    "notes": "Магазин запчастей, не услуги. Цена ручки Liebherr 8959₽."
+  },
+  {
+    "listing_id": "L0009",
+    "source": "company_website",
+    "url": "https://stirkom.ru",
+    "title": "СтирКом — ремонт стиральных машин",
+    "category": "Ремонт бытовой техники / Ремонт стиральных машин",
+    "seller_name": "СтирКом",
+    "contacts": {
+      "phone": "+7 (915) 338-18-07",
+      "email": "stirkom1@yandex.ru",
+      "website": "stirkom.ru"
+    },
+    "location": {
+      "city": "Жуковский",
+      "address": "ул. Кооперативная, дом 3"
+    },
+    "images": [],
+    "rating": null,
+    "reviews_count": null,
+    "working_hours": "24/7",
+    "collection_date": "2026-07-16T14:30:00Z",
+    "notes": "Кросс-источник: L0005 (Яндекс Карты) + L0009 (сайт). Одна компания, телефон и email подтверждены."
   }
 ]

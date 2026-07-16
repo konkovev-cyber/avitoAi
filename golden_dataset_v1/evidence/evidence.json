@@ -1,0 +1,52 @@
+[
+  {
+    "evidence_id": "E001",
+    "type": "cross_source_address_match",
+    "source": "yandex_maps + company_website",
+    "value": "Кооперативная ул., 3, г. Жуковский",
+    "strength": 0.25,
+    "linked_objects": ["L0005", "L0009"],
+    "description": "Адрес компании Стирком.ру совпадает в Яндекс Картах и на сайте stirkom.ru",
+    "collection_date": "2026-07-16T14:30:00Z"
+  },
+  {
+    "evidence_id": "E002",
+    "type": "cross_source_website_match",
+    "source": "yandex_maps + company_website",
+    "value": "stirkom.ru",
+    "strength": 0.30,
+    "linked_objects": ["L0005", "L0009"],
+    "description": "Сайт stirkom.ru указан в Яндекс Картах и подтверждён прямым доступом к сайту",
+    "collection_date": "2026-07-16T14:30:00Z"
+  },
+  {
+    "evidence_id": "E003",
+    "type": "name_similarity",
+    "source": "yandex_maps + company_website",
+    "value": "Стирком.ру / СтирКом",
+    "strength": 0.15,
+    "linked_objects": ["L0005", "L0009"],
+    "description": "Название компании в Яндекс Картах (Стирком.ру) и на сайте (СтирКом) — очевидный match",
+    "collection_date": "2026-07-16T14:30:00Z"
+  },
+  {
+    "evidence_id": "E004",
+    "type": "phone_extracted",
+    "source": "company_website",
+    "value": "+7 (915) 338-18-07",
+    "strength": 0.35,
+    "linked_objects": ["L0009"],
+    "description": "Телефон компании с сайта stirkom.ru",
+    "collection_date": "2026-07-16T14:30:00Z"
+  },
+  {
+    "evidence_id": "E005",
+    "type": "email_extracted",
+    "source": "company_website",
+    "value": "stirkom1@yandex.ru",
+    "strength": 0.30,
+    "linked_objects": ["L0009"],
+    "description": "Email компании с сайта stirkom.ru",
+    "collection_date": "2026-07-16T14:30:00Z"
+  }
+]

@@ -7,7 +7,7 @@
       "listings": ["L0001"],
       "confidence": "verified",
       "proof": ["source_yandex_maps"],
-      "notes": "Специализированный сервис Liebherr. Найден только в Яндекс Картах."
+      "notes": "Специализированный сервис Liebherr."
     },
     {
       "seller_id": "SELLER_002",
@@ -38,15 +38,55 @@
     },
     {
       "seller_id": "SELLER_005",
-      "real_name": "Протор-Сервис",
+      "real_name": "Импорт-Сервис",
       "type": "company",
-      "listings": ["L0005"],
+      "listings": ["L0007"],
       "confidence": "verified",
       "proof": ["source_yandex_maps"],
-      "notes": "Крупный сервис с наибольшим количеством отзывов."
+      "notes": "Хорошее место 2026. Лыткарино."
+    },
+    {
+      "seller_id": "SELLER_006",
+      "real_name": "Samsung Сервисный центр",
+      "type": "company",
+      "listings": ["L0006"],
+      "confidence": "verified",
+      "proof": ["source_yandex_maps"],
+      "notes": "5485 отзывов. Варшавское шоссе."
+    },
+    {
+      "seller_id": "SELLER_007",
+      "real_name": "СтирКом (ИП/ООО)",
+      "type": "company",
+      "listings": ["L0005", "L0009"],
+      "confidence": "verified",
+      "proof": ["cross_source_match", "same_address", "same_website"],
+      "notes": "Кросс-источник: Яндекс Карты + сайт. Адрес совпадает, сайт указан на Картах."
     }
   ],
-  "match_hypotheses": [],
+  "match_hypotheses": [
+    {
+      "hypothesis_id": "MH_001",
+      "entity_a": "SELLER_005 (L0005 — Яндекс Карты)",
+      "entity_b": "SELLER_005 (L0009 — сайт компании)",
+      "confidence": 0.95,
+      "signals": [
+        "same_address: Кооперативная ул., 3, Жуковский (вес 0.25)",
+        "same_website: stirkom.ru (вес 0.30)",
+        "same_name: Стирком.ру / СтирКом (вес 0.15)"
+      ],
+      "total_before_negative": 0.70,
+      "negative_signals": [],
+      "decision": "STRONG_MATCH",
+      "requires_review": false
+    }
+  ],
   "complex_cases": [],
-  "unknown_cases": []
+  "unknown_cases": [
+    {
+      "listing_id": "L0008",
+      "reason": "Запчасти бытовой техники — магазин запчастей, а не услуги. Может быть связан с другими продавцами или независим.",
+      "confidence": 0.30
+    }
+  ]
 }
