@@ -38,12 +38,12 @@
     },
     {
       "seller_id": "SELLER_005",
-      "real_name": "Импорт-Сервис",
+      "real_name": "Импорт-Сервис (Лыткарино)",
       "type": "company",
       "listings": ["L0007"],
       "confidence": "verified",
       "proof": ["source_yandex_maps"],
-      "notes": "Хорошее место 2026. Лыткарино."
+      "notes": "Хорошее место 2026. Лыткарино, МО."
     },
     {
       "seller_id": "SELLER_006",
@@ -61,14 +61,23 @@
       "listings": ["L0005", "L0009"],
       "confidence": "verified",
       "proof": ["cross_source_match", "same_address", "same_website"],
-      "notes": "Кросс-источник: Яндекс Карты + сайт. Адрес совпадает, сайт указан на Картах."
+      "notes": "Кросс-источник: Яндекс Карты + сайт. Адрес совпадает."
+    },
+    {
+      "seller_id": "SELLER_008",
+      "real_name": "ООО «ИМПОРТ-СЕРВИС» (СПб)",
+      "type": "company",
+      "listings": ["L0010"],
+      "confidence": "verified",
+      "proof": ["company_website", "inn_verification"],
+      "notes": "ИНН 7810674120. 20+ лет, СПб. Другая компания, не SELLER_005."
     }
   ],
   "match_hypotheses": [
     {
       "hypothesis_id": "MH_001",
-      "entity_a": "SELLER_005 (L0005 — Яндекс Карты)",
-      "entity_b": "SELLER_005 (L0009 — сайт компании)",
+      "entity_a": "L0005 — Яндекс Карты (Стирком.ру)",
+      "entity_b": "L0009 — сайт компании (СтирКом)",
       "confidence": 0.95,
       "signals": [
         "same_address: Кооперативная ул., 3, Жуковский (вес 0.25)",
@@ -81,7 +90,16 @@
       "requires_review": false
     }
   ],
-  "complex_cases": [],
+  "complex_cases": [
+    {
+      "case_id": "CC_001",
+      "type": "same_name_different_entity",
+      "entities": ["SELLER_005 (Лыткарино)", "SELLER_008 (СПб)"],
+      "description": "Оба продавца называются «Импорт-Сервис», но находятся в разных городах, имеют разные телефоны и адреса. SELLER_008 — ООО с ИНН 7810674120.",
+      "confidence": 0.95,
+      "decision": "DIFFERENT_SELLERS"
+    }
+  ],
   "unknown_cases": [
     {
       "listing_id": "L0008",

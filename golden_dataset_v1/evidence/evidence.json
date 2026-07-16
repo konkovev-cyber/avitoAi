@@ -48,5 +48,35 @@
     "linked_objects": ["L0009"],
     "description": "Email компании с сайта stirkom.ru",
     "collection_date": "2026-07-16T14:30:00Z"
+  },
+  {
+    "evidence_id": "E006",
+    "type": "negative_match",
+    "source": "yandex_maps + company_website",
+    "value": "same_name_different_entity",
+    "strength": -0.50,
+    "linked_objects": ["L0007", "L0010"],
+    "description": "Импорт-Сервис в Лыткарино (L0007) ≠ Импорт-Сервис в СПб (L0010). Разные города, телефоны, адреса. L0010 имеет ИНН 7810674120.",
+    "collection_date": "2026-07-16T15:00:00Z"
+  },
+  {
+    "evidence_id": "E007",
+    "type": "inn_extracted",
+    "source": "company_website",
+    "value": "7810674120",
+    "strength": 0.40,
+    "linked_objects": ["L0010"],
+    "description": "ИНН 7810674120 — ООО «ИМПОРТ-СЕРВИС», зарегистрирован в СПб",
+    "collection_date": "2026-07-16T15:00:00Z"
+  },
+  {
+    "evidence_id": "E008",
+    "type": "phone_extracted",
+    "source": "company_website",
+    "value": "8 (812) 702-33-33",
+    "strength": 0.35,
+    "linked_objects": ["L0010"],
+    "description": "Телефон компании Импорт-Сервис СПб",
+    "collection_date": "2026-07-16T15:00:00Z"
   }
 ]

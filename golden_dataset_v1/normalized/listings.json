@@ -205,5 +205,28 @@
     "working_hours": "24/7",
     "collection_date": "2026-07-16T14:30:00Z",
     "notes": "Кросс-источник: L0005 (Яндекс Карты) + L0009 (сайт). Одна компания, телефон и email подтверждены."
+  },
+  {
+    "listing_id": "L0010",
+    "source": "company_website",
+    "url": "https://www.import-service.ru",
+    "title": "Импорт-Сервис — ремонт техники в СПб",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "Импорт-Сервис",
+    "contacts": {
+      "phone": "8 (812) 702-33-33",
+      "email": null,
+      "website": "import-service.ru"
+    },
+    "location": {
+      "city": "Санкт-Петербург",
+      "address": "пр. Юрия Гагарина д. 23, лит. А-А1, пом. 8"
+    },
+    "images": [],
+    "rating": null,
+    "reviews_count": null,
+    "working_hours": "24/7",
+    "collection_date": "2026-07-16T15:00:00Z",
+    "notes": "Сайт import-service.ru. ИНН 7810674120, ООО «ИМПОРТ-СЕРВИС». 20+ лет на рынке."
   }
 ]
