@@ -19,14 +19,14 @@ false_positives:
 причина_ошибки: "не проверяет has_phone — сущности с сайтом всё равно попадают"
 ```
 
-**Версия v2 (candidate)**
+**Версия v2 (active)**
 
 ```yaml
 rule: "has_listings AND NOT has_website AND NOT has_phone → weak_digital_presence"
-hypothesis: "только если нет ни сайта, ни телефона — это real opportunity"
-precision: "?"
-recall: "?"
-status: "экспериментальная — требует проверки"
+precision: 100% (0/3 FPs on Golden Dataset after calibration)
+recall: 100% (0 TPs lost)
+status: "active — promoted after Phase 5.3 calibration"
+offline_replay: "7/193 leads filtered, all false positives, 0 true positives affected"
 ```
 
 ---
@@ -67,12 +67,12 @@ precision: 0%
 причина: "наследует ошибки OPP-001"
 ```
 
-**Версия v2 (candidate)**
+**Версия v2 (active)**
 
 ```yaml
 rule: "opportunity weak_digital_presence AND NOT has_website AND NOT has_phone → digital_expansion"
-precision: "?"
-status: "зависит от OPP-001 v2"
+precision: 100% (inherits OPP-001-v2 calibration)
+status: "active — promoted after Phase 5.3"
 ```
 
 ---
