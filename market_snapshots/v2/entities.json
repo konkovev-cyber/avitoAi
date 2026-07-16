@@ -1,0 +1,1214 @@
+[
+  {
+    "id": "ph_001",
+    "name": "Masters",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": "masters-phone.ru",
+    "sources": [
+      "ym_ph_001"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_002",
+    "name": "Точка Ремонта",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_002"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_003",
+    "name": "HardWorkers",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_003"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_004",
+    "name": "АйХелп",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_004"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_005",
+    "name": "Vidmaster",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_005"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_006",
+    "name": "X-Repair",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_006"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_007",
+    "name": "Планета iPhone",
+    "type": "company",
+    "status": "verified",
+    "phone": "+7 (495) 120-33-73",
+    "website": "planetiphone.ru",
+    "sources": [
+      "ym_ph_007",
+      "site_ph_007"
+    ],
+    "evidence_count": 4
+  },
+  {
+    "id": "ph_008",
+    "name": "Samsung Сервисный Центр (ремонт телефонов)",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": "samsung-phone-service.ru",
+    "sources": [
+      "ym_ph_008"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_010",
+    "name": "Планета iPhone (сайт)",
+    "type": "company",
+    "status": "verified",
+    "phone": "+7 (495) 120-33-73",
+    "website": "planetiphone.ru",
+    "sources": [
+      "site_ph_010"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_011",
+    "name": "PhoneHelp_11",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_011"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_012",
+    "name": "TechLab_12",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": "techlab_12.ru",
+    "sources": [
+      "av_ph_012"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_013",
+    "name": "SmartService_13",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_013"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_014",
+    "name": "MobilePro_14",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_014"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_015",
+    "name": "DigitalFix_15",
+    "type": "company",
+    "status": "candidate",
+    "phone": "+7 (495) 015-15-55",
+    "website": null,
+    "sources": [
+      "av_ph_015"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_016",
+    "name": "GSM_16",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": "gsm_16.ru",
+    "sources": [
+      "ym_ph_016"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_017",
+    "name": "ApplePro_17",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_017"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_018",
+    "name": "iFix_18",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_018"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_019",
+    "name": "PhoneHelp_19",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_019"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_020",
+    "name": "TechLab_20",
+    "type": "company",
+    "status": "verified",
+    "phone": "+7 (495) 020-20-00",
+    "website": "techlab_20.ru",
+    "sources": [
+      "ym_ph_020"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_021",
+    "name": "SmartService_21",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_021"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_022",
+    "name": "MobilePro_22",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_022"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_023",
+    "name": "DigitalFix_23",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_023"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_024",
+    "name": "GSM_24",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": "gsm_24.ru",
+    "sources": [
+      "av_ph_024"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_025",
+    "name": "ApplePro_25",
+    "type": "company",
+    "status": "verified",
+    "phone": "+7 (495) 025-25-55",
+    "website": null,
+    "sources": [
+      "ym_ph_025"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_026",
+    "name": "iFix_26",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_026"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_027",
+    "name": "PhoneHelp_27",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_027"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_028",
+    "name": "TechLab_28",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": "techlab_28.ru",
+    "sources": [
+      "ym_ph_028"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_029",
+    "name": "SmartService_29",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_029"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_030",
+    "name": "MobilePro_30",
+    "type": "company",
+    "status": "candidate",
+    "phone": "+7 (495) 030-30-00",
+    "website": null,
+    "sources": [
+      "av_ph_030"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_031",
+    "name": "DigitalFix_31",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_031"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_032",
+    "name": "GSM_32",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": "gsm_32.ru",
+    "sources": [
+      "ym_ph_032"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_033",
+    "name": "ApplePro_33",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_033"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_034",
+    "name": "iFix_34",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_034"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_035",
+    "name": "PhoneHelp_35",
+    "type": "company",
+    "status": "verified",
+    "phone": "+7 (495) 035-35-55",
+    "website": null,
+    "sources": [
+      "ym_ph_035"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_036",
+    "name": "TechLab_36",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": "techlab_36.ru",
+    "sources": [
+      "av_ph_036"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_037",
+    "name": "SmartService_37",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_037"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_038",
+    "name": "MobilePro_38",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_038"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_039",
+    "name": "DigitalFix_39",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_039"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_040",
+    "name": "GSM_40",
+    "type": "company",
+    "status": "verified",
+    "phone": "+7 (495) 040-40-00",
+    "website": "gsm_40.ru",
+    "sources": [
+      "ym_ph_040"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_041",
+    "name": "ApplePro_41",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_041"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_042",
+    "name": "iFix_42",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_042"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_043",
+    "name": "PhoneHelp_43",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_043"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_044",
+    "name": "TechLab_44",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": "techlab_44.ru",
+    "sources": [
+      "ym_ph_044"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_045",
+    "name": "SmartService_45",
+    "type": "company",
+    "status": "candidate",
+    "phone": "+7 (495) 045-45-55",
+    "website": null,
+    "sources": [
+      "av_ph_045"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_046",
+    "name": "MobilePro_46",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_046"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_047",
+    "name": "DigitalFix_47",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_047"
+    ],
+    "evidence_count": 3
+  },
+  {
+    "id": "ph_048",
+    "name": "GSM_48",
+    "type": "company",
+    "status": "candidate",
+    "phone": null,
+    "website": "gsm_48.ru",
+    "sources": [
+      "av_ph_048"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_049",
+    "name": "ApplePro_49",
+    "type": "company",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ym_ph_049"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_050",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_050"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_051",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_051"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_052",
+    "name": "Мастер iPhone",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_052"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_053",
+    "name": "Мастер iPad",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_053"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_054",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_054"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_055",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_055"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_056",
+    "name": "Мастер iPhone",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_056"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_057",
+    "name": "Мастер iPad",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_057"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_058",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_058"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_059",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_059"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_060",
+    "name": "Мастер iPhone",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_060"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_061",
+    "name": "Мастер iPad",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_061"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_062",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_062"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_063",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_063"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_064",
+    "name": "Мастер iPhone",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_064"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_065",
+    "name": "Мастер iPad",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_065"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_066",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_066"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_067",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_067"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_068",
+    "name": "Мастер iPhone",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_068"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_069",
+    "name": "Мастер iPad",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_069"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_070",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_070"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_071",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_071"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_072",
+    "name": "Мастер iPhone",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_072"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_073",
+    "name": "Мастер iPad",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_073"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_074",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_074"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_075",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_075"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_076",
+    "name": "Мастер iPhone",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_076"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_077",
+    "name": "Мастер iPad",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_077"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_078",
+    "name": "Мастер Apple",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_078"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_079",
+    "name": "Мастер Samsung",
+    "type": "seller",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "av_ph_079"
+    ],
+    "evidence_count": 1
+  },
+  {
+    "id": "ph_080",
+    "name": "Store-iRepair",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "wb_ph_080"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_081",
+    "name": "Store-PhoneFix",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "oz_ph_081"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_082",
+    "name": "Store-SmartLab",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ymk_ph_082"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_083",
+    "name": "Store-TechPro",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "wb_ph_083"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_084",
+    "name": "Store-iRepair",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "oz_ph_084"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_085",
+    "name": "Store-PhoneFix",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ymk_ph_085"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_086",
+    "name": "Store-SmartLab",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "wb_ph_086"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_087",
+    "name": "Store-TechPro",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "oz_ph_087"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_088",
+    "name": "Store-iRepair",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ymk_ph_088"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_089",
+    "name": "Store-PhoneFix",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "wb_ph_089"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_090",
+    "name": "Store-SmartLab",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "oz_ph_090"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_091",
+    "name": "Store-TechPro",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ymk_ph_091"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_092",
+    "name": "Store-iRepair",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "wb_ph_092"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_093",
+    "name": "Store-PhoneFix",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "oz_ph_093"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_094",
+    "name": "Store-SmartLab",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ymk_ph_094"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_095",
+    "name": "Store-TechPro",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "wb_ph_095"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_096",
+    "name": "Store-iRepair",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "oz_ph_096"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_097",
+    "name": "Store-PhoneFix",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ymk_ph_097"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_098",
+    "name": "Store-SmartLab",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "wb_ph_098"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_099",
+    "name": "Store-TechPro",
+    "type": "store",
+    "status": "candidate",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "oz_ph_099"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_100",
+    "name": "Store-iRepair",
+    "type": "store",
+    "status": "verified",
+    "phone": null,
+    "website": null,
+    "sources": [
+      "ymk_ph_100"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_101",
+    "name": "iFix Moscow",
+    "type": "company",
+    "status": "verified",
+    "phone": "+7 (495) 777-88-99",
+    "website": "ifix-moscow.ru",
+    "sources": [
+      "ym_101"
+    ],
+    "evidence_count": 2
+  },
+  {
+    "id": "ph_102",
+    "name": "Мастер Алексей (выездной)",
+    "type": "seller",
+    "status": "candidate",
+    "phone": "+7 (999) 888-77-66",
+    "sources": [
+      "av_102"
+    ],
+    "evidence_count": 1
+  }
+]
