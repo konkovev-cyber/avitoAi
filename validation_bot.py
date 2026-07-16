@@ -321,7 +321,15 @@ async def cmd_leads(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def build_app() -> Application:
     _init_db()
-    app = Application.builder().token(TOKEN).build()
+
+    http_kwargs = {}
+    if settings.proxy_url:
+        from telegram.request import HTTPXRequest
+        http_kwargs["proxy"] = settings.proxy_url
+        request = HTTPXRequest(**http_kwargs)
+        app = Application.builder().token(TOKEN).request(request).build()
+    else:
+        app = Application.builder().token(TOKEN).build()
 
     conv = ConversationHandler(
         entry_points=[
