@@ -39,6 +39,9 @@ class Scheduler:
         self._last_radar_build: float = 0.0
         self._last_run_times: dict[int, float] = {}  # search_id -> timestamp
 
+        from analyzer.opportunity import OpportunityEngine
+        self._opp_engine = OpportunityEngine(db)
+
         # Build AI scorer if configured
         ai_scorer = None
         try:
@@ -165,17 +168,23 @@ class Scheduler:
 
                     analysis_id = self.db.save_analysis(listing_id, search_row["id"], deal)
 
-                    # Check thresholds
-                    passes_score = deal.score >= min_score
-                    passes_savings = abs(deal.price_delta_pct) >= min_savings
-                    is_good = deal.recommendation in ("buy", "maybe")
+                    # Group into opportunity
+                    opp, is_new, price_improved = self._opp_engine.process_listing_deal(
+                        user_id, listing_id, listing, deal
+                    )
 
-                    if is_good and passes_score and passes_savings:
+                    # Check thresholds on the opportunity level
+                    opp_savings_pct = (
+                        (opp["median_price"] - opp["best_price"]) / opp["median_price"] * 100
+                        if opp["median_price"] > 0
+                        else 0
+                    )
+                    passes_score = opp["deal_score"] >= min_score
+                    passes_savings = abs(opp_savings_pct) >= min_savings
+                    is_good = opp["recommendation"] in ("buy", "maybe")
+
+                    if is_good and passes_score and passes_savings and (is_new or price_improved):
                         # Save alert to DB
-                        user_row = self.db.get_user_by_telegram(
-                            # We need telegram_id for push — get from users table
-                            self._get_telegram_id(user_id)
-                        )
                         self.db.save_alert(user_id, analysis_id)
                         alert_count += 1
 
@@ -183,15 +192,16 @@ class Scheduler:
                         if notify and self.bot_app:
                             telegram_id = self._get_telegram_id(user_id)
                             if telegram_id:
-                                await self._push_alert(telegram_id, listing, deal)
+                                await self._push_alert(telegram_id, opp, deal, opp_savings_pct)
 
-                        emoji = "🔥" if deal.recommendation == "buy" else "✅"
+                        emoji = "🔥" if opp["recommendation"] == "buy" else "✅"
                         log.info(
-                            "%s DEAL [%.0f] %s — %s₽ (%+.0f%%)",
-                            emoji, deal.score,
-                            listing.title[:50],
-                            f"{listing.price:,.0f}",
-                            deal.price_delta_pct,
+                            "%s OPPORTUNITY [%.0f] %s — Best: %s₽ (Market: %s₽, %+.0f%%)",
+                            emoji, opp["deal_score"],
+                            opp["title"][:50],
+                            f"{opp['best_price']:,.0f}",
+                            f"{opp['median_price']:,.0f}",
+                            -opp_savings_pct,
                         )
 
                 log.info("  → %s: %d new / %d alerts", source, new_count, alert_count)
@@ -215,25 +225,30 @@ class Scheduler:
         except Exception:
             return None
 
-    async def _push_alert(self, telegram_id: int, listing, deal):
+    async def _push_alert(self, telegram_id: int, opp: dict, deal, savings_pct: float):
         """Push a deal alert to Telegram."""
         try:
             from bot.telegram import send_deal_alert
+            # Format title to include duplication count if multiple sellers are selling this
+            title = opp["title"]
+            if opp["listings_count"] > 1:
+                title = f"{title} (и еще {opp['listings_count'] - 1} продавца)"
+
             alert_data = {
-                "title": listing.title,
-                "price": listing.price,
-                "market_price": deal.market_price,
-                "deal_score": deal.score,
-                "price_delta_pct": deal.price_delta_pct,
+                "title": title,
+                "price": opp["best_price"],
+                "market_price": opp["median_price"],
+                "deal_score": opp["deal_score"],
+                "price_delta_pct": -savings_pct,
                 "risk_score": deal.risk_score,
-                "recommendation": deal.recommendation,
+                "recommendation": opp["recommendation"],
                 "ai_explanation": deal.ai_explanation or "",
                 "ai_why_good": deal.ai_why_good or [],
                 "ai_risks": deal.ai_risks or [],
-                "ai_score": deal.ai_score or deal.score,
-                "url": listing.url,
-                "confidence": deal.confidence,
-                "market_liquidity": deal.market_liquidity,
+                "ai_score": opp["deal_score"],
+                "url": opp["url"],
+                "confidence": opp["confidence"],
+                "market_liquidity": opp["market_liquidity"],
             }
             await send_deal_alert(self.bot_app, telegram_id, alert_data)
         except Exception as e:

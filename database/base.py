@@ -134,6 +134,33 @@ class BaseDatabase(ABC):
         """Get recent alerts sent to user."""
         pass
 
+    # ── Opportunities ─────────────────────────────────────────────────────────
+
+    @abstractmethod
+    def create_opportunity(self, opportunity: dict) -> int:
+        """Create a new opportunity."""
+        pass
+
+    @abstractmethod
+    def update_opportunity(self, opp_id: int, **kwargs) -> None:
+        """Update opportunity metrics."""
+        pass
+
+    @abstractmethod
+    def get_opportunity(self, opp_id: int) -> Optional[dict]:
+        """Get opportunity details."""
+        pass
+
+    @abstractmethod
+    def find_matching_opportunity(self, user_id: int, title: str, price: float) -> Optional[dict]:
+        """Find existing matching opportunity by user and similar title/price."""
+        pass
+
+    @abstractmethod
+    def link_listing_to_opportunity(self, listing_id: int, opp_id: int) -> None:
+        """Link a listing to an opportunity."""
+        pass
+
     # ── User Settings ─────────────────────────────────────────────────────────
 
     @abstractmethod

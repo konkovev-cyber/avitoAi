@@ -335,6 +335,80 @@ class SQLiteDatabase(BaseDatabase):
             result.append(d)
         return result
 
+    # ── Opportunities ─────────────────────────────────────────────────────────
+
+    def create_opportunity(self, opportunity: dict) -> int:
+        conn = self.connect()
+        cur = conn.execute(
+            """INSERT INTO opportunities
+            (user_id, title, category, best_price, avg_price, median_price,
+             deal_score, confidence, market_liquidity, recommendation, url, listings_count)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                opportunity.get("user_id"),
+                opportunity.get("title"),
+                opportunity.get("category"),
+                opportunity.get("best_price"),
+                opportunity.get("avg_price"),
+                opportunity.get("median_price"),
+                opportunity.get("deal_score"),
+                opportunity.get("confidence"),
+                opportunity.get("market_liquidity"),
+                opportunity.get("recommendation"),
+                opportunity.get("url"),
+                opportunity.get("listings_count", 1),
+            ),
+        )
+        conn.commit()
+        return cur.lastrowid
+
+    def update_opportunity(self, opp_id: int, **kwargs) -> None:
+        conn = self.connect()
+        allowed = {
+            "title", "category", "best_price", "avg_price", "median_price",
+            "deal_score", "confidence", "market_liquidity", "recommendation", "url", "listings_count"
+        }
+        updates = {k: v for k, v in kwargs.items() if k in allowed}
+        if not updates:
+            return
+        set_clause = ", ".join(f"{k} = ?" for k in updates)
+        values = list(updates.values()) + [opp_id]
+        conn.execute(
+            f"UPDATE opportunities SET {set_clause}, updated_at = datetime('now') WHERE id = ?",
+            values,
+        )
+        conn.commit()
+
+    def get_opportunity(self, opp_id: int) -> Optional[dict]:
+        conn = self.connect()
+        row = conn.execute("SELECT * FROM opportunities WHERE id = ?", (opp_id,)).fetchone()
+        return dict(row) if row else None
+
+    def find_matching_opportunity(self, user_id: int, title: str, price: float) -> Optional[dict]:
+        conn = self.connect()
+        words = [w for w in title.lower().split() if len(w) > 3]
+        if not words:
+            return None
+        like_pattern = f"%{words[0]}%"
+        rows = conn.execute(
+            """SELECT * FROM opportunities
+            WHERE user_id = ? AND title LIKE ?
+            AND best_price >= ? AND best_price <= ?
+            ORDER BY updated_at DESC""",
+            (user_id, like_pattern, price * 0.7, price * 1.3),
+        ).fetchall()
+        for row in rows:
+            opp_title = row["title"].lower()
+            matches = sum(1 for w in words if w in opp_title)
+            if matches >= min(2, len(words)):
+                return dict(row)
+        return None
+
+    def link_listing_to_opportunity(self, listing_id: int, opp_id: int) -> None:
+        conn = self.connect()
+        conn.execute("UPDATE listings SET opportunity_id = ? WHERE id = ?", (opp_id, listing_id))
+        conn.commit()
+
     # ── User Settings ─────────────────────────────────────────────────────────
 
     def get_user_settings_by_search_id(self, search_id: int) -> dict:

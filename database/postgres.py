@@ -85,6 +85,21 @@ class PostgresDatabase(BaseDatabase):
     def get_recent_alerts(self, user_id: int, limit: int = 10) -> list[dict]:
         raise NotImplementedError()
 
+    def create_opportunity(self, opportunity: dict) -> int:
+        raise NotImplementedError()
+
+    def update_opportunity(self, opp_id: int, **kwargs) -> None:
+        raise NotImplementedError()
+
+    def get_opportunity(self, opp_id: int) -> Optional[dict]:
+        raise NotImplementedError()
+
+    def find_matching_opportunity(self, user_id: int, title: str, price: float) -> Optional[dict]:
+        raise NotImplementedError()
+
+    def link_listing_to_opportunity(self, listing_id: int, opp_id: int) -> None:
+        raise NotImplementedError()
+
     def get_user_settings_by_search_id(self, search_id: int) -> dict:
         raise NotImplementedError()
 

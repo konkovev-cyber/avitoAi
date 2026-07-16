@@ -85,6 +85,26 @@ CREATE TABLE IF NOT EXISTS analysis (
 );
 """
 
+CREATE_OPPORTUNITIES = """
+CREATE TABLE IF NOT EXISTS opportunities (
+    id INTEGER PRIMARY KEY,
+    user_id INTEGER REFERENCES users(id),
+    title TEXT NOT NULL,
+    category TEXT,
+    best_price REAL,
+    avg_price REAL,
+    median_price REAL,
+    deal_score REAL,
+    confidence REAL,
+    market_liquidity TEXT,
+    recommendation TEXT,
+    url TEXT,
+    listings_count INTEGER DEFAULT 1,
+    created_at TEXT DEFAULT (datetime('now')),
+    updated_at TEXT DEFAULT (datetime('now'))
+);
+"""
+
 CREATE_ALERTS = """
 CREATE TABLE IF NOT EXISTS alerts (
     id INTEGER PRIMARY KEY,
@@ -227,12 +247,15 @@ MIGRATIONS = [
     # add confidence & market_liquidity to analysis
     "ALTER TABLE analysis ADD COLUMN confidence REAL DEFAULT 0.5;",
     "ALTER TABLE analysis ADD COLUMN market_liquidity TEXT DEFAULT 'medium';",
+    # add opportunity_id to listings
+    "ALTER TABLE listings ADD COLUMN opportunity_id INTEGER REFERENCES opportunities(id);",
 ]
 
 SCHEMA = [
     CREATE_USERS,
     CREATE_SEARCHES,
     CREATE_LISTINGS,
+    CREATE_OPPORTUNITIES,
     CREATE_ANALYSIS,
     CREATE_ALERTS,
     CREATE_USER_SETTINGS,
