@@ -196,6 +196,12 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await show_ai_settings(update, context, data[len("settings_ai_"):])
     elif data.startswith("set_ai_provider_"):
         await set_ai_provider(update, context, data[len("set_ai_provider_"):])
+    elif data == "wormsoft_model_low":
+        context.user_data["pending_ai_model"] = "wormsoft/agent/low"
+        await _ask_wormsoft_key(update)
+    elif data == "wormsoft_model_medium":
+        context.user_data["pending_ai_model"] = "wormsoft/agent/medium"
+        await _ask_wormsoft_key(update)
     elif data.startswith("set_hunter_interval_"):
         await set_hunter_interval(update, context, int(data[len("set_hunter_interval_"):]))
     elif data.startswith("set_hunter_min_"):
@@ -863,12 +869,17 @@ async def show_ai_settings(update: Update, context: ContextTypes.DEFAULT_TYPE, s
     user_id = _get_user_id(update)
     s = DB.get_user_settings(user_id)
     current = s.get("ai_provider", "") or settings.ai_provider
+    current_model = s.get("ai_model", "") or settings.ai_model
 
-    from ai.factory import provider_display_name
+    from ai.factory import provider_display_name, provider_model_hint
+
+    model_hint = provider_model_hint(current) if current else ""
+    model_line = f"\nМодель: <code>{current_model}</code>" if current_model else ""
 
     text = (
         "🤖 <b>AI Провайдер</b>\n\n"
-        f"Текущий: <b>{provider_display_name(current) if current else 'Не настроен'}</b>\n\n"
+        f"Текущий: <b>{provider_display_name(current) if current else 'Не настроен'}</b>"
+        f"{model_line}\n\n"
         "Выберите AI провайдера для анализа объявлений.\n"
         "<i>Без AI система работает на эвристиках.</i>\n\n"
         "<b>Что даёт AI:</b>\n"
@@ -876,12 +887,14 @@ async def show_ai_settings(update: Update, context: ContextTypes.DEFAULT_TYPE, s
         "✅ Оценка рисков продавца\n"
         "✅ Market Radar с комментариями\n"
         "✅ Умный парсинг ваших запросов"
+        + (f"\n\n<i>{model_hint}</i>" if model_hint else "")
     )
 
     def mark(p: str) -> str:
         return "✅ " if current == p else ""
 
     kb = _kb(
+        [_btn(f"{mark('wormsoft')}🦾 WormSoft AI", "set_ai_provider_wormsoft")],
         [_btn(f"{mark('openai')}🤖 OpenAI GPT", "set_ai_provider_openai")],
         [_btn(f"{mark('gemini')}✨ Google Gemini", "set_ai_provider_gemini")],
         [_btn(f"{mark('anthropic')}🔮 Claude", "set_ai_provider_anthropic")],
@@ -891,16 +904,44 @@ async def show_ai_settings(update: Update, context: ContextTypes.DEFAULT_TYPE, s
     await _edit(update, text, kb)
 
 
+async def _ask_wormsoft_key(update: Update):
+    """Show the API key input prompt for WormSoft."""
+    await update.effective_message.edit_text(
+        "🔑 <b>API ключ WormSoft</b>\n\n"
+        "Введите ваш API ключ.\n\n"
+        "<i>Где получить: ai.wormsoft.ru</i>",
+        parse_mode="HTML",
+        reply_markup=_kb([_btn("🚫 Отмена", "settings_ai_menu")]),
+    )
+
+
 async def set_ai_provider(update: Update, context: ContextTypes.DEFAULT_TYPE, provider: str):
     user_id = _get_user_id(update)
 
     if provider == "none":
-        DB.upsert_user_settings(user_id, ai_provider="", ai_api_key="")
+        DB.upsert_user_settings(user_id, ai_provider="", ai_api_key="", ai_model="")
         await update.callback_query.answer("AI отключён", show_alert=False)
         await show_ai_settings(update, context)
         return
 
-    # Ask for API key
+    # WormSoft: ask model first, then API key
+    if provider == "wormsoft":
+        context.user_data["pending_ai_provider"] = provider
+        await _edit(
+            update,
+            "🦾 <b>WormSoft AI</b>\n\n"
+            "Выберите модель:\n\n"
+            "<b>Low</b> — быстрая и дешёвая (рекомендуется)\n"
+            "<b>Medium</b> — точнее, подходит для сложных анализов",
+            _kb(
+                [_btn("⚡ Low (быстрая)", "wormsoft_model_low")],
+                [_btn("🎯 Medium (точная)", "wormsoft_model_medium")],
+                [_btn("🚫 Отмена", "settings_ai_menu")],
+            ),
+        )
+        return WAIT_AI_KEY
+
+    # Other providers: ask for API key
     context.user_data["pending_ai_provider"] = provider
 
     provider_names = {
@@ -947,7 +988,7 @@ async def got_ai_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
         return WAIT_AI_KEY
 
-    DB.upsert_user_settings(user_id, ai_provider=provider, ai_api_key=api_key)
+    DB.upsert_user_settings(user_id, ai_provider=provider, ai_api_key=api_key, ai_model=model)
 
     from ai.factory import get_user_ai_provider, provider_display_name
     s = DB.get_user_settings(user_id)

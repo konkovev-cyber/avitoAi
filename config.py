@@ -42,10 +42,15 @@ class Settings(BaseSettings):
     deal_score_threshold_maybe: float = 50.0 # ≥50 → standard alert
 
     # ── AI (all optional — system works without AI) ────────────────────────────
-    ai_provider: str = ""                    # "openai" | "gemini" | "anthropic" | ""
-    ai_model: str = ""                       # specific model override
+    ai_provider: str = ""                    # "wormsoft" | "openai" | "gemini" | "anthropic" | ""
+    ai_model: str = ""                       # specific model override (empty = provider default)
     ai_enabled: bool = False                 # explicit enable flag
 
+    # WormSoft (рекомендуется — агентские модели по себестоимости)
+    wormsoft_api_key: str = ""
+    wormsoft_base_url: str = "https://ai.wormsoft.ru/api/gpt"
+
+    # Другие провайдеры
     openai_api_key: str = ""
     gemini_api_key: str = ""
     anthropic_api_key: str = ""
@@ -61,7 +66,8 @@ class Settings(BaseSettings):
     def is_ai_configured(self) -> bool:
         """Returns True if at least one AI provider key is set."""
         return bool(
-            self.openai_api_key
+            self.wormsoft_api_key
+            or self.openai_api_key
             or self.gemini_api_key
             or self.anthropic_api_key
         )
