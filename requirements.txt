@@ -12,7 +12,7 @@ beautifulsoup4>=4.12
 lxml>=5.1
 
 # Telegram Bot
-python-telegram-bot>=21.0
+python-telegram-bot[socks]>=21.0
 
 # Dashboard
 fastapi>=0.110

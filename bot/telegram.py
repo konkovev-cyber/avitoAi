@@ -1008,7 +1008,14 @@ def build_app() -> Application:
         except Exception:
             pass
 
-    app = Application.builder().token(settings.telegram_bot_token).build()
+    # Build request with proxy
+    from telegram.request import HTTPXRequest
+    http_kwargs = {}
+    if settings.proxy_url:
+        http_kwargs["proxy"] = settings.proxy_url
+    request = HTTPXRequest(**http_kwargs)
+
+    app = Application.builder().token(settings.telegram_bot_token).request(request).build()
     set_app(app)
 
     # Main ConversationHandler
