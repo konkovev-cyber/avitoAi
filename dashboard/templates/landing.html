@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Agent — AI Поиск Выгодных Предложений</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0f19;
+            --bg-card: rgba(20, 26, 43, 0.6);
+            --border-color: rgba(255, 255, 255, 0.08);
+            --accent-glow: rgba(56, 189, 248, 0.15);
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+            --color-sky: #38bdf8;
+            --color-indigo: #6366f1;
+            --color-emerald: #10b981;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(99, 102, 241, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(56, 189, 248, 0.1) 0%, transparent 40%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--color-sky), var(--color-indigo));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 10px 20px;
+            border-radius: 99px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .hero {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 80px auto;
+        }
+
+        .badge {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            color: #818cf8;
+            padding: 6px 16px;
+            border-radius: 99px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 24px;
+            box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            background: linear-gradient(to right, #ffffff, #cbd5e1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-sky), var(--color-indigo));
+            color: #ffffff;
+            padding: 16px 36px;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.4);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px -5px rgba(99, 102, 241, 0.6);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+            margin-bottom: 80px;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 32px;
+            backdrop-filter: blur(20px);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            border-color: rgba(56, 189, 248, 0.3);
+            box-shadow: 0 20px 40px -15px var(--accent-glow);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--color-sky);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 24px;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .login-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 40px;
+            max-width: 480px;
+            margin: 0 auto;
+            text-align: center;
+            backdrop-filter: blur(20px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        }
+
+        .login-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+
+        .login-box p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 24px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        input {
+            flex: 1;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 12px 16px;
+            color: #ffffff;
+            font-size: 1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        input:focus {
+            border-color: var(--color-sky);
+            box-shadow: 0 0 0 2px var(--accent-glow);
+        }
+
+        .login-btn {
+            background: #ffffff;
+            color: var(--bg-primary);
+            border: none;
+            border-radius: 10px;
+            padding: 12px 24px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .login-btn:hover {
+            background: var(--color-sky);
+            color: #ffffff;
+        }
+
+        footer {
+            border-top: 1px solid var(--border-color);
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.5rem; }
+            .btn-group { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🤖 Market Agent</div>
+            <a href="https://t.me/market_agent_bot" class="nav-btn">Открыть Telegram</a>
+        </header>
+
+        <section class="hero">
+            <div class="badge">SaaS Multi-User v4</div>
+            <h1>Умный поиск выгодных возможностей на маркетплейсах</h1>
+            <p>
+                Хватит листать сотни объявлений вручную. Подключите AI-агентов, которые будут 
+                в фоновом режиме анализировать рынок, группировать дубликаты в единые Сделки (Opportunities), 
+                оценивать ликвидность и присылать только действительно ценные инсайты.
+            </p>
+
+            <div class="btn-group">
+                <a href="https://t.me/market_agent_bot" class="btn-primary">
+                    <span>Начать в Telegram</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+            </div>
+
+            <div class="login-box">
+                <h3>Войти в Личный Кабинет</h3>
+                <p>Введите ваш Telegram ID, чтобы открыть персональный дашборд с находками, радаром и поисковыми запросами.</p>
+                <form action="" onsubmit="event.preventDefault(); window.location.href='/dashboard/' + document.getElementById('tg_id').value;">
+                    <div class="input-group">
+                        <input type="number" id="tg_id" placeholder="Ваш Telegram ID" required>
+                        <button type="submit" class="login-btn">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Анализ Возможностей (Opportunities)</h3>
+                <p>Мы группируем повторяющиеся объявления в единую коммерческую возможность, отсекая спам и выделяя лучшую цену на рынке.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Умный AI Роутер</h3>
+                <p>Интеллектуальная маршрутизация запросов между нейросетями с резервированием ключей и автоматической оценкой ликвидности.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Асинхронные Воркеры</h3>
+                <p>Параллельный сбор данных через изолированные сессии Playwright с контролем нагрузки на сервер.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        🤖 Market Agent © 2026 · SaaS Платформа Рыночной Аналитики
+    </footer>
+</body>
+</html>

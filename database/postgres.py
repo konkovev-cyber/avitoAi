@@ -94,6 +94,9 @@ class PostgresDatabase(BaseDatabase):
     def get_opportunity(self, opp_id: int) -> Optional[dict]:
         raise NotImplementedError()
 
+    def get_user_opportunities(self, user_id: int, limit: int = 50) -> list[dict]:
+        raise NotImplementedError()
+
     def find_matching_opportunity(self, user_id: int, title: str, price: float) -> Optional[dict]:
         raise NotImplementedError()
 

@@ -384,6 +384,14 @@ class SQLiteDatabase(BaseDatabase):
         row = conn.execute("SELECT * FROM opportunities WHERE id = ?", (opp_id,)).fetchone()
         return dict(row) if row else None
 
+    def get_user_opportunities(self, user_id: int, limit: int = 50) -> list[dict]:
+        conn = self.connect()
+        rows = conn.execute(
+            "SELECT * FROM opportunities WHERE user_id = ? ORDER BY updated_at DESC LIMIT ?",
+            (user_id, limit),
+        ).fetchall()
+        return [dict(r) for r in rows]
+
     def find_matching_opportunity(self, user_id: int, title: str, price: float) -> Optional[dict]:
         conn = self.connect()
         words = [w for w in title.lower().split() if len(w) > 3]

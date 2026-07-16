@@ -152,6 +152,11 @@ class BaseDatabase(ABC):
         pass
 
     @abstractmethod
+    def get_user_opportunities(self, user_id: int, limit: int = 50) -> list[dict]:
+        """Get all opportunities for a specific user."""
+        pass
+
+    @abstractmethod
     def find_matching_opportunity(self, user_id: int, title: str, price: float) -> Optional[dict]:
         """Find existing matching opportunity by user and similar title/price."""
         pass
