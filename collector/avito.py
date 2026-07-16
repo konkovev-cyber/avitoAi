@@ -1,18 +1,60 @@
-"""Avito collector — Playwright-based."""
+"""Avito collector — Playwright-based scraper.
+
+Supports all SearchQuery fields:
+  - query / keywords
+  - location (city → avito city slug)
+  - max_price / min_price
+  - condition (new / like_new / used / any)
+  - category
+"""
 
 from __future__ import annotations
 
 import logging
 import re
-import time
 from typing import Optional
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 
 from config import settings
 from models import RawListing, SearchQuery
 from .base import BaseCollector
 
 log = logging.getLogger("market_agent.collector.avito")
+
+# Avito city slugs (ru → slug)
+CITY_SLUGS: dict[str, str] = {
+    "москва": "moskva",
+    "санкт-петербург": "sankt-peterburg",
+    "спб": "sankt-peterburg",
+    "питер": "sankt-peterburg",
+    "екатеринбург": "ekaterinburg",
+    "новосибирск": "novosibirsk",
+    "казань": "kazan",
+    "нижний новгород": "nizhniy_novgorod",
+    "челябинск": "chelyabinsk",
+    "самара": "samara",
+    "уфа": "ufa",
+    "ростов-на-дону": "rostov-na-donu",
+    "краснодар": "krasnodar",
+    "омск": "omsk",
+    "воронеж": "voronezh",
+    "пермь": "perm",
+    "волгоград": "volgograd",
+    "красноярск": "krasnoyarsk",
+    "тюмень": "tyumen",
+    "весь регион": "rossiya",
+    "везде": "rossiya",
+    "вся россия": "rossiya",
+    "россия": "rossiya",
+}
+
+# Avito condition param values
+CONDITION_PARAM: dict[str, str] = {
+    "new": "1",       # новый
+    "like_new": "2",  # хорошее
+    "used": "3",      # среднее или ниже
+    # "any" → не передаём параметр
+}
 
 
 class AvitoCollector(BaseCollector):
@@ -26,15 +68,15 @@ class AvitoCollector(BaseCollector):
         self._context = None
         self._page = None
 
+    # ── Browser lifecycle ─────────────────────────────────────────────────────
+
     async def _ensure_browser(self):
         if self._browser is not None:
             return
         from playwright.async_api import async_playwright
 
         self._pw = await async_playwright().start()
-        launch_kwargs = {
-            "headless": settings.playwright_headless,
-        }
+        launch_kwargs = {"headless": settings.playwright_headless}
         if self.proxy_url:
             launch_kwargs["proxy"] = {"server": self.proxy_url}
 
@@ -47,122 +89,209 @@ class AvitoCollector(BaseCollector):
             ),
             viewport={"width": 1920, "height": 1080},
             locale="ru-RU",
+            extra_http_headers={"Accept-Language": "ru-RU,ru;q=0.9"},
         )
         self._page = await self._context.new_page()
-        log.info("Browser launched")
+        # Block images/fonts to speed up
+        await self._page.route(
+            "**/*.{png,jpg,jpeg,gif,webp,svg,woff,woff2,ttf}",
+            lambda r: r.abort(),
+        )
+        log.info("Avito browser launched (headless=%s)", settings.playwright_headless)
+
+    # ── Search ────────────────────────────────────────────────────────────────
 
     async def search(self, query: SearchQuery) -> list[RawListing]:
         await self._ensure_browser()
         url = self._make_search_url(query)
-        self.log(f"Searching: {url}")
+        log.info("[avito] GET %s", url)
 
         try:
-            await self._page.goto(url, wait_until="domcontentloaded", timeout=30000)
-            await self._page.wait_for_timeout(2000)  # let JS render
+            await self._page.goto(url, wait_until="domcontentloaded", timeout=30_000)
+            await self._page.wait_for_timeout(settings.playwright_slow_mo)
 
-            # Try to find listing items
-            items = await self._page.query_selector_all(
-                '[data-marker="item"], [itemtype="http://schema.org/Product"]'
-            )
+            # Detect CAPTCHA / block
+            if await self._page.query_selector("[class*='captcha'], [class*='blocked']"):
+                log.warning("Avito: CAPTCHA detected, skipping")
+                return []
+
+            # Listing selectors (Avito changes HTML regularly — try multiple)
+            items = await self._page.query_selector_all('[data-marker="item"]')
             if not items:
-                # Fallback: look for any listing cards
                 items = await self._page.query_selector_all(
-                    ".iva-item-root, .items-item, article"
+                    ".iva-item-root, .items-item, article[class*='item']"
                 )
 
-            self.log(f"Found {len(items)} items on page")
-            results = []
-            for item in items[:30]:  # limit to first 30
+            log.info("[avito] Found %d raw items", len(items))
+
+            results: list[RawListing] = []
+            for item in items[:30]:
                 try:
                     listing = await self._parse_item(item)
-                    if listing:
+                    if listing and listing.price > 0:
                         results.append(listing)
                 except Exception as e:
-                    self.log(f"Parse error: {e}", "warning")
+                    log.debug("Item parse error: %s", e)
+
+            log.info("[avito] Parsed %d valid listings", len(results))
             return results
 
         except Exception as e:
-            self.log(f"Search error: {e}", "error")
+            log.error("[avito] Search failed: %s", e)
             return []
 
+    # ── Parsing ───────────────────────────────────────────────────────────────
+
     async def _parse_item(self, item) -> Optional[RawListing]:
-        """Parse a single listing card."""
         try:
-            # Title and URL
-            link = await item.query_selector("a[href]")
+            # URL + title
+            link = await item.query_selector("a[data-marker='item-title'], a[href*='/']")
             if not link:
                 return None
+
             href = await link.get_attribute("href") or ""
             url = f"{self.BASE_URL}{href}" if href.startswith("/") else href
+            if not url or "avito.ru" not in url:
+                return None
 
-            title_el = await link.query_selector(
-                "h3, [itemprop='name'], .title, [class*='title']"
+            title = await self._extract_text(
+                item,
+                "[data-marker='item-title'] h3, "
+                "[itemprop='name'], "
+                "h3[class*='title'], "
+                ".iva-item-title",
             )
-            title = ""
-            if title_el:
-                title = (await title_el.inner_text()).strip()
             if not title:
                 title = (await link.inner_text()).strip()[:200]
+            if not title:
+                return None
 
             # Price
             price = await self._extract_price(item)
 
             # Location
-            loc = await self._extract_text(item, "[class*='address'], [class*='location']")
+            location = await self._extract_text(
+                item,
+                "[data-marker='item-address'], "
+                "[class*='geo-address'], "
+                "[class*='location']",
+            )
 
             # Seller
-            seller = await self._extract_text(item, "[class*='seller'], [data-marker='seller']")
+            seller = await self._extract_text(
+                item,
+                "[data-marker='seller-info/name'], "
+                "[class*='seller-info'], "
+                "[class*='seller']",
+            )
+
+            # Images count
+            img_els = await item.query_selector_all("img[src*='avito']")
+            images = [await el.get_attribute("src") or "" for el in img_els if el]
+
+            # Published date
+            published = await self._extract_text(
+                item, "[data-marker='item-date'], [class*='date']"
+            )
 
             return RawListing(
                 source="avito",
-                title=title[:500],
+                title=title.strip()[:500],
                 price=price,
-                location=loc,
+                location=(location or "").strip()[:200],
                 url=url,
-                seller_name=seller,
+                seller_name=(seller or "").strip()[:200],
+                images=[img for img in images if img][:10],
+                published_at=published,
             )
         except Exception as e:
-            self.log(f"Item parse error: {e}", "warning")
+            log.debug("_parse_item error: %s", e)
             return None
 
     async def _extract_price(self, item) -> float:
-        """Extract price from a listing card."""
-        price_el = await item.query_selector(
-            "[itemprop='price'], [class*='price'], [data-marker='price']"
-        )
-        if not price_el:
-            return 0.0
-        text = (await price_el.inner_text()).strip()
-        # Extract digits
-        nums = re.findall(r"[\d\s]+", text)
-        clean = "".join(nums).strip()
-        try:
-            return float(clean.replace(" ", "")) if clean else 0.0
-        except ValueError:
-            return 0.0
+        """Extract numeric price from listing card."""
+        selectors = [
+            "[data-marker='item-price'] meta[itemprop='price']",
+            "[itemprop='price']",
+            "[data-marker='item-price']",
+            "[class*='price-text']",
+            "[class*='price']",
+        ]
+        for sel in selectors:
+            el = await item.query_selector(sel)
+            if not el:
+                continue
+            # Try content attribute first (meta tag)
+            content = await el.get_attribute("content")
+            if content:
+                try:
+                    return float(re.sub(r"[^\d.]", "", content))
+                except ValueError:
+                    pass
+            # Fall back to inner text
+            text = (await el.inner_text()).strip()
+            nums = re.sub(r"[^\d]", "", text)
+            if nums:
+                try:
+                    return float(nums)
+                except ValueError:
+                    pass
+        return 0.0
 
     @staticmethod
     async def _extract_text(parent, selector: str) -> Optional[str]:
-        el = await parent.query_selector(selector)
-        if el:
-            return (await el.inner_text()).strip()
+        """Try each comma-separated selector, return first non-empty result."""
+        for sel in selector.split(", "):
+            el = await parent.query_selector(sel.strip())
+            if el:
+                text = (await el.inner_text()).strip()
+                if text:
+                    return text
         return None
 
+    # ── URL builder ───────────────────────────────────────────────────────────
+
     def _make_search_url(self, query: SearchQuery) -> str:
-        parts = [self.BASE_URL, "moskva"]  # default location
-        if query.category:
-            parts.append(f"q={quote(query.query)}")
-        else:
-            parts.append(f"q={quote(query.query)}")
-        params = []
+        """Build correct Avito search URL from SearchQuery."""
+        # City slug
+        city_slug = "rossiya"  # default: all Russia
+        if query.location:
+            slug = CITY_SLUGS.get(query.location.lower().strip())
+            if slug:
+                city_slug = slug
+            else:
+                # Use the city name directly as slug (some cities work as-is)
+                city_slug = query.location.lower().strip().replace(" ", "_")
+
+        # Search term
+        search_term = query.query
+        if query.keywords:
+            # Add keywords not already in query
+            extras = [k for k in query.keywords if k.lower() not in search_term.lower()]
+            if extras:
+                search_term = f"{search_term} {' '.join(extras[:3])}"
+
+        # Query params
+        params: dict = {"q": search_term}
+
         if query.max_price:
-            params.append(f"p={int(query.max_price)}")
-        url = f"{'/'.join(parts)}?{'&'.join(params)}" if params else "/".join(parts)
+            params["pmax"] = int(query.max_price)
+        if query.min_price:
+            params["pmin"] = int(query.min_price)
+
+        # Condition
+        cond = getattr(query, "condition", "any") or "any"
+        if cond in CONDITION_PARAM:
+            params["q_type"] = CONDITION_PARAM[cond]
+
+        url = f"{self.BASE_URL}/{city_slug}?{urlencode(params, quote_via=quote)}"
         return url
+
+    # ── Cleanup ───────────────────────────────────────────────────────────────
 
     async def close(self):
         if self._browser:
             await self._browser.close()
         if hasattr(self, "_pw") and self._pw:
             await self._pw.stop()
-        self.log("Closed")
+        log.info("Avito browser closed")
