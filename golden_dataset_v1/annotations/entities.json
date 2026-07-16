@@ -2,12 +2,19 @@
   "seller_groups": [
     {
       "seller_id": "SELLER_001",
-      "real_name": "Либхерр Сервис",
+      "real_name": "Либхерр Сервис (ИП/ООО)",
       "type": "company",
-      "listings": ["L0001"],
+      "listings": ["L0001", "L0011", "L0012"],
       "confidence": "verified",
-      "proof": ["source_yandex_maps"],
-      "notes": "Специализированный сервис Liebherr."
+      "proof": [
+        "cross_source_match",
+        "same_inn: 510704817991",
+        "same_ogrn: 323508100040821",
+        "same_website: liebherr-service.ru",
+        "same_phone: +7 495 797 12 17"
+      ],
+      "evidence_density": 6,
+      "notes": "Кросс-источник: Яндекс Карты (Салтыковская, 51) + Сайт (Перерва, 11). Адреса разные — возможно переезд или офис + сервис."
     },
     {
       "seller_id": "SELLER_002",

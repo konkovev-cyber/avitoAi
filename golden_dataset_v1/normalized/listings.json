@@ -228,5 +228,51 @@
     "working_hours": "24/7",
     "collection_date": "2026-07-16T15:00:00Z",
     "notes": "Сайт import-service.ru. ИНН 7810674120, ООО «ИМПОРТ-СЕРВИС». 20+ лет на рынке."
+  },
+  {
+    "listing_id": "L0011",
+    "source": "company_website",
+    "url": "https://liebherr-service.ru",
+    "title": "Сервисный центр Liebherr",
+    "category": "Ремонт бытовой техники / Ремонт холодильников",
+    "seller_name": "Либхерр Сервис",
+    "contacts": {
+      "phone": "+7 495 797 12 17",
+      "email": "liebherr-service@internet.ru",
+      "website": "liebherr-service.ru"
+    },
+    "location": {
+      "city": "Москва",
+      "address": "ул. Перерва, д. 11, стр. 21"
+    },
+    "images": [],
+    "rating": null,
+    "reviews_count": null,
+    "working_hours": "Пн-Вс 8:00-23:00",
+    "collection_date": "2026-07-16T15:15:00Z",
+    "notes": "★ Сайт liebherr-service.ru. ИНН 510704817991, ОГРН 323508100040821. Официальный сервис Liebherr? Evidence Density = 6."
+  },
+  {
+    "listing_id": "L0012",
+    "source": "company_website",
+    "url": "https://liebherr-service.ru",
+    "title": "Либхерр Сервис — ИНН/ОГРН (реквизиты)",
+    "category": "Ремонт бытовой техники / Юридические данные",
+    "seller_name": "ИП / Либхерр Сервис",
+    "contacts": {
+      "phone": "+7 495 797 12 17",
+      "email": "liebherr-service@internet.ru",
+      "website": "liebherr-service.ru"
+    },
+    "location": {
+      "city": "Москва",
+      "address": "ул. Перерва, д. 11, стр. 21"
+    },
+    "images": [],
+    "rating": null,
+    "reviews_count": null,
+    "working_hours": "Пн-Вс 8:00-23:00",
+    "collection_date": "2026-07-16T15:15:00Z",
+    "notes": "Юридические реквизиты с сайта: ИНН 510704817991, ОГРН 323508100040821."
   }
 ]
