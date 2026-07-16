@@ -341,14 +341,9 @@ async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.callback_query.answer(f"План {plan} установлен", show_alert=True)
         await show_admin_users(update, context)
 
-    # New search
-    elif data == "new_search":
-        await ask_search_query(update, context)
-        return ST_SEARCH_TEXT
-
 # ── Searches ───────────────────────────────────────────────────────────────────
 
-async def ask_search_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def ask_search_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     """Ask user what they want to search for."""
     await update.callback_query.edit_message_text(
         "🔍 <b>Что ищем?</b>\n\n"
@@ -359,6 +354,7 @@ async def ask_search_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [InlineKeyboardButton("◀ Отмена", callback_data="menu_main")]
         ]),
     )
+    return ST_SEARCH_TEXT
 
 
 async def got_search_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -1093,6 +1089,7 @@ def build_app() -> Application:
     conv = ConversationHandler(
         entry_points=[
             CommandHandler("start", cmd_start),
+            CallbackQueryHandler(ask_search_query, pattern="^new_search$"),
             CallbackQueryHandler(ask_city, pattern="^settings_city$"),
             CallbackQueryHandler(set_ai_provider_cb.__wrapped__ if hasattr(set_ai_provider_cb, '__wrapped__') else lambda u, c: None, pattern="^set_ai_"),
             CallbackQueryHandler(set_threshold_cb.__wrapped__ if hasattr(set_threshold_cb, '__wrapped__') else lambda u, c: None, pattern="^set_threshold_"),
