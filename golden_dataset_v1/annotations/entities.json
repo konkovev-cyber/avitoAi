@@ -132,6 +132,50 @@
       ],
       "evidence_density": 5,
       "notes": "Сайт samsung-service-center.ru. ИП Чиликов А.А. НЕ официальный сервис Samsung."
+    },
+    {
+      "seller_id": "SELLER_010",
+      "real_name": "АЛЬФА-СЕРВИС / Альфа Ремонт (Кировоградская 15)",
+      "type": "company",
+      "listings": [
+        "L0015",
+        "L0016"
+      ],
+      "confidence": "strong_candidate",
+      "proof": [
+        "cross_source_address_match",
+        "same_address: Кировоградская ул., 15"
+      ],
+      "evidence_density": 4,
+      "notes": "Cross-source candidate: remont-stiralok.ru (АЛЬФА-СЕРВИС) + Яндекс Карты (Альфа Ремонт). Адрес совпадает, названия различаются, категории разные (ремонт бытовой техники vs ремонт телефонов). Confidence до проверки телефона."
+    },
+    {
+      "seller_id": "SELLER_011",
+      "real_name": "Альфа Сервис (Семёновская)",
+      "type": "company",
+      "listings": [
+        "L0017"
+      ],
+      "confidence": "verified",
+      "proof": [
+        "source_yandex_maps"
+      ],
+      "evidence_density": 1,
+      "notes": "Альфа Сервис на Б. Семёновской. Другая компания — отличается адрес и категория."
+    },
+    {
+      "seller_id": "SELLER_012",
+      "real_name": "Альфа (Волгоградский)",
+      "type": "company",
+      "listings": [
+        "L0018"
+      ],
+      "confidence": "verified",
+      "proof": [
+        "source_yandex_maps"
+      ],
+      "evidence_density": 1,
+      "notes": "Альфа на Волгоградском. Другая компания."
     }
   ],
   "match_hypotheses": [
@@ -149,6 +193,23 @@
       "negative_signals": [],
       "decision": "STRONG_MATCH",
       "requires_review": false
+    },
+    {
+      "hypothesis_id": "MH_002",
+      "entity_a": "L0015 — remont-stiralok.ru (АЛЬФА-СЕРВИС)",
+      "entity_b": "L0016 — Яндекс Карты (Альфа Ремонт)",
+      "confidence": 0.7,
+      "signals": [
+        "same_address: Кировоградская ул., 15 (вес 0.30)",
+        "similar_name: АЛЬФА-СЕРВИС vs Альфа Ремонт (вес 0.08)",
+        "same_city: Москва (вес 0.08)"
+      ],
+      "total_before_negative": 0.46,
+      "negative_signals": [
+        "different_category: бытовая техника vs телефоны"
+      ],
+      "decision": "CANDIDATE",
+      "requires_review": true
     }
   ],
   "complex_cases": [
@@ -173,6 +234,18 @@
       "description": "Оба сервиса называют себя «Samsung Сервисный центр», но имеют разные адреса (Варшавское ш. vs Новинский б-р), разные телефоны и разные ИНН. SELLER_009 — ИП Чиликов, неофициальный сервис.",
       "confidence": 0.95,
       "decision": "DIFFERENT_SELLERS"
+    },
+    {
+      "case_id": "CC_003",
+      "type": "generic_name_false_merge_risk",
+      "entities": [
+        "SELLER_010 (Кировоградская)",
+        "SELLER_011 (Семёновская)",
+        "SELLER_012 (Волгоградский)"
+      ],
+      "description": "Три компании с именем «Альфа» на Яндекс Картах + сайт remont-stiralok.ru. Одна группа (Кировоградская 15) — возможный match. Две другие — разные компании. Generic name «Альфа» — высокий риск False Merge.",
+      "confidence": 0.85,
+      "decision": "LIKELY_DIFFERENT_SELLERS"
     }
   ],
   "unknown_cases": [

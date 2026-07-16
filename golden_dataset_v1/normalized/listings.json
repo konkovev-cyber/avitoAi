@@ -320,5 +320,97 @@
     "working_hours": "c 09:00 до 21:00",
     "collection_date": "2026-07-16T15:30:00Z",
     "notes": "Юридические реквизиты: ИНН 720506602266, ОГРН 323774600182280. ИП Чиликов А.А."
+  },
+  {
+    "listing_id": "L0015",
+    "source": "company_website",
+    "url": "https://remont-stiralok.ru",
+    "title": "АЛЬФА-СЕРВИС — ремонт бытовой техники",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "АЛЬФА-СЕРВИС",
+    "contacts": {
+      "phone": "+7 (495) 636 18 76",
+      "email": null,
+      "website": "remont-stiralok.ru"
+    },
+    "location": {
+      "city": "Москва",
+      "address": "ул. Кировоградская, д. 15"
+    },
+    "images": [],
+    "rating": null,
+    "reviews_count": null,
+    "working_hours": "Пн-Вс с 9 до 21",
+    "collection_date": "2026-07-16T15:45:00Z",
+    "notes": "Evidence Density = 3 (phone, website, address). Generic name «Альфа» — высокий риск False Merge."
+  },
+  {
+    "listing_id": "L0016",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/alfa_remont/",
+    "title": "Альфа Ремонт",
+    "category": "Ремонт телефонов / Ремонт бытовой техники",
+    "seller_name": "Альфа Ремонт",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Кировоградская ул., 15"
+    },
+    "images": [],
+    "rating": 5.0,
+    "reviews_count": 738,
+    "working_hours": "до 21:00",
+    "collection_date": "2026-07-16T15:45:00Z",
+    "notes": "★ Cross-source candidate: совпадает адрес с L0015. Но разные названия (Альфа Ремонт vs АЛЬФА-СЕРВИС) и другая категория."
+  },
+  {
+    "listing_id": "L0017",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/alfa_servis/",
+    "title": "Альфа Сервис",
+    "category": "Ремонт телефонов",
+    "seller_name": "Альфа Сервис",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Большая Семёновская ул., 28"
+    },
+    "images": [],
+    "rating": 5.0,
+    "reviews_count": 153,
+    "working_hours": "до 20:00",
+    "collection_date": "2026-07-16T15:45:00Z",
+    "notes": "То же имя «Альфа», другой адрес. False Merge risk с L0015/L0016."
+  },
+  {
+    "listing_id": "L0018",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/alfa/",
+    "title": "Альфа (Волгоградский просп.)",
+    "category": "Ремонт телефонов",
+    "seller_name": "Альфа",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Москва",
+      "address": "Волгоградский просп., 84, корп. 1"
+    },
+    "images": [],
+    "rating": 4.6,
+    "reviews_count": 24,
+    "working_hours": "до 20:00",
+    "collection_date": "2026-07-16T15:45:00Z",
+    "notes": "То же имя «Альфа», другой адрес, другой рейтинг. False Merge risk."
   }
 ]

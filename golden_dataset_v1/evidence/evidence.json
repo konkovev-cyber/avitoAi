@@ -158,5 +158,45 @@
     "linked_objects": ["L0006", "L0013"],
     "description": "Два сервиса с брендом Samsung, разные адреса, телефоны и ИНН — разные компании.",
     "collection_date": "2026-07-16T15:30:00Z"
+  },
+  {
+    "evidence_id": "E017",
+    "type": "cross_source_address_match",
+    "source": "yandex_maps + company_website",
+    "value": "Кировоградская ул., 15",
+    "strength": 0.30,
+    "linked_objects": ["L0015", "L0016"],
+    "description": "Адрес компании АЛЬФА-СЕРВИС совпадает на сайте и Яндекс Картах (Альфа Ремонт)",
+    "collection_date": "2026-07-16T15:45:00Z"
+  },
+  {
+    "evidence_id": "E018",
+    "type": "phone_extracted",
+    "source": "company_website",
+    "value": "+7 (495) 636 18 76",
+    "strength": 0.35,
+    "linked_objects": ["L0015"],
+    "description": "Телефон АЛЬФА-СЕРВИС с сайта remont-stiralok.ru",
+    "collection_date": "2026-07-16T15:45:00Z"
+  },
+  {
+    "evidence_id": "E019",
+    "type": "negative_match",
+    "source": "yandex_maps",
+    "value": "generic_name_different_entity",
+    "strength": -0.30,
+    "linked_objects": ["L0016", "L0017"],
+    "description": "Альфа Ремонт (Кировоградская 15) vs Альфа Сервис (Б. Семёновская 28) — разные адреса, может быть одна сеть или разные компании",
+    "collection_date": "2026-07-16T15:45:00Z"
+  },
+  {
+    "evidence_id": "E020",
+    "type": "negative_match",
+    "source": "yandex_maps",
+    "value": "generic_name_different_entity",
+    "strength": -0.30,
+    "linked_objects": ["L0016", "L0018"],
+    "description": "Альфа Ремонт (Кировоградская 15) vs Альфа (Волгоградский 84) — разные адреса, разные рейтинги",
+    "collection_date": "2026-07-16T15:45:00Z"
   }
 ]
