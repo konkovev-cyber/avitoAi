@@ -412,5 +412,51 @@
     "working_hours": "до 20:00",
     "collection_date": "2026-07-16T15:45:00Z",
     "notes": "То же имя «Альфа», другой адрес, другой рейтинг. False Merge risk."
+  },
+  {
+    "listing_id": "L0019",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/132_remont/",
+    "title": "132 Ремонт бытовой техники",
+    "category": "Ремонт бытовой техники",
+    "seller_name": "132 Ремонт",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Щёлково",
+      "address": "Советская ул., уч67"
+    },
+    "images": [],
+    "rating": 4.8,
+    "reviews_count": 55,
+    "working_hours": "до 20:00",
+    "collection_date": "2026-07-16T16:00:00Z",
+    "notes": "Необычное название «132». Категория ремонт. Минимум данных — Unknown case."
+  },
+  {
+    "listing_id": "L0020",
+    "source": "yandex_maps",
+    "url": "https://yandex.ru/maps/org/lazercom/",
+    "title": "Лазерком",
+    "category": "Ремонт бытовой техники / Кондиционеры",
+    "seller_name": "Лазерком",
+    "contacts": {
+      "phone": null,
+      "email": null,
+      "website": null
+    },
+    "location": {
+      "city": "Жуковский",
+      "address": "ул. Маяковского, 17"
+    },
+    "images": [],
+    "rating": 4.7,
+    "reviews_count": 221,
+    "working_hours": "до 19:00",
+    "collection_date": "2026-07-16T16:00:00Z",
+    "notes": "Жуковский — тот же город, что и Стирком.ру (L0005). Возможна связь или конкуренты."
   }
 ]

@@ -176,6 +176,34 @@
       ],
       "evidence_density": 1,
       "notes": "Альфа на Волгоградском. Другая компания."
+    },
+    {
+      "seller_id": "SELLER_013",
+      "real_name": "132 Ремонт бытовой техники",
+      "type": "company",
+      "listings": [
+        "L0019"
+      ],
+      "confidence": "verified",
+      "proof": [
+        "source_yandex_maps"
+      ],
+      "evidence_density": 1,
+      "notes": "Необычное название «132». Минимум данных. Unknown case."
+    },
+    {
+      "seller_id": "SELLER_014",
+      "real_name": "Лазерком",
+      "type": "company",
+      "listings": [
+        "L0020"
+      ],
+      "confidence": "verified",
+      "proof": [
+        "source_yandex_maps"
+      ],
+      "evidence_density": 1,
+      "notes": "Жуковский, кондиционеры. Тот же город, что Стирком.ру."
     }
   ],
   "match_hypotheses": [
@@ -252,6 +280,16 @@
     {
       "listing_id": "L0008",
       "reason": "Запчасти бытовой техники — магазин запчастей, а не услуги. Может быть связан с другими продавцами или независим.",
+      "confidence": 0.3
+    },
+    {
+      "listing_id": "L0019",
+      "reason": "132 Ремонт в Щёлково. Только адрес и название. Нет телефона, email, сайта. Недостаточно для объединения или разделения.",
+      "confidence": 0.25
+    },
+    {
+      "listing_id": "L0020",
+      "reason": "Лазерком в Жуковском. Только категория и адрес. Возможна связь со Стирком.ру (тот же город), но доказательств нет.",
       "confidence": 0.3
     }
   ]
