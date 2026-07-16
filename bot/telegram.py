@@ -1,9 +1,30 @@
-"""Telegram Bot — personal AI marketplace agent. Premium UX."""
+"""Telegram Bot — Market Agent v2. Personal AI Marketplace Intelligence Platform.
+
+Architecture:
+    Bot UI Layer
+          │
+    ConversationManager
+          │
+    Search Intent Parser (AI optional)
+          │
+    Market Agent Core
+          │
+    Deal Scoring Engine
+          │
+    Notification System
+
+UX Principles:
+  - Max 2-3 buttons per screen
+  - All actions via inline buttons
+  - Emoji as visual markers
+  - No technical jargon for users
+  - Pошаговый диалог вместо команд
+  - Commands only for admin (/start, /menu)
+"""
 
 from __future__ import annotations
 
 import logging
-from datetime import datetime, timezone
 from typing import Optional
 
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -24,11 +45,22 @@ from bot.alerts import format_alert
 
 log = logging.getLogger("market_agent.bot")
 
-# Conversation states
-WAIT_QUERY, WAIT_PRICE, WAIT_LOCATION, WAIT_CONDITION = range(4)
+# ── Conversation states ────────────────────────────────────────────────────────
+(
+    WAIT_QUERY,
+    WAIT_PRICE,
+    WAIT_LOCATION,
+    WAIT_CONDITION,
+    WAIT_PURPOSE,
+    WAIT_AI_KEY,
+) = range(6)
 
 DB = Database()
 
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  HELPERS
+# ═══════════════════════════════════════════════════════════════════════════════
 
 def _get_user_id(update: Update) -> int:
     user = update.effective_user
@@ -37,268 +69,363 @@ def _get_user_id(update: Update) -> int:
     return row["id"] if row else 0
 
 
-# ═══════════════════════════════════════════════
+def _kb(*rows: list) -> InlineKeyboardMarkup:
+    """Shorthand keyboard builder."""
+    return InlineKeyboardMarkup(rows)
+
+
+def _btn(text: str, data: str) -> InlineKeyboardButton:
+    return InlineKeyboardButton(text, callback_data=data)
+
+
+def _url_btn(text: str, url: str) -> InlineKeyboardButton:
+    return InlineKeyboardButton(text, url=url)
+
+
+def _home_row() -> list:
+    return [_btn("🏠 В меню", "menu_home")]
+
+
+async def _edit(update: Update, text: str, kb: InlineKeyboardMarkup):
+    """Edit current message safely."""
+    msg = update.effective_message
+    try:
+        await msg.edit_text(text, parse_mode="HTML", reply_markup=kb)
+    except Exception:
+        await msg.reply_text(text, parse_mode="HTML", reply_markup=kb)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 #  MAIN MENU
-# ═══════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
 
 async def cmd_start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Show main dashboard."""
+    """Entry point — /start or /menu."""
     _get_user_id(update)
     await show_main_menu(update, context)
 
 
-async def show_main_menu(update: Update | None, context, edit: bool = False):
-    chat_id = update.effective_chat.id if update else context.user_data.get("chat_id")
-    if not chat_id:
-        return
+async def show_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE, edit: bool = False):
+    user_id = _get_user_id(update)
+    stats = DB.get_user_stats(user_id)
+    user_settings = DB.get_user_settings(user_id)
+    hunter_on = bool(user_settings.get("hunter_enabled", 0))
+    hunter_status = "🟢 Агент работает" if hunter_on else "⚪ Агент на паузе"
 
-    stats = _user_stats(_get_user_id(update))
+    ai_provider = user_settings.get("ai_provider", "") or settings.ai_provider
+    ai_badge = ""
+    if ai_provider:
+        from ai.factory import provider_display_name
+        ai_badge = f"\n🤖 AI: {provider_display_name(ai_provider)}"
+
+    today_checked = stats.get("today_checked", 0)
+    today_good = stats.get("today_good", 0)
+    avg_savings = stats.get("avg_savings", 0)
+
     text = (
         "🤖 <b>Market Agent</b>\n"
-        "Ваш личный охотник за выгодными предложениями\n\n"
-        f"<b>━━━━━━━━━━━━━━━━━━━━━━━</b>\n\n"
-        f"🟢 Агент работает\n\n"
-        f"<b>Сегодня:</b>\n"
-        f"🔎 Проверено: <b>{stats['total_listings']}</b> объявлений\n"
-        f"🔥 Найдено выгодных: <b>{stats['good_deals']}</b>\n"
-        f"📉 Средняя экономия: <b>{stats['avg_savings']}</b>\n\n"
-        f"<b>━━━━━━━━━━━━━━━━━━━━━━━</b>"
+        "<i>Ваш личный охотник за выгодными предложениями</i>\n\n"
+        "<b>━━━━━━━━━━━━━━━━━━━━━━━</b>\n\n"
+        f"{hunter_status}{ai_badge}\n\n"
+        "<b>Сегодня:</b>\n"
+        f"🔎 Проверено: <b>{today_checked}</b> объявлений\n"
+        f"🔥 Найдено выгодных: <b>{today_good}</b>\n"
+        f"📉 Средняя экономия: <b>{avg_savings}%</b>\n\n"
+        "<b>━━━━━━━━━━━━━━━━━━━━━━━</b>"
     )
 
-    kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🔍 Новый поиск", callback_data="menu_search")],
-        [
-            InlineKeyboardButton("🎯 Мои охоты", callback_data="menu_hunts"),
-            InlineKeyboardButton("🔥 Находки", callback_data="menu_finds"),
-        ],
-        [
-            InlineKeyboardButton("📊 Статистика", callback_data="menu_stats"),
-        ],
-    ])
+    kb = _kb(
+        [_btn("🔍 Новый поиск", "menu_search")],
+        [_btn("🎯 Мои охоты", "menu_hunts"), _btn("🔥 Находки", "menu_finds")],
+        [_btn("📡 Market Radar", "menu_radar"), _btn("📊 Статистика", "menu_stats")],
+        [_btn("⚙️ Настройки", "menu_settings")],
+    )
 
-    method = update.message.edit_text if edit else update.message.reply_text
-    await method(chat_id=chat_id, text=text, parse_mode="HTML", reply_markup=kb)
+    if edit:
+        await _edit(update, text, kb)
+    else:
+        await update.effective_message.reply_text(text, parse_mode="HTML", reply_markup=kb)
 
 
-# ═══════════════════════════════════════════════
-#  BUTTON HANDLER
-# ═══════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
+#  CALLBACK DISPATCHER
+# ═══════════════════════════════════════════════════════════════════════════════
 
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     await query.answer()
     data = query.data
-    chat_id = update.effective_chat.id
     _get_user_id(update)
 
-    if data == "menu_search":
-        await start_search(update, context)
+    routes = {
+        "menu_home":     lambda: show_main_menu(update, context, edit=True),
+        "menu_hunts":    lambda: show_hunts(update, context),
+        "menu_finds":    lambda: show_finds(update, context),
+        "menu_stats":    lambda: show_stats(update, context),
+        "menu_radar":    lambda: show_radar(update, context),
+        "menu_settings": lambda: show_settings(update, context),
+        "hunter_on":     lambda: set_hunter(update, context, True),
+        "hunter_off":    lambda: set_hunter(update, context, False),
+        "search_cancel": lambda: cancel_search(update, context),
+    }
 
-    elif data == "menu_hunts":
-        await show_hunts(update, context)
+    if data in routes:
+        await routes[data]()
+        return
 
-    elif data == "menu_finds":
-        await show_finds(update, context)
-
-    elif data == "menu_stats":
-        await show_stats(update, context)
-
-    elif data.startswith("hunt_open_"):
-        search_id = int(data[len("hunt_open_"):])
-        await show_hunt_detail(update, search_id)
-
+    # Parametric routes
+    if data.startswith("hunt_open_"):
+        await show_hunt_detail(update, int(data[len("hunt_open_"):]))
     elif data.startswith("hunt_pause_"):
-        search_id = int(data[len("hunt_pause_"):])
-        DB.deactivate_search(search_id)
+        DB.deactivate_search(int(data[len("hunt_pause_"):]))
         await show_hunts(update, context)
-
+    elif data.startswith("hunt_resume_"):
+        DB.activate_search(int(data[len("hunt_resume_"):]))
+        await show_hunts(update, context)
     elif data.startswith("hunt_delete_"):
-        search_id = int(data[len("hunt_delete_"):])
-        DB.deactivate_search(search_id)
+        DB.deactivate_search(int(data[len("hunt_delete_"):]))
         await show_hunts(update, context)
-
-    elif data.startswith("find_next_"):
-        finds = context.user_data.get("finds_page", 0)
-        context.user_data["finds_page"] = finds + 5
+    elif data.startswith("find_save_"):
+        await save_find(update, context, data)
+    elif data.startswith("find_skip_"):
+        await query.answer("Пропущено ✓", show_alert=False)
+    elif data.startswith("finds_page_"):
+        context.user_data["finds_page"] = int(data[len("finds_page_"):])
         await show_finds(update, context)
-
-    elif data == "menu_home":
-        await show_main_menu(update, context, edit=True)
-
-    elif data == "search_cancel":
-        context.user_data.clear()
-        await query.message.edit_text(
-            "🔍 Поиск отменён. Чтобы создать новый, нажмите кнопку в меню.",
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")]
-            ]),
-        )
-
-    # Hunter mode
-    elif data == "hunter_on":
-        context.user_data["hunter_mode"] = True
-        await query.edit_message_text(
-            "🎯 <b>Режим охотника включён!</b>\n\n"
-            "Я буду самостоятельно искать выгодные предложения и присылать только лучшие.\n\n"
-            "Сейчас работаю над вашими активными охотами.",
-            parse_mode="HTML",
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🔕 Отключить", callback_data="hunter_off")],
-                [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-            ]),
-        )
-
-    elif data == "hunter_off":
-        context.user_data["hunter_mode"] = False
-        await query.edit_message_text(
-            "🔕 Режим охотника отключён. Я больше не буду присылать автоматические уведомления.",
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🎯 Включить", callback_data="hunter_on")],
-                [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-            ]),
-        )
+    elif data.startswith("settings_ai_"):
+        await show_ai_settings(update, context, data[len("settings_ai_"):])
+    elif data.startswith("set_ai_provider_"):
+        await set_ai_provider(update, context, data[len("set_ai_provider_"):])
+    elif data.startswith("set_hunter_interval_"):
+        await set_hunter_interval(update, context, int(data[len("set_hunter_interval_"):]))
+    elif data.startswith("set_hunter_min_"):
+        await set_hunter_min(update, context, float(data[len("set_hunter_min_"):]))
+    elif data == "settings_hunter":
+        await show_hunter_settings(update, context)
+    elif data == "settings_notifications":
+        await toggle_notifications(update, context)
+    elif data == "menu_saved":
+        await show_saved_finds(update, context)
 
 
-# ═══════════════════════════════════════════════
-#  SEARCH DIALOG
-# ═══════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
+#  SEARCH DIALOG (пошаговый)
+# ═══════════════════════════════════════════════════════════════════════════════
 
 async def start_search(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.callback_query.edit_message_text(
+    """Step 1: Ask what to search."""
+    context.user_data.clear()
+    await _edit(
+        update,
         "🔍 <b>Новый поиск</b>\n\n"
         "Что будем искать?\n\n"
-        "Например: <i>MacBook Pro M2, iPhone 15, RTX 4090</i>",
-        parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("🚫 Отмена", callback_data="search_cancel")]
-        ]),
+        "<i>Например: MacBook Pro M2, iPhone 15, RTX 4090, BMW E60</i>",
+        _kb([_btn("🚫 Отмена", "search_cancel")]),
     )
     return WAIT_QUERY
 
 
 async def got_query(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data["query"] = update.message.text
+    """Step 2: Got item name, ask price."""
+    query_text = update.message.text.strip()
+    context.user_data["query"] = query_text
+
+    # Try AI intent parsing in background (non-blocking)
+    user_id = _get_user_id(update)
+    user_settings = DB.get_user_settings(user_id)
+    try:
+        from ai.factory import get_user_ai_provider
+        ai = get_user_ai_provider(user_settings)
+        if ai and ai.is_available:
+            intent = await ai.parse_intent(query_text)
+            if intent.max_price:
+                context.user_data["ai_max_price"] = intent.max_price
+            if intent.location:
+                context.user_data["ai_location"] = intent.location
+            if intent.condition != "any":
+                context.user_data["ai_condition"] = intent.condition
+    except Exception:
+        pass
+
+    price_hint = ""
+    if context.user_data.get("ai_max_price"):
+        price_hint = f"\n\n<i>AI подсказка: ~{context.user_data['ai_max_price']:,.0f} ₽</i>"
+
     await update.message.reply_text(
+        f"✅ <b>{query_text}</b>\n\n"
         "💰 <b>Максимальная цена</b>\n\n"
-        "Введите сумму в рублях или пропустите.\n\n"
-        "Например: <i>90000</i>",
+        f"Введите сумму в рублях или пропустите.{price_hint}",
         parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("⏭ Пропустить", callback_data="price_skip")]
-        ]),
+        reply_markup=_kb([_btn("⏭ Пропустить", "price_skip")]),
     )
     return WAIT_PRICE
 
 
 async def got_price(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Step 3: Got price, ask city."""
     try:
         price = int("".join(c for c in update.message.text if c.isdigit()))
         context.user_data["max_price"] = price
     except ValueError:
         pass
-    await update.message.reply_text(
-        "📍 <b>Город</b>\n\n"
-        "Укажите город или пропустите для поиска везде.",
-        parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("🇷🇺 Москва", callback_data="loc_msk")],
-            [InlineKeyboardButton("🇷🇺 Санкт-Петербург", callback_data="loc_spb")],
-            [InlineKeyboardButton("🌍 Везде", callback_data="loc_skip")],
-        ]),
-    )
+    await _ask_location(update)
     return WAIT_LOCATION
 
 
-async def got_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    loc = update.message.text.strip() if update.message.text else None
-    context.user_data["location"] = loc
-    await show_condition_picker(update)
+async def _ask_location(update: Update):
+    await update.effective_message.reply_text(
+        "📍 <b>Город</b>\n\nВыберите или введите свой.",
+        parse_mode="HTML",
+        reply_markup=_kb(
+            [_btn("🏙 Москва", "loc_msk"), _btn("🌇 Санкт-Петербург", "loc_spb")],
+            [_btn("🌆 Екатеринбург", "loc_ekb"), _btn("🌃 Новосибирск", "loc_nsk")],
+            [_btn("🌍 Везде", "loc_skip")],
+        ),
+    )
+
+
+async def got_location_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """User typed a city name."""
+    context.user_data["location"] = update.message.text.strip()
+    await _ask_condition(update)
     return WAIT_CONDITION
 
 
+async def _set_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Location button pressed."""
+    await update.callback_query.answer()
+    loc_map = {
+        "loc_msk": "Москва",
+        "loc_spb": "Санкт-Петербург",
+        "loc_ekb": "Екатеринбург",
+        "loc_nsk": "Новосибирск",
+        "loc_skip": None,
+    }
+    context.user_data["location"] = loc_map.get(update.callback_query.data)
+    await _ask_condition(update)
+    return WAIT_CONDITION
+
+
+async def _ask_condition(update: Update):
+    await update.effective_message.reply_text(
+        "📦 <b>Состояние</b>\n\nКакое состояние вас интересует?",
+        parse_mode="HTML",
+        reply_markup=_kb(
+            [_btn("✨ Новый", "cond_new"), _btn("👍 Как новый", "cond_likenew")],
+            [_btn("📦 Б/у", "cond_used"), _btn("⏭ Не важно", "cond_any")],
+        ),
+    )
+
+
 async def got_condition(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    """Condition callback or text."""
-    context.user_data["condition"] = update.callback_query.data if update.callback_query else "any"
+    """Condition selected."""
+    await update.callback_query.answer()
+    context.user_data["condition"] = update.callback_query.data  # cond_new, etc.
+    await _ask_purpose(update)
+    return WAIT_PURPOSE
+
+
+async def _ask_purpose(update: Update):
+    await update.effective_message.reply_text(
+        "🎯 <b>Цель покупки</b>",
+        parse_mode="HTML",
+        reply_markup=_kb(
+            [_btn("🏠 Для себя", "purp_self")],
+            [_btn("💰 Найти дешевле рынка", "purp_deal")],
+            [_btn("🔄 Перепродажа", "purp_resale")],
+        ),
+    )
+
+
+async def got_purpose(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Purpose selected — final step, create hunt."""
+    await update.callback_query.answer()
+    purp_map = {"purp_self": "self", "purp_deal": "deal", "purp_resale": "resale"}
+    context.user_data["purpose"] = purp_map.get(update.callback_query.data, "self")
     await create_hunt(update, context)
     return ConversationHandler.END
 
 
-async def show_condition_picker(update: Update):
-    """Show condition options."""
-    chat_id = update.effective_chat.id if update.message else update.callback_query.message.chat.id
-    method = update.effective_message.reply_text
-    await method(
-        text=(
-            "📦 <b>Состояние</b>\n\n"
-            "Какое состояние вас интересует?"
-        ),
-        parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("✨ Новый", callback_data="cond_new")],
-            [InlineKeyboardButton("👍 Как новый", callback_data="cond_likenew")],
-            [InlineKeyboardButton("📦 Б/у", callback_data="cond_used")],
-            [InlineKeyboardButton("⏭ Не важно", callback_data="cond_any")],
-        ]),
-    )
-
-
-# ═══════════════════════════════════════════════
-#  CREATE HUNT
-# ═══════════════════════════════════════════════
-
 async def create_hunt(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Save the search and confirm to user."""
     user = update.effective_user
     user_row = DB.get_user_by_telegram(user.id)
     if not user_row:
-        await update.callback_query.message.edit_text("❌ Ошибка. Попробуйте /start")
+        await update.effective_message.reply_text("❌ Ошибка. Попробуйте /start")
         return
 
     q = context.user_data.get("query", "Поиск")
     max_price = context.user_data.get("max_price")
     location = context.user_data.get("location")
-    condition = context.user_data.get("condition", "any")
+    condition_raw = context.user_data.get("condition", "cond_any")
+    purpose = context.user_data.get("purpose", "self")
+
+    cond_map = {
+        "cond_new": "new", "cond_likenew": "like_new",
+        "cond_used": "used", "cond_any": "any",
+    }
+    cond_label = {
+        "cond_new": "Новый", "cond_likenew": "Как новый",
+        "cond_used": "Б/у", "cond_any": "Любое",
+    }
+    purp_label = {"self": "Для себя", "deal": "Дешевле рынка", "resale": "Перепродажа"}
 
     query_obj = SearchQuery(
         user_id=user_row["id"],
         query=q,
         keywords=q.split(),
         max_price=float(max_price) if max_price else None,
-        location=location or None,
+        location=location,
+        condition=cond_map.get(condition_raw, "any"),
+        purpose=purpose,
     )
-    search_id = DB.create_search(query_obj)
+    DB.create_search(query_obj)
 
     price_line = f"до {max_price:,.0f} ₽" if max_price else "без ограничений"
     loc_line = location or "везде"
-    cond_map = {"cond_new": "Новый", "cond_likenew": "Как новый", "cond_used": "Б/у", "cond_any": "Любое"}
-    cond_line = cond_map.get(condition, "Любое")
-
-    cond_obj = {"condition": condition} if condition != "any" else {}
 
     text = (
         "🎯 <b>Охота создана!</b>\n\n"
-        f"Товар: <code>{q}</code>\n"
-        f"Бюджет: {price_line}\n"
-        f"Регион: {loc_line}\n"
-        f"Состояние: {cond_line}\n\n"
-        f"<i>Я буду проверять новые объявления автоматически.</i>\n"
-        f"<i>Пришлю уведомление, когда найду выгодное предложение.</i>"
+        f"<b>Товар:</b> <code>{q}</code>\n"
+        f"<b>Бюджет:</b> {price_line}\n"
+        f"<b>Регион:</b> {loc_line}\n"
+        f"<b>Состояние:</b> {cond_label.get(condition_raw, 'Любое')}\n"
+        f"<b>Цель:</b> {purp_label.get(purpose, 'Для себя')}\n\n"
+        "<i>AI будет проверять рынок автоматически.\n"
+        "Пришлю уведомление, когда найду выгодное предложение.</i>"
     )
 
-    kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🎯 Новая охота", callback_data="menu_search")],
-        [InlineKeyboardButton("📋 Все охоты", callback_data="menu_hunts")],
-        [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-    ])
-
-    await update.callback_query.message.edit_text(
-        text=text, parse_mode="HTML", reply_markup=kb,
+    await update.effective_message.reply_text(
+        text,
+        parse_mode="HTML",
+        reply_markup=_kb(
+            [_btn("🎯 Новая охота", "menu_search")],
+            [_btn("📋 Мои охоты", "menu_hunts")],
+            _home_row(),
+        ),
     )
     context.user_data.clear()
 
 
-# ═══════════════════════════════════════════════
+async def _skip_price(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    await update.callback_query.answer()
+    await _ask_location(update)
+    return WAIT_LOCATION
+
+
+async def cancel_search(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    context.user_data.clear()
+    await _edit(
+        update,
+        "🔍 Поиск отменён.",
+        _kb([_btn("🔍 Новый поиск", "menu_search")], _home_row()),
+    )
+    return ConversationHandler.END
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 #  MY HUNTS
-# ═══════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
 
 async def show_hunts(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = _get_user_id(update)
@@ -306,321 +433,679 @@ async def show_hunts(update: Update, context: ContextTypes.DEFAULT_TYPE):
     active = [s for s in searches if s["active"]]
 
     if not active:
-        await update.callback_query.edit_message_text(
-            "🎯 У вас пока нет активных охот.\n\n"
-            "Создайте первую — нажмите кнопку ниже.",
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🔍 Создать охоту", callback_data="menu_search")],
-                [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-            ]),
+        await _edit(
+            update,
+            "🎯 <b>Мои охоты</b>\n\nУ вас пока нет активных охот.\nСоздайте первую!",
+            _kb([_btn("🔍 Создать охоту", "menu_search")], _home_row()),
         )
         return
 
     lines = ["🎯 <b>Мои охоты</b>\n"]
     buttons = []
 
-    for s in active[:20]:
-        price = f"до {s['max_price']:,.0f}₽" if s.get("max_price") else ""
+    for s in active[:10]:
+        price_str = f"до {s['max_price']:,.0f} ₽" if s.get("max_price") else "любая цена"
+        loc_str = s.get("location") or "везде"
+        st = DB.get_search_stats(s["id"])
         lines.append(
-            f"<b>━━━━━━━━━━━━━━━━━━━</b>\n"
-            f"🎯 <b>{s['query'][:60]}</b>\n"
-            f"   {price} | Статус: 🟢 Активна\n"
+            f"<b>━━━━━━━━━━━━━━━━━</b>\n"
+            f"🎯 <b>{s['query'][:50]}</b>\n"
+            f"   💰 {price_str} · 📍 {loc_str}\n"
+            f"   🟢 Активна · 🔥 Находок: {st['good_deals']}\n"
         )
-        buttons.append([
-            InlineKeyboardButton(
-                f"▶ {s['query'][:30]}",
-                callback_data=f"hunt_open_{s['id']}",
-            ),
-        ])
+        buttons.append([_btn(f"▶ {s['query'][:28]}", f"hunt_open_{s['id']}")])
 
-    buttons.append([InlineKeyboardButton("🔍 Новая охота", callback_data="menu_search")])
-    buttons.append([InlineKeyboardButton("🏠 В меню", callback_data="menu_home")])
+    buttons += [
+        [_btn("🔍 Новая охота", "menu_search")],
+        _home_row(),
+    ]
 
-    await update.callback_query.edit_message_text(
-        text="\n".join(lines),
-        parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup(buttons),
-    )
+    await _edit(update, "\n".join(lines), _kb(*buttons))
 
 
 async def show_hunt_detail(update: Update, search_id: int):
     searches = DB.get_active_searches()
     s = next((x for x in searches if x["id"] == search_id), None)
     if not s:
-        await update.callback_query.edit_message_text("Охота не найдена.")
+        await _edit(update, "Охота не найдена.", _kb(_home_row()))
         return
 
-    alerts = DB.get_recent_alerts(DB.get_user_by_telegram(update.effective_user.id)["id"], limit=3)
-    hunting = [a for a in alerts if a.get("search_id") == search_id]
+    st = DB.get_search_stats(search_id)
+    price_str = f"до {s['max_price']:,.0f} ₽" if s.get("max_price") else "любая цена"
+    loc_str = s.get("location") or "везде"
+
+    cond_labels = {"new": "Новый", "like_new": "Как новый", "used": "Б/у", "any": "Любое"}
+    purp_labels = {"self": "Для себя", "deal": "Дешевле рынка", "resale": "Перепродажа"}
 
     text = (
         f"🎯 <b>{s['query']}</b>\n\n"
-        f"💰 До {s['max_price']:,.0f} ₽\n"
-        f"🟢 Активна\n\n"
-        f"🔥 Находок: {len(hunting)}\n"
+        f"💰 Бюджет: {price_str}\n"
+        f"📍 Регион: {loc_str}\n"
+        f"📦 Состояние: {cond_labels.get(s.get('condition', 'any'), 'Любое')}\n"
+        f"🎯 Цель: {purp_labels.get(s.get('purpose', 'self'), 'Для себя')}\n\n"
+        f"<b>━━━━━━━━━━━━━━━━━</b>\n"
+        f"🟢 Статус: Активна\n"
+        f"🔍 Всего найдено: <b>{st['total']}</b>\n"
+        f"🔥 Выгодных: <b>{st['good_deals']}</b>"
     )
 
-    kb = InlineKeyboardMarkup([
+    kb = _kb(
         [
-            InlineKeyboardButton("⏸ Пауза", callback_data=f"hunt_pause_{search_id}"),
-            InlineKeyboardButton("❌ Удалить", callback_data=f"hunt_delete_{search_id}"),
+            _btn("⏸ Пауза", f"hunt_pause_{search_id}"),
+            _btn("❌ Удалить", f"hunt_delete_{search_id}"),
         ],
-        [InlineKeyboardButton("📋 Все охоты", callback_data="menu_hunts")],
-        [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-    ])
-
-    await update.callback_query.edit_message_text(
-        text=text, parse_mode="HTML", reply_markup=kb,
+        [_btn("📋 Все охоты", "menu_hunts")],
+        _home_row(),
     )
+    await _edit(update, text, kb)
 
 
-# ═══════════════════════════════════════════════
-#  FINDS
-# ═══════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
+#  BEST FINDS
+# ═══════════════════════════════════════════════════════════════════════════════
 
 async def show_finds(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = _get_user_id(update)
-    offset = context.user_data.get("finds_page", 0)
-    alerts = DB.get_recent_alerts(user_id, limit=20)
+    page = context.user_data.get("finds_page", 0)
+    alerts = DB.get_recent_alerts(user_id, limit=50)
 
     if not alerts:
-        await update.callback_query.edit_message_text(
-            "🔍 Пока нет находок.\n\n"
-            "Создайте охоту — и я начну искать.",
-            reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("🔍 Новая охота", callback_data="menu_search")],
-                [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-            ]),
+        await _edit(
+            update,
+            "🔍 <b>Находки</b>\n\nПока нет находок.\nСоздайте охоту — и я начну искать!",
+            _kb([_btn("🔍 Новая охота", "menu_search")], _home_row()),
         )
         return
 
-    # Get the requested slice
-    page = alerts[offset:offset + 3]
-    if not page:
+    chunk = alerts[page: page + 3]
+    if not chunk:
         context.user_data["finds_page"] = 0
-        page = alerts[:3]
+        chunk = alerts[:3]
+        page = 0
 
-    for a in page:
-        kb = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🔗 Открыть", url=f"{a.get('url', '')}")],
-        ])
-        text = _format_find_card(a)
-        await update.callback_query.message.reply_text(
-            text=text, parse_mode="HTML", reply_markup=kb, disable_web_page_preview=True,
+    # Navigation header
+    total_pages = (len(alerts) + 2) // 3
+    current_page = page // 3 + 1
+    header_text = f"🔥 <b>Лучшие находки</b>  [{current_page}/{total_pages}]\n"
+    await _edit(update, header_text, _kb(_home_row()))
+
+    for a in chunk:
+        why_good = a.get("ai_why_good") or []
+        risks = a.get("ai_risks") or []
+
+        # Fallback why_good from heuristics
+        if not why_good:
+            if (a.get("price_delta_pct") or 0) < -10:
+                why_good.append("цена ниже рынка")
+            if a.get("seller_rating") and a["seller_rating"] > 4.5:
+                why_good.append("хороший продавец")
+            images = a.get("images") or []
+            if len(images) >= 3:
+                why_good.append("есть реальные фото")
+
+        card = format_alert(
+            title=a.get("title", ""),
+            price=a.get("price", 0),
+            market_price=a.get("market_price") or a.get("price", 0),
+            deal_score=a.get("deal_score", 0),
+            price_delta_pct=a.get("price_delta_pct", 0),
+            risk_score=a.get("risk_score", 50),
+            recommendation=a.get("recommendation", "maybe"),
+            ai_explanation=a.get("ai_explanation") or "",
+            ai_why_good=why_good,
+            ai_risks=risks,
         )
 
-    # Show more button if needed
-    if len(alerts) > offset + 3:
-        kb = InlineKeyboardMarkup([
-            [InlineKeyboardButton("⏩ Ещё", callback_data="find_next")],
-            [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
+        listing_id = a.get("listing_id") or a.get("id", 0)
+        analysis_id = a.get("analysis_id", 0)
+        url = a.get("url", "")
+
+        kb_rows = []
+        if url:
+            kb_rows.append([_url_btn("🔗 Открыть объявление", url)])
+        kb_rows.append([
+            _btn("⭐ Сохранить", f"find_save_{listing_id}_{analysis_id}"),
+            _btn("❌ Не интересно", f"find_skip_{listing_id}"),
         ])
-        await update.callback_query.message.reply_text(
-            "Больше находок ниже ⤵", reply_markup=kb,
-        )
-    else:
-        kb = InlineKeyboardMarkup([
-            [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-        ])
-        await update.callback_query.message.reply_text(
-            "Это все находки за сегодня.", reply_markup=kb,
+
+        await update.effective_message.reply_text(
+            card, parse_mode="HTML",
+            reply_markup=_kb(*kb_rows),
+            disable_web_page_preview=True,
         )
 
+    # Navigation
+    nav_rows = []
+    if page > 0:
+        nav_rows.append(_btn("◀ Назад", f"finds_page_{max(0, page - 3)}"))
+    if page + 3 < len(alerts):
+        nav_rows.append(_btn("▶ Ещё", f"finds_page_{page + 3}"))
 
-def _format_find_card(a: dict) -> str:
-    """Format a single deal card beautifully."""
-    title = a.get("title", "Без названия")[:80]
-    price = a.get("price", 0)
-    deal_score = a.get("deal_score", 0)
-    price_delta = a.get("price_delta_pct", 0)
-    recommendation = a.get("recommendation", "maybe")
-    risk_score = a.get("risk_score", 0)
-
-    emoji = "🔥" if deal_score >= 70 else "✅" if deal_score >= 50 else "ℹ️"
-    rec_emoji = "🟢" if recommendation == "buy" else "🟡"
-
-    # Top-level assessment
-    if deal_score >= 80:
-        assessment = "✦ Отличная цена на фоне рынка. Рекомендую посмотреть прямо сейчас."
-    elif deal_score >= 60:
-        assessment = "✦ Хороший вариант. Стоит обратить внимание."
-    else:
-        assessment = "✦ Интересно, но нужно проверить детали."
-
-    return (
-        f"{emoji} <b>{title}</b>\n\n"
-        f"💰 <b>{price:,.0f} ₽</b>\n"
-        f"📊 Рынок: <b>{(price / (1 + price_delta/100)):,.0f} ₽</b>\n"
-        f"📉 Отклонение: <b>{price_delta:+.0f}%</b>\n\n"
-        f"<b>━━━━━━━━━━━━━━━━━━━</b>\n"
-        f"⭐ Оценка: <b>{deal_score:.0f}/100</b>\n"
-        f"🎯 Риск: <b>{risk_score:.0f}/100</b>\n"
-        f"{rec_emoji} {assessment}\n\n"
-        f"<b>━━━━━━━━━━━━━━━━━━━</b>"
+    footer_kb = _kb(nav_rows, [_btn("⭐ Сохранённые", "menu_saved")], _home_row()) if nav_rows else _kb(
+        [_btn("⭐ Сохранённые", "menu_saved")], _home_row()
+    )
+    await update.effective_message.reply_text(
+        "Выберите действие:", reply_markup=footer_kb
     )
 
 
-# ═══════════════════════════════════════════════
-#  STATS
-# ═══════════════════════════════════════════════
+async def save_find(update: Update, context: ContextTypes.DEFAULT_TYPE, data: str):
+    """Save a find to favorites."""
+    user_id = _get_user_id(update)
+    try:
+        _, listing_id, analysis_id = data.rsplit("_", 2)
+        ok = DB.save_find(user_id, int(listing_id), int(analysis_id))
+        await update.callback_query.answer(
+            "⭐ Сохранено!" if ok else "Уже сохранено", show_alert=False
+        )
+    except Exception:
+        await update.callback_query.answer("Ошибка сохранения", show_alert=False)
+
+
+async def show_saved_finds(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = _get_user_id(update)
+    saved = DB.get_saved_finds(user_id, limit=10)
+
+    if not saved:
+        await _edit(
+            update,
+            "⭐ <b>Сохранённые находки</b>\n\nСписок пуст. Сохраняйте интересные предложения!",
+            _kb([_btn("🔥 Находки", "menu_finds")], _home_row()),
+        )
+        return
+
+    lines = ["⭐ <b>Сохранённые находки</b>\n"]
+    for s in saved:
+        delta = s.get("price_delta_pct", 0)
+        lines.append(
+            f"<b>━━━━━━━━━━━━━━━━━</b>\n"
+            f"<b>{s['title'][:60]}</b>\n"
+            f"💰 {s['price']:,.0f} ₽ · 📊 {delta:+.0f}% от рынка\n"
+        )
+
+    await _edit(
+        update, "\n".join(lines),
+        _kb([_btn("🔥 Все находки", "menu_finds")], _home_row()),
+    )
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  MARKET RADAR
+# ═══════════════════════════════════════════════════════════════════════════════
+
+async def show_radar(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = _get_user_id(update)
+
+    # Try to get cached radar from DB first
+    radar_items = DB.get_latest_radar(user_id, limit=6)
+
+    if not radar_items:
+        # Check if user has any searches
+        searches = DB.get_user_searches(user_id)
+        if not searches:
+            await _edit(
+                update,
+                "📡 <b>Market Radar</b>\n\n"
+                "Создайте хотя бы одну охоту — и я начну отслеживать рынок по вашим категориям.",
+                _kb([_btn("🔍 Создать охоту", "menu_search")], _home_row()),
+            )
+            return
+        await _edit(
+            update,
+            "📡 <b>Market Radar</b>\n\n⏳ Данные ещё накапливаются...\n\n"
+            "<i>Радар заработает после первых проверок рынка.</i>",
+            _kb(_home_row()),
+        )
+        return
+
+    lines = ["📡 <b>Market Radar</b>\n<i>Ваш рынок прямо сейчас</i>\n"]
+
+    for item in radar_items:
+        emoji = item.get("trend_emoji", "→")
+        category = item.get("category", "")
+        avg_price = item.get("avg_price", 0)
+        trend_pct = item.get("trend_pct", 0)
+        hot = item.get("hot_deals_count", 0)
+        comment = item.get("ai_comment", "")
+
+        price_str = f"~{avg_price:,.0f} ₽" if avg_price else ""
+        trend_str = f"{trend_pct:+.1f}%" if trend_pct != 0 else ""
+        hot_str = f"🔥 {hot} горячих" if hot else ""
+
+        meta = " · ".join(x for x in [price_str, trend_str, hot_str] if x)
+
+        lines.append(
+            f"<b>━━━━━━━━━━━━━━━━━</b>\n"
+            f"{emoji} <b>{category[:40]}</b>\n"
+            f"   {meta}\n"
+            + (f"   <i>{comment}</i>\n" if comment else "")
+        )
+
+    lines.append("\n<i>Обновляется каждый час</i>")
+
+    await _edit(
+        update, "\n".join(lines),
+        _kb([_btn("🔄 Обновить", "menu_radar")], _home_row()),
+    )
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  STATISTICS
+# ═══════════════════════════════════════════════════════════════════════════════
 
 async def show_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_id = _get_user_id(update)
-    stats = _user_stats(user_id)
+    stats = DB.get_user_stats(user_id)
 
     text = (
-        "📊 <b>Ваша история</b>\n\n"
-        f"<b>━━━━━━━━━━━━━━━━━━━</b>\n\n"
-        f"🔎 Найдено предложений: <b>{stats['total_listings']}</b>\n"
-        f"🔥 Выгодных находок: <b>{stats['good_deals']}</b>\n"
-        f"📉 Средняя экономия: <b>{stats['avg_savings']}</b>\n"
-        f"🎯 Активных охот: <b>{stats['active_searches']}</b>\n\n"
-        f"<b>━━━━━━━━━━━━━━━━━━━</b>\n\n"
-        f"<i>Чем больше данных — тем точнее мои рекомендации.</i>"
+        "📊 <b>Ваша статистика</b>\n\n"
+        "<b>━━━━━━━━━━━━━━━━━</b>\n\n"
+        f"🔎 Всего найдено: <b>{stats['total_alerts']}</b>\n"
+        f"🔥 Выгодных сделок: <b>{stats['good_deals']}</b>\n"
+        f"⭐ Сохранено: <b>{stats['saved_finds']}</b>\n"
+        f"🎯 Активных охот: <b>{stats['active_searches']}</b>\n"
+        f"📉 Средняя экономия: <b>{stats['avg_savings']}%</b>\n\n"
+        "<b>━━━━━━━━━━━━━━━━━</b>\n\n"
+        f"<b>Сегодня:</b>\n"
+        f"🔎 Проверено: <b>{stats['today_checked']}</b>\n"
+        f"🔥 Выгодных: <b>{stats['today_good']}</b>\n\n"
+        "<i>Чем больше охот — тем точнее AI рекомендации.</i>"
     )
 
-    kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("🎯 Включить охоту", callback_data="hunter_on")],
-        [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-    ])
+    kb = _kb(
+        [_btn("🎯 Включить Hunter Mode", "hunter_on")],
+        [_btn("📡 Market Radar", "menu_radar")],
+        _home_row(),
+    )
+    await _edit(update, text, kb)
 
-    await update.callback_query.edit_message_text(
-        text=text, parse_mode="HTML", reply_markup=kb,
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  HUNTER MODE
+# ═══════════════════════════════════════════════════════════════════════════════
+
+async def set_hunter(update: Update, context: ContextTypes.DEFAULT_TYPE, enabled: bool):
+    user_id = _get_user_id(update)
+    DB.upsert_user_settings(user_id, hunter_enabled=1 if enabled else 0)
+
+    if enabled:
+        text = (
+            "🎯 <b>Hunter Mode включён!</b>\n\n"
+            "Я буду самостоятельно искать выгодные предложения\n"
+            "и присылать только лучшие.\n\n"
+            "<i>Работаю над вашими активными охотами...</i>"
+        )
+        kb = _kb(
+            [_btn("⚙️ Настройки охоты", "settings_hunter")],
+            [_btn("🔕 Отключить", "hunter_off")],
+            _home_row(),
+        )
+    else:
+        text = (
+            "🔕 <b>Hunter Mode отключён.</b>\n\n"
+            "Я больше не буду присылать автоматические уведомления."
+        )
+        kb = _kb(
+            [_btn("🎯 Включить", "hunter_on")],
+            _home_row(),
+        )
+
+    await _edit(update, text, kb)
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+#  SETTINGS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+async def show_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = _get_user_id(update)
+    s = DB.get_user_settings(user_id)
+
+    hunter_status = "🟢 Вкл" if s.get("hunter_enabled") else "⚪ Выкл"
+    notif_status = "🔔 Вкл" if s.get("notifications_enabled", 1) else "🔕 Выкл"
+
+    ai_prov = s.get("ai_provider", "") or settings.ai_provider
+    from ai.factory import provider_display_name
+    ai_status = provider_display_name(ai_prov) if ai_prov else "⚙️ Не настроен"
+
+    interval_min = s.get("hunter_interval_sec", 300) // 60
+    min_savings = s.get("hunter_min_savings_pct", 10)
+
+    text = (
+        "⚙️ <b>Настройки</b>\n\n"
+        "<b>━━━━━━━━━━━━━━━━━</b>\n\n"
+        f"🎯 Hunter Mode: <b>{hunter_status}</b>\n"
+        f"⏱ Частота проверки: <b>каждые {interval_min} мин</b>\n"
+        f"📉 Мин. выгода: <b>{min_savings:.0f}%</b>\n\n"
+        f"🤖 AI провайдер: <b>{ai_status}</b>\n\n"
+        f"🔔 Уведомления: <b>{notif_status}</b>\n\n"
+        "<b>━━━━━━━━━━━━━━━━━</b>"
     )
 
+    kb = _kb(
+        [_btn("🎯 Hunter Mode", "settings_hunter")],
+        [_btn("🤖 AI провайдер", "settings_ai_menu")],
+        [_btn(f"🔔 Уведомления ({notif_status})", "settings_notifications")],
+        _home_row(),
+    )
+    await _edit(update, text, kb)
 
-def _user_stats(user_id: int) -> dict:
-    """Compute user statistics."""
-    conn = DB.connect()
 
-    # Active searches
-    active = conn.execute(
-        "SELECT COUNT(*) FROM searches WHERE user_id = ? AND active = 1",
-        (user_id,),
-    ).fetchone()[0]
+async def show_hunter_settings(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = _get_user_id(update)
+    s = DB.get_user_settings(user_id)
 
-    # Total alerts
-    total_alerts = conn.execute(
-        "SELECT COUNT(*) FROM alerts WHERE user_id = ?", (user_id,),
-    ).fetchone()[0]
+    interval_sec = s.get("hunter_interval_sec", 300)
+    min_savings = s.get("hunter_min_savings_pct", 10)
+    enabled = bool(s.get("hunter_enabled", 0))
 
-    # Good deals (score >= 70)
-    good = conn.execute(
-        """SELECT COUNT(*) FROM alerts a
-        JOIN analysis an ON a.analysis_id = an.id
-        WHERE a.user_id = ? AND an.deal_score >= 70""",
-        (user_id,),
-    ).fetchone()[0]
+    text = (
+        "🎯 <b>Настройки Hunter Mode</b>\n\n"
+        f"Статус: {'🟢 Активен' if enabled else '⚪ Выключен'}\n\n"
+        "<b>Частота проверки:</b>"
+    )
 
-    # Avg savings
-    avg = conn.execute(
-        """SELECT AVG(ABS(an.price_delta_pct))
-        FROM alerts a
-        JOIN analysis an ON a.analysis_id = an.id
-        WHERE a.user_id = ? AND an.price_delta_pct < 0""",
-        (user_id,),
-    ).fetchone()[0] or 0
+    interval_kb = [
+        _btn(f"{'✅ ' if interval_sec == 300 else ''}5 мин", "set_hunter_interval_300"),
+        _btn(f"{'✅ ' if interval_sec == 900 else ''}15 мин", "set_hunter_interval_900"),
+        _btn(f"{'✅ ' if interval_sec == 3600 else ''}1 час", "set_hunter_interval_3600"),
+    ]
 
-    return {
-        "total_listings": total_alerts,
-        "good_deals": good,
-        "avg_savings": f"{abs(avg):.0f}%",
-        "active_searches": active,
+    text += "\n\n<b>Минимальная выгода для уведомления:</b>"
+
+    savings_kb = [
+        _btn(f"{'✅ ' if min_savings == 10 else ''}10%", "set_hunter_min_10"),
+        _btn(f"{'✅ ' if min_savings == 20 else ''}20%", "set_hunter_min_20"),
+        _btn(f"{'✅ ' if min_savings == 30 else ''}30%", "set_hunter_min_30"),
+    ]
+
+    toggle_label = "🔕 Выключить" if enabled else "🎯 Включить"
+    toggle_action = "hunter_off" if enabled else "hunter_on"
+
+    kb = _kb(
+        interval_kb,
+        savings_kb,
+        [_btn(toggle_label, toggle_action)],
+        [_btn("◀ Назад", "menu_settings")],
+        _home_row(),
+    )
+    await _edit(update, text, kb)
+
+
+async def set_hunter_interval(update: Update, context: ContextTypes.DEFAULT_TYPE, sec: int):
+    user_id = _get_user_id(update)
+    DB.upsert_user_settings(user_id, hunter_interval_sec=sec)
+    await update.callback_query.answer(f"✅ Интервал: {sec // 60} мин", show_alert=False)
+    await show_hunter_settings(update, context)
+
+
+async def set_hunter_min(update: Update, context: ContextTypes.DEFAULT_TYPE, pct: float):
+    user_id = _get_user_id(update)
+    DB.upsert_user_settings(user_id, hunter_min_savings_pct=pct)
+    await update.callback_query.answer(f"✅ Мин. выгода: {pct:.0f}%", show_alert=False)
+    await show_hunter_settings(update, context)
+
+
+async def toggle_notifications(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    user_id = _get_user_id(update)
+    s = DB.get_user_settings(user_id)
+    current = s.get("notifications_enabled", 1)
+    new_val = 0 if current else 1
+    DB.upsert_user_settings(user_id, notifications_enabled=new_val)
+    status = "включены 🔔" if new_val else "выключены 🔕"
+    await update.callback_query.answer(f"Уведомления {status}", show_alert=False)
+    await show_settings(update, context)
+
+
+# ── AI Settings ───────────────────────────────────────────────────────────────
+
+async def show_ai_settings(update: Update, context: ContextTypes.DEFAULT_TYPE, sub: str = "menu"):
+    user_id = _get_user_id(update)
+    s = DB.get_user_settings(user_id)
+    current = s.get("ai_provider", "") or settings.ai_provider
+
+    from ai.factory import provider_display_name
+
+    text = (
+        "🤖 <b>AI Провайдер</b>\n\n"
+        f"Текущий: <b>{provider_display_name(current) if current else 'Не настроен'}</b>\n\n"
+        "Выберите AI провайдера для анализа объявлений.\n"
+        "<i>Без AI система работает на эвристиках.</i>\n\n"
+        "<b>Что даёт AI:</b>\n"
+        "✅ Объяснение каждой находки\n"
+        "✅ Оценка рисков продавца\n"
+        "✅ Market Radar с комментариями\n"
+        "✅ Умный парсинг ваших запросов"
+    )
+
+    def mark(p: str) -> str:
+        return "✅ " if current == p else ""
+
+    kb = _kb(
+        [_btn(f"{mark('openai')}🤖 OpenAI GPT", "set_ai_provider_openai")],
+        [_btn(f"{mark('gemini')}✨ Google Gemini", "set_ai_provider_gemini")],
+        [_btn(f"{mark('anthropic')}🔮 Claude", "set_ai_provider_anthropic")],
+        [_btn(f"{mark('')}⚙️ Без AI", "set_ai_provider_none")],
+        [_btn("◀ Назад", "menu_settings")],
+    )
+    await _edit(update, text, kb)
+
+
+async def set_ai_provider(update: Update, context: ContextTypes.DEFAULT_TYPE, provider: str):
+    user_id = _get_user_id(update)
+
+    if provider == "none":
+        DB.upsert_user_settings(user_id, ai_provider="", ai_api_key="")
+        await update.callback_query.answer("AI отключён", show_alert=False)
+        await show_ai_settings(update, context)
+        return
+
+    # Ask for API key
+    context.user_data["pending_ai_provider"] = provider
+
+    provider_names = {
+        "openai": "OpenAI",
+        "gemini": "Google Gemini",
+        "anthropic": "Anthropic Claude",
+    }
+    name = provider_names.get(provider, provider)
+
+    instructions = {
+        "openai": "platform.openai.com → API Keys",
+        "gemini": "aistudio.google.com → Get API Key",
+        "anthropic": "console.anthropic.com → API Keys",
     }
 
+    await _edit(
+        update,
+        f"🔑 <b>API ключ для {name}</b>\n\n"
+        f"Введите ваш API ключ.\n\n"
+        f"<i>Где получить: {instructions.get(provider, '')}</i>",
+        _kb([_btn("🚫 Отмена", "settings_ai_menu")]),
+    )
+    return WAIT_AI_KEY
 
-# ═══════════════════════════════════════════════
-#  CONVERSATION HELPERS (defined before handler)
-# ═══════════════════════════════════════════════
 
-async def _cancel_search(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.callback_query.answer()
-    context.user_data.clear()
-    await update.callback_query.edit_message_text(
-        "🔍 Поиск отменён.",
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("🔍 Новый поиск", callback_data="menu_search")],
-            [InlineKeyboardButton("🏠 В меню", callback_data="menu_home")],
-        ]),
+async def got_ai_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Received AI API key from user."""
+    user_id = _get_user_id(update)
+    provider = context.user_data.pop("pending_ai_provider", "")
+    api_key = update.message.text.strip()
+
+    if not provider or not api_key:
+        await update.message.reply_text(
+            "❌ Ошибка. Попробуйте ещё раз.",
+            reply_markup=_kb([_btn("◀ Настройки", "menu_settings")]),
+        )
+        return ConversationHandler.END
+
+    # Validate key format (basic check)
+    if len(api_key) < 20:
+        await update.message.reply_text(
+            "❌ Ключ слишком короткий. Проверьте и попробуйте снова.",
+            reply_markup=_kb([_btn("◀ Назад", "settings_ai_menu")]),
+        )
+        return WAIT_AI_KEY
+
+    DB.upsert_user_settings(user_id, ai_provider=provider, ai_api_key=api_key)
+
+    from ai.factory import get_user_ai_provider, provider_display_name
+    s = DB.get_user_settings(user_id)
+
+    # Test the key
+    test_ok = False
+    try:
+        prov = get_user_ai_provider(s)
+        if prov and prov.is_available:
+            test_ok = True
+    except Exception:
+        pass
+
+    status = "✅ Ключ сохранён и проверен!" if test_ok else "✅ Ключ сохранён."
+
+    await update.message.reply_text(
+        f"{status}\n\n"
+        f"🤖 AI провайдер: <b>{provider_display_name(provider)}</b>\n\n"
+        "Теперь все находки будут анализироваться с помощью AI.",
+        parse_mode="HTML",
+        reply_markup=_kb([_btn("◀ Настройки", "menu_settings")], _home_row()),
     )
     return ConversationHandler.END
 
 
-async def _skip_price(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.callback_query.answer()
-    await update.effective_message.edit_text(
-        "📍 <b>Город</b>\n\nВыберите город для поиска.",
-        parse_mode="HTML",
-        reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("🇷🇺 Москва", callback_data="loc_msk")],
-            [InlineKeyboardButton("🇷🇺 СПб", callback_data="loc_spb")],
-            [InlineKeyboardButton("🌍 Везде", callback_data="loc_skip")],
-        ]),
+# ═══════════════════════════════════════════════════════════════════════════════
+#  PUBLIC NOTIFICATION API (called by collector/scheduler)
+# ═══════════════════════════════════════════════════════════════════════════════
+
+async def send_deal_alert(
+    app: "Application",
+    telegram_id: int,
+    alert_data: dict,
+):
+    """Send a deal alert to a user. Called externally by the scheduler."""
+    title = alert_data.get("title", "")
+    price = alert_data.get("price", 0)
+    market_price = alert_data.get("market_price", price)
+    deal_score = alert_data.get("deal_score", 0)
+    price_delta_pct = alert_data.get("price_delta_pct", 0)
+    risk_score = alert_data.get("risk_score", 50)
+    recommendation = alert_data.get("recommendation", "maybe")
+    ai_explanation = alert_data.get("ai_explanation") or ""
+    ai_why_good = alert_data.get("ai_why_good") or []
+    ai_risks = alert_data.get("ai_risks") or []
+    url = alert_data.get("url", "")
+    confidence = alert_data.get("ai_score") or deal_score
+
+    card = format_alert(
+        title=title, price=price, market_price=market_price,
+        deal_score=deal_score, price_delta_pct=price_delta_pct,
+        risk_score=risk_score, recommendation=recommendation,
+        ai_explanation=ai_explanation, ai_why_good=ai_why_good,
+        ai_risks=ai_risks,
     )
-    return WAIT_LOCATION
+
+    header = (
+        "🔥 <b>Новая находка!</b>\n\n"
+        f"Уверенность: <b>{confidence:.0f}%</b>\n"
+        f"Рекомендация: {'🟢 Стоит посмотреть' if recommendation == 'buy' else '🟡 Интересно'}\n\n"
+    )
+
+    kb_rows = []
+    if url:
+        kb_rows.append([_url_btn("🔗 Открыть объявление", url)])
+    kb_rows.append([_btn("🏠 В меню", "menu_home")])
+
+    try:
+        await app.bot.send_message(
+            chat_id=telegram_id,
+            text=header + card,
+            parse_mode="HTML",
+            reply_markup=_kb(*kb_rows),
+            disable_web_page_preview=True,
+        )
+    except Exception as e:
+        log.warning("Failed to send alert to %s: %s", telegram_id, e)
 
 
-async def _set_location(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.callback_query.answer()
-    data = update.callback_query.data
-    loc_map = {"loc_msk": "Москва", "loc_spb": "Санкт-Петербург", "loc_skip": None}
-    context.user_data["location"] = loc_map.get(data)
-    await show_condition_picker(update)
-    return WAIT_CONDITION
-
-
-# ═══════════════════════════════════════════════
-#  CONVERSATION HANDLER
-# ═══════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
+#  CONVERSATION HANDLERS
+# ═══════════════════════════════════════════════════════════════════════════════
 
 search_conversation = ConversationHandler(
     entry_points=[CallbackQueryHandler(start_search, pattern="^menu_search$")],
     states={
         WAIT_QUERY: [
             MessageHandler(filters.TEXT & ~filters.COMMAND, got_query),
-            CallbackQueryHandler(_cancel_search, pattern="^search_cancel$"),
+            CallbackQueryHandler(cancel_search, pattern="^search_cancel$"),
         ],
         WAIT_PRICE: [
             MessageHandler(filters.TEXT & ~filters.COMMAND, got_price),
             CallbackQueryHandler(_skip_price, pattern="^price_skip$"),
         ],
         WAIT_LOCATION: [
-            MessageHandler(filters.TEXT & ~filters.COMMAND, got_location),
+            MessageHandler(filters.TEXT & ~filters.COMMAND, got_location_text),
             CallbackQueryHandler(_set_location, pattern="^loc_"),
         ],
         WAIT_CONDITION: [
             CallbackQueryHandler(got_condition, pattern="^cond_"),
         ],
+        WAIT_PURPOSE: [
+            CallbackQueryHandler(got_purpose, pattern="^purp_"),
+        ],
     },
-    fallbacks=[CallbackQueryHandler(_cancel_search, pattern="^search_cancel$")],
+    fallbacks=[CallbackQueryHandler(cancel_search, pattern="^search_cancel$")],
+    per_message=False,
+)
+
+ai_key_conversation = ConversationHandler(
+    entry_points=[CallbackQueryHandler(set_ai_provider, pattern="^set_ai_provider_(?!none)")],
+    states={
+        WAIT_AI_KEY: [
+            MessageHandler(filters.TEXT & ~filters.COMMAND, got_ai_key),
+            CallbackQueryHandler(show_ai_settings, pattern="^settings_ai_menu$"),
+        ],
+    },
+    fallbacks=[CallbackQueryHandler(show_settings, pattern="^menu_settings$")],
+    per_message=False,
 )
 
 
-# ═══════════════════════════════════════════════
-#  RUNNER
-# ═══════════════════════════════════════════════
+# ═══════════════════════════════════════════════════════════════════════════════
+#  BOT RUNNER
+# ═══════════════════════════════════════════════════════════════════════════════
 
 class MarketAgentBot:
+    """Market Agent Telegram Bot runner."""
+
     def __init__(self, db: Database = DB):
         self.db = db
         self._app: Optional[Application] = None
 
-    def start(self):
+    def build_app(self) -> Application:
         if not settings.telegram_bot_token:
-            log.error("TELEGRAM_BOT_TOKEN not set")
-            return
+            raise ValueError("MA_TELEGRAM_BOT_TOKEN not set")
 
-        self._app = Application.builder().token(settings.telegram_bot_token).build()
+        app = Application.builder().token(settings.telegram_bot_token).build()
 
-        # Commands
-        self._app.add_handler(CommandHandler("start", cmd_start))
-        self._app.add_handler(CommandHandler("menu", cmd_start))
+        # Commands (admin only — users see inline buttons)
+        app.add_handler(CommandHandler("start", cmd_start))
+        app.add_handler(CommandHandler("menu", cmd_start))
 
-        # Conversation handler for creating a new search
-        self._app.add_handler(search_conversation)
+        # Conversations (order matters — more specific first)
+        app.add_handler(ai_key_conversation)
+        app.add_handler(search_conversation)
 
-        # Callback handler for all inline buttons
-        self._app.add_handler(CallbackQueryHandler(handle_callback))
+        # Generic callback fallback
+        app.add_handler(CallbackQueryHandler(handle_callback))
 
-        log.info("Bot v2 started (premium UX), polling...")
-        self._app.run_polling(allowed_updates=Update.ALL_TYPES)
+        self._app = app
+        return app
+
+    def start(self):
+        app = self.build_app()
+        log.info("Market Agent Bot v2 started — polling...")
+        app.run_polling(allowed_updates=Update.ALL_TYPES)
+
+    @property
+    def app(self) -> Optional[Application]:
+        return self._app

@@ -1,30 +1,56 @@
-"""Scheduler — runs collectors periodically + analyzes + alerts."""
+"""Scheduler v2 — orchestrates collection + AI analysis + alerts + Market Radar.
+
+Improvements over v1:
+- Per-user Hunter Mode intervals (not global)
+- AI-enriched deal scoring via DealEngine.evaluate_async()
+- Market Radar rebuild every hour
+- Sends push notifications via bot application
+- Respects user notification settings
+"""
 
 from __future__ import annotations
 
 import asyncio
 import json
 import logging
+import time
+from typing import Optional
 
 from config import settings
 from database.db import Database
-from models import SearchQuery, RawListing
+from models import SearchQuery
 from collector.avito import AvitoCollector
 from collector.youla import YulaCollector
 from analyzer.engine import DealEngine
-from bot.alerts import format_alert
 
 log = logging.getLogger("market_agent.scheduler")
+
+RADAR_REBUILD_INTERVAL = 3600  # rebuild Market Radar every hour
 
 
 class Scheduler:
     """Orchestrates periodic collection + analysis + alerts."""
 
-    def __init__(self, db: Database):
+    def __init__(self, db: Database, bot_app=None):
         self.db = db
-        self._collectors: dict[str, any] = {}
+        self.bot_app = bot_app           # telegram Application (optional, for push alerts)
+        self._collectors: dict = {}
         self._running = False
-        self._engine = DealEngine(db)
+        self._last_radar_build: float = 0.0
+
+        # Build AI scorer if configured
+        ai_scorer = None
+        try:
+            from ai.factory import get_ai_provider
+            from analyzer.ai_scorer import AIScorer
+            ai_prov = get_ai_provider()
+            if ai_prov:
+                ai_scorer = AIScorer(db, ai_prov)
+                log.info("AI scorer enabled: %s", ai_prov.name)
+        except Exception as e:
+            log.warning("AI scorer init failed: %s", e)
+
+        self._engine = DealEngine(db, ai_scorer=ai_scorer)
 
     async def _get_collector(self, name: str):
         if name not in self._collectors:
@@ -38,85 +64,178 @@ class Scheduler:
     async def run(self):
         self._running = True
         log.info(
-            "Scheduler started (interval=%ds, avito=%s, youla=%s)",
-            settings.collector_interval_sec,
+            "Scheduler v2 started (avito=%s, youla=%s, AI=%s)",
             settings.collector_avito_enabled,
             settings.collector_youla_enabled,
+            "yes" if self._engine.ai_scorer else "no",
         )
 
         try:
             while self._running:
-                searches = self.db.get_active_searches()
-                if not searches:
-                    log.info("No active searches, waiting...")
-                    await asyncio.sleep(settings.collector_interval_sec)
-                    continue
-
-                for search_row in searches:
-                    query = SearchQuery(
-                        user_id=search_row["user_id"],
-                        query=search_row["query"],
-                        category=search_row.get("category"),
-                        keywords=json.loads(search_row.get("keywords", "[]")),
-                        max_price=search_row.get("max_price"),
-                        min_price=search_row.get("min_price"),
-                        location=search_row.get("location"),
-                        sources=["avito", "youla"],
-                    )
-
-                    for source in query.sources:
-                        collector = await self._get_collector(source)
-                        if collector is None:
-                            continue
-
-                        log.info("[%s] Searching: %s", source, query.query)
-                        listings = await collector.search(query)
-
-                        new_count = 0
-                        alert_count = 0
-                        for listing in listings:
-                            # Skip duplicates
-                            if self.db.listing_exists(listing.url):
-                                continue
-
-                            listing_id = self.db.insert_listing(listing)
-                            if not listing_id:
-                                continue
-                            new_count += 1
-
-                            # Analyze deal
-                            deal = self._engine.evaluate(listing, search_row["id"])
-                            analysis_id = self.db.save_analysis(listing_id, search_row["id"], deal)
-
-                            # Alert if good deal
-                            if deal.recommendation in ("buy", "maybe"):
-                                self.db.save_alert(search_row["user_id"], analysis_id)
-                                alert_count += 1
-
-                                # Log
-                                emoji = "🔥" if deal.recommendation == "buy" else "✅"
-                                log.info(
-                                    "%s DEAL [%.0f] %s — %s₽ (%+.0f%%) → %s",
-                                    emoji,
-                                    deal.score,
-                                    listing.title[:50],
-                                    f"{listing.price:,.0f}",
-                                    deal.price_delta_pct,
-                                    deal.recommendation.upper(),
-                                )
-
-                        log.info(
-                            "  → %s: %d new / %d alerts",
-                            source, new_count, alert_count,
-                        )
-
-                log.info("Cycle complete. Next in %ds", settings.collector_interval_sec)
+                await self._run_cycle()
                 await asyncio.sleep(settings.collector_interval_sec)
-
         except asyncio.CancelledError:
             log.info("Scheduler cancelled")
         finally:
             await self._close_all()
+
+    async def _run_cycle(self):
+        """One collection cycle: fetch → analyze → alert."""
+        searches = self.db.get_active_searches()
+        if not searches:
+            log.debug("No active searches, skipping cycle")
+            return
+
+        # Group searches by user to check Hunter Mode per user
+        users_processed: set[int] = set()
+
+        for search_row in searches:
+            user_id = search_row["user_id"]
+            u_settings = self.db.get_user_settings(user_id)
+
+            # Check Hunter Mode (if disabled, user still gets alerts when explicitly triggered)
+            # But we continue collecting for all active searches regardless
+            min_score = u_settings.get("hunter_min_score", 50.0)
+            min_savings = u_settings.get("hunter_min_savings_pct", 10.0)
+            notify = bool(u_settings.get("notifications_enabled", 1))
+
+            query = SearchQuery(
+                user_id=user_id,
+                query=search_row["query"],
+                category=search_row.get("category"),
+                keywords=json.loads(search_row.get("keywords") or "[]"),
+                max_price=search_row.get("max_price"),
+                min_price=search_row.get("min_price"),
+                location=search_row.get("location"),
+                condition=search_row.get("condition", "any"),
+                purpose=search_row.get("purpose", "self"),
+                sources=["avito", "youla"],
+            )
+
+            for source in query.sources:
+                collector = await self._get_collector(source)
+                if collector is None:
+                    continue
+
+                log.info("[%s] Searching: %s (user=%d)", source, query.query, user_id)
+                try:
+                    listings = await collector.search(query)
+                except Exception as e:
+                    log.error("Collector %s failed for %s: %s", source, query.query, e)
+                    continue
+
+                new_count = 0
+                alert_count = 0
+
+                for listing in listings:
+                    if self.db.listing_exists(listing.url):
+                        continue
+
+                    listing_id = self.db.insert_listing(listing)
+                    if not listing_id:
+                        continue
+                    new_count += 1
+
+                    # AI-enriched analysis (async, with fallback to heuristics)
+                    try:
+                        deal = await self._engine.evaluate_async(listing, search_row["id"])
+                    except Exception as e:
+                        log.warning("Analysis failed for %s: %s", listing.title[:50], e)
+                        deal = self._engine.evaluate(listing, search_row["id"])
+
+                    analysis_id = self.db.save_analysis(listing_id, search_row["id"], deal)
+
+                    # Check thresholds
+                    passes_score = deal.score >= min_score
+                    passes_savings = abs(deal.price_delta_pct) >= min_savings
+                    is_good = deal.recommendation in ("buy", "maybe")
+
+                    if is_good and passes_score and passes_savings:
+                        # Save alert to DB
+                        user_row = self.db.get_user_by_telegram(
+                            # We need telegram_id for push — get from users table
+                            self._get_telegram_id(user_id)
+                        )
+                        self.db.save_alert(user_id, analysis_id)
+                        alert_count += 1
+
+                        # Push notification
+                        if notify and self.bot_app:
+                            telegram_id = self._get_telegram_id(user_id)
+                            if telegram_id:
+                                await self._push_alert(telegram_id, listing, deal)
+
+                        emoji = "🔥" if deal.recommendation == "buy" else "✅"
+                        log.info(
+                            "%s DEAL [%.0f] %s — %s₽ (%+.0f%%)",
+                            emoji, deal.score,
+                            listing.title[:50],
+                            f"{listing.price:,.0f}",
+                            deal.price_delta_pct,
+                        )
+
+                log.info("  → %s: %d new / %d alerts", source, new_count, alert_count)
+            users_processed.add(user_id)
+
+        # Rebuild Market Radar once per hour
+        if time.time() - self._last_radar_build > RADAR_REBUILD_INTERVAL:
+            await self._rebuild_radar(list(users_processed))
+            self._last_radar_build = time.time()
+
+        log.info("Cycle complete. Next in %ds", settings.collector_interval_sec)
+
+    def _get_telegram_id(self, user_id: int) -> Optional[int]:
+        """Get Telegram ID for a DB user ID."""
+        try:
+            conn = self.db.connect()
+            row = conn.execute(
+                "SELECT telegram_id FROM users WHERE id = ?", (user_id,)
+            ).fetchone()
+            return row["telegram_id"] if row else None
+        except Exception:
+            return None
+
+    async def _push_alert(self, telegram_id: int, listing, deal):
+        """Push a deal alert to Telegram."""
+        try:
+            from bot.telegram import send_deal_alert
+            alert_data = {
+                "title": listing.title,
+                "price": listing.price,
+                "market_price": deal.market_price,
+                "deal_score": deal.score,
+                "price_delta_pct": deal.price_delta_pct,
+                "risk_score": deal.risk_score,
+                "recommendation": deal.recommendation,
+                "ai_explanation": deal.ai_explanation or "",
+                "ai_why_good": deal.ai_why_good or [],
+                "ai_risks": deal.ai_risks or [],
+                "ai_score": deal.ai_score or deal.score,
+                "url": listing.url,
+            }
+            await send_deal_alert(self.bot_app, telegram_id, alert_data)
+        except Exception as e:
+            log.warning("Push alert failed for tg=%s: %s", telegram_id, e)
+
+    async def _rebuild_radar(self, user_ids: list[int]):
+        """Rebuild Market Radar for all active users."""
+        try:
+            from ai.factory import get_ai_provider
+            from analyzer.market_radar import MarketRadar
+            ai_prov = get_ai_provider()
+            radar = MarketRadar(self.db, ai_provider=ai_prov)
+            for user_id in user_ids:
+                try:
+                    snapshots = await radar.build(user_id)
+                    if snapshots:
+                        log.info(
+                            "Market Radar: %d categories for user %d",
+                            len(snapshots), user_id
+                        )
+                except Exception as e:
+                    log.warning("Radar build failed for user %d: %s", user_id, e)
+        except Exception as e:
+            log.warning("Market Radar rebuild error: %s", e)
 
     async def _close_all(self):
         for name, c in self._collectors.items():

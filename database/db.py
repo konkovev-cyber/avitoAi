@@ -1,7 +1,8 @@
-"""Database operations for Market Agent."""
+"""Database operations for Market Agent — v2 with AI, Hunter Mode, Market Radar."""
 
 from __future__ import annotations
 
+import hashlib
 import json
 import logging
 import sqlite3
@@ -10,7 +11,7 @@ from pathlib import Path
 from typing import Optional
 
 from config import settings
-from models import RawListing, SearchQuery, DealScore
+from models import RawListing, SearchQuery, DealScore, MarketRadarSnapshot
 from .schema import SCHEMA
 
 log = logging.getLogger("market_agent.db")
@@ -40,7 +41,7 @@ class Database:
         conn.commit()
         log.info("Database schema initialized at %s", self.db_path)
 
-    # ── Users ────────────────────────────────────────
+    # ── Users ────────────────────────────────────────────────────────────────
 
     def upsert_user(self, telegram_id: int, username: Optional[str] = None) -> int:
         conn = self.connect()
@@ -50,7 +51,7 @@ class Database:
             (telegram_id, username, username),
         )
         conn.commit()
-        return cur.lastrowid or self.get_user_by_telegram(telegram_id)
+        return cur.lastrowid or self.get_user_by_telegram(telegram_id)["id"]
 
     def get_user_by_telegram(self, telegram_id: int) -> Optional[dict]:
         conn = self.connect()
@@ -59,13 +60,14 @@ class Database:
         ).fetchone()
         return dict(row) if row else None
 
-    # ── Searches ─────────────────────────────────────
+    # ── Searches ─────────────────────────────────────────────────────────────
 
     def create_search(self, search: SearchQuery) -> int:
         conn = self.connect()
         cur = conn.execute(
-            "INSERT INTO searches (user_id, query, category, keywords, max_price, min_price, location) "
-            "VALUES (?, ?, ?, ?, ?, ?, ?)",
+            "INSERT INTO searches "
+            "(user_id, query, category, keywords, max_price, min_price, location, condition, purpose) "
+            "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (
                 search.user_id,
                 search.query,
@@ -74,6 +76,8 @@ class Database:
                 search.max_price,
                 search.min_price,
                 search.location,
+                search.condition,
+                search.purpose,
             ),
         )
         conn.commit()
@@ -99,7 +103,24 @@ class Database:
         conn.execute("UPDATE searches SET active = 0 WHERE id = ?", (search_id,))
         conn.commit()
 
-    # ── Listings ─────────────────────────────────────
+    def activate_search(self, search_id: int):
+        conn = self.connect()
+        conn.execute("UPDATE searches SET active = 1 WHERE id = ?", (search_id,))
+        conn.commit()
+
+    def get_search_stats(self, search_id: int) -> dict:
+        """Returns count of total and good deals found for a search."""
+        conn = self.connect()
+        total = conn.execute(
+            "SELECT COUNT(*) FROM analysis WHERE search_id = ?", (search_id,)
+        ).fetchone()[0]
+        good = conn.execute(
+            "SELECT COUNT(*) FROM analysis WHERE search_id = ? AND deal_score >= 70",
+            (search_id,),
+        ).fetchone()[0]
+        return {"total": total, "good_deals": good}
+
+    # ── Listings ─────────────────────────────────────────────────────────────
 
     def insert_listing(self, listing: RawListing) -> int:
         conn = self.connect()
@@ -153,29 +174,16 @@ class Database:
         ).fetchall()
         return [dict(r) for r in rows]
 
-    def get_recent_alerts(self, user_id: int, limit: int = 10) -> list[dict]:
-        conn = self.connect()
-        rows = conn.execute(
-            """SELECT a.*, l.title, l.price, l.url, l.source,
-                      an.deal_score, an.recommendation, an.price_delta_pct
-            FROM alerts a
-            JOIN analysis an ON a.analysis_id = an.id
-            JOIN listings l ON an.listing_id = l.id
-            WHERE a.user_id = ?
-            ORDER BY a.sent_at DESC LIMIT ?""",
-            (user_id, limit),
-        ).fetchall()
-        return [dict(r) for r in rows]
-
-    # ── Analysis ─────────────────────────────────────
+    # ── Analysis ─────────────────────────────────────────────────────────────
 
     def save_analysis(self, listing_id: int, search_id: int, deal: DealScore) -> int:
         conn = self.connect()
         cur = conn.execute(
             """INSERT INTO analysis
             (listing_id, search_id, market_price, price_delta_pct,
-             deal_score, risk_score, risk_factors, recommendation)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+             deal_score, risk_score, risk_factors, recommendation,
+             ai_score, ai_explanation, ai_why_good, ai_risks, ai_provider)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
                 listing_id,
                 search_id,
@@ -185,6 +193,11 @@ class Database:
                 deal.risk_score,
                 json.dumps(deal.risk_factors),
                 deal.recommendation,
+                deal.ai_score,
+                deal.ai_explanation,
+                json.dumps(deal.ai_why_good) if deal.ai_why_good else None,
+                json.dumps(deal.ai_risks) if deal.ai_risks else None,
+                deal.ai_provider,
             ),
         )
         conn.commit()
@@ -199,7 +212,181 @@ class Database:
         conn.commit()
         return cur.lastrowid
 
-    # ── Stats ────────────────────────────────────────
+    def get_recent_alerts(self, user_id: int, limit: int = 10) -> list[dict]:
+        conn = self.connect()
+        rows = conn.execute(
+            """SELECT a.*, l.title, l.price, l.url, l.source, l.description,
+                      l.seller_name, l.seller_rating, l.images,
+                      an.deal_score, an.recommendation, an.price_delta_pct,
+                      an.market_price, an.risk_score, an.risk_factors,
+                      an.ai_score, an.ai_explanation, an.ai_why_good,
+                      an.ai_risks, an.ai_provider, an.id as analysis_id
+            FROM alerts a
+            JOIN analysis an ON a.analysis_id = an.id
+            JOIN listings l ON an.listing_id = l.id
+            WHERE a.user_id = ?
+            ORDER BY a.sent_at DESC LIMIT ?""",
+            (user_id, limit),
+        ).fetchall()
+        result = []
+        for r in rows:
+            d = dict(r)
+            # Parse JSON fields
+            for field in ("risk_factors", "ai_why_good", "ai_risks", "images"):
+                if d.get(field) and isinstance(d[field], str):
+                    try:
+                        d[field] = json.loads(d[field])
+                    except Exception:
+                        d[field] = []
+            result.append(d)
+        return result
+
+    # ── User Settings ─────────────────────────────────────────────────────────
+
+    def get_user_settings(self, user_id: int) -> dict:
+        conn = self.connect()
+        row = conn.execute(
+            "SELECT * FROM user_settings WHERE user_id = ?", (user_id,)
+        ).fetchone()
+        if row:
+            return dict(row)
+        # Return defaults
+        return {
+            "user_id": user_id,
+            "hunter_enabled": 0,
+            "hunter_interval_sec": 300,
+            "hunter_min_savings_pct": 10.0,
+            "hunter_min_score": 50.0,
+            "ai_provider": "",
+            "ai_api_key": "",
+            "ai_model": "",
+            "notifications_enabled": 1,
+            "notify_on_buy": 1,
+            "notify_on_maybe": 0,
+        }
+
+    def upsert_user_settings(self, user_id: int, **kwargs) -> None:
+        conn = self.connect()
+        # Build update clause dynamically
+        allowed = {
+            "hunter_enabled", "hunter_interval_sec", "hunter_min_savings_pct",
+            "hunter_min_score", "ai_provider", "ai_api_key", "ai_model",
+            "notifications_enabled", "notify_on_buy", "notify_on_maybe",
+        }
+        updates = {k: v for k, v in kwargs.items() if k in allowed}
+        if not updates:
+            return
+
+        # Try insert first, then update
+        conn.execute(
+            "INSERT OR IGNORE INTO user_settings (user_id) VALUES (?)", (user_id,)
+        )
+        set_clause = ", ".join(f"{k} = ?" for k in updates)
+        values = list(updates.values()) + [user_id]
+        conn.execute(
+            f"UPDATE user_settings SET {set_clause}, updated_at = datetime('now') "
+            f"WHERE user_id = ?",
+            values,
+        )
+        conn.commit()
+
+    # ── Saved Finds ───────────────────────────────────────────────────────────
+
+    def save_find(self, user_id: int, listing_id: int, analysis_id: int, note: str = "") -> bool:
+        conn = self.connect()
+        try:
+            conn.execute(
+                "INSERT OR IGNORE INTO saved_finds (user_id, listing_id, analysis_id, note) "
+                "VALUES (?, ?, ?, ?)",
+                (user_id, listing_id, analysis_id, note),
+            )
+            conn.commit()
+            return True
+        except Exception as e:
+            log.warning("Failed to save find: %s", e)
+            return False
+
+    def get_saved_finds(self, user_id: int, limit: int = 20) -> list[dict]:
+        conn = self.connect()
+        rows = conn.execute(
+            """SELECT sf.*, l.title, l.price, l.url, l.source,
+                      an.deal_score, an.recommendation, an.price_delta_pct,
+                      an.market_price, an.ai_explanation
+            FROM saved_finds sf
+            JOIN listings l ON sf.listing_id = l.id
+            JOIN analysis an ON sf.analysis_id = an.id
+            WHERE sf.user_id = ?
+            ORDER BY sf.saved_at DESC LIMIT ?""",
+            (user_id, limit),
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+    def remove_saved_find(self, user_id: int, listing_id: int):
+        conn = self.connect()
+        conn.execute(
+            "DELETE FROM saved_finds WHERE user_id = ? AND listing_id = ?",
+            (user_id, listing_id),
+        )
+        conn.commit()
+
+    # ── Market Radar ──────────────────────────────────────────────────────────
+
+    def save_market_radar(self, user_id: int, snapshot: MarketRadarSnapshot):
+        conn = self.connect()
+        conn.execute(
+            """INSERT INTO market_radar
+            (user_id, category, avg_price, median_price, sample_size,
+             trend, trend_pct, trend_emoji, ai_comment, hot_deals_count)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
+            (
+                user_id,
+                snapshot.category,
+                snapshot.avg_price,
+                snapshot.median_price,
+                snapshot.sample_size,
+                snapshot.trend,
+                snapshot.trend_pct,
+                snapshot.trend_emoji,
+                snapshot.ai_comment,
+                snapshot.hot_deals_count,
+            ),
+        )
+        conn.commit()
+
+    def get_latest_radar(self, user_id: int, limit: int = 5) -> list[dict]:
+        """Get latest Market Radar snapshot per category for a user."""
+        conn = self.connect()
+        rows = conn.execute(
+            """SELECT * FROM market_radar
+            WHERE user_id = ?
+            GROUP BY category
+            HAVING MAX(snapshot_at)
+            ORDER BY hot_deals_count DESC, ABS(trend_pct) DESC
+            LIMIT ?""",
+            (user_id, limit),
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+    # ── AI Cache ─────────────────────────────────────────────────────────────
+
+    def get_ai_cache(self, cache_key: str) -> Optional[str]:
+        conn = self.connect()
+        row = conn.execute(
+            "SELECT response FROM ai_cache WHERE cache_key = ? "
+            "AND created_at > datetime('now', '-24 hours')",
+            (cache_key,),
+        ).fetchone()
+        return row["response"] if row else None
+
+    def set_ai_cache(self, cache_key: str, provider: str, response: str):
+        conn = self.connect()
+        conn.execute(
+            "INSERT OR REPLACE INTO ai_cache (cache_key, provider, response) VALUES (?, ?, ?)",
+            (cache_key, provider, response),
+        )
+        conn.commit()
+
+    # ── Stats ─────────────────────────────────────────────────────────────────
 
     def get_stats(self) -> dict:
         conn = self.connect()
@@ -216,9 +403,58 @@ class Database:
             "by_source": {r[0]: r[1] for r in by_source},
         }
 
+    def get_user_stats(self, user_id: int) -> dict:
+        conn = self.connect()
+        active = conn.execute(
+            "SELECT COUNT(*) FROM searches WHERE user_id = ? AND active = 1",
+            (user_id,),
+        ).fetchone()[0]
+        total_alerts = conn.execute(
+            "SELECT COUNT(*) FROM alerts WHERE user_id = ?", (user_id,)
+        ).fetchone()[0]
+        good = conn.execute(
+            """SELECT COUNT(*) FROM alerts a
+            JOIN analysis an ON a.analysis_id = an.id
+            WHERE a.user_id = ? AND an.deal_score >= 70""",
+            (user_id,),
+        ).fetchone()[0]
+        avg_raw = conn.execute(
+            """SELECT AVG(ABS(an.price_delta_pct))
+            FROM alerts a
+            JOIN analysis an ON a.analysis_id = an.id
+            WHERE a.user_id = ? AND an.price_delta_pct < 0""",
+            (user_id,),
+        ).fetchone()[0] or 0
+        saved = conn.execute(
+            "SELECT COUNT(*) FROM saved_finds WHERE user_id = ?", (user_id,)
+        ).fetchone()[0]
+        # Today's stats
+        today_checked = conn.execute(
+            """SELECT COUNT(*) FROM alerts a
+            JOIN analysis an ON a.analysis_id = an.id
+            WHERE a.user_id = ? AND date(a.sent_at) = date('now')""",
+            (user_id,),
+        ).fetchone()[0]
+        today_good = conn.execute(
+            """SELECT COUNT(*) FROM alerts a
+            JOIN analysis an ON a.analysis_id = an.id
+            WHERE a.user_id = ? AND date(a.sent_at) = date('now') AND an.deal_score >= 70""",
+            (user_id,),
+        ).fetchone()[0]
+        return {
+            "active_searches": active,
+            "total_alerts": total_alerts,
+            "good_deals": good,
+            "avg_savings": round(abs(avg_raw), 1),
+            "saved_finds": saved,
+            "today_checked": today_checked,
+            "today_good": today_good,
+        }
+
+    # ── Helpers ───────────────────────────────────────────────────────────────
+
     @staticmethod
     def _hash_listing(listing: RawListing) -> str:
-        import hashlib
         raw = f"{listing.source}|{listing.title}|{listing.price}|{listing.seller_name}"
         return hashlib.sha256(raw.encode()).hexdigest()[:16]
 

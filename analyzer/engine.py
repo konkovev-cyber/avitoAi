@@ -1,8 +1,16 @@
-"""Deal Scoring Engine — evaluates how good a deal is."""
+"""Deal Scoring Engine — evaluates how good a deal is.
+
+Two-layer scoring:
+1. Heuristic (always runs): price delta + risk + quality
+2. AI (optional): blended when provider configured
+
+The engine works identically without AI — it simply returns heuristic scores.
+"""
 
 from __future__ import annotations
 
 import logging
+from typing import Optional
 
 from config import settings
 from database.db import Database
@@ -14,39 +22,41 @@ log = logging.getLogger("market_agent.analyzer.engine")
 
 
 class DealEngine:
-    """Combines price analysis + risk scoring into a single deal score."""
+    """Combines price analysis + risk scoring into a single deal score.
 
-    # Weights
-    W_PRICE = 0.50  # price advantage weight
-    W_RISK = 0.30  # risk penalty weight
-    W_QUALITY = 0.20  # listing quality weight
+    Optionally enriches with AI if ai_scorer is provided.
+    """
 
-    def __init__(self, db: Database):
+    # Heuristic weights
+    W_PRICE = 0.50
+    W_RISK = 0.30
+    W_QUALITY = 0.20
+
+    def __init__(self, db: Database, ai_scorer=None):
         self.db = db
         self.price_model = PriceModel(db)
         self.risk_scorer = RiskScorer()
+        self.ai_scorer = ai_scorer  # Optional[AIScorer]
 
-    def evaluate(
-        self, listing: RawListing, search_id: int
-    ) -> DealScore:
-        """Evaluate a single listing. Returns score + recommendation."""
+    def evaluate(self, listing: RawListing, search_id: int) -> DealScore:
+        """Synchronous heuristic-only evaluation. Returns DealScore."""
         # 1. Market price analysis
         market = self.price_model.estimate(
-            category=listing.title,  # use title as category proxy
-            max_price=listing.price * 2 if listing.price > 0 else 1000000,
+            category=listing.title,
+            max_price=listing.price * 2 if listing.price > 0 else 1_000_000,
         )
 
         # 2. Risk scoring
         risk = self.risk_scorer.score(listing, market.median)
 
-        # 3. Calculate price delta
+        # 3. Price delta
         market_price = market.median if market.sample_size > 0 else listing.price
         if market_price > 0 and listing.price > 0:
             price_delta = (market_price - listing.price) / market_price * 100
         else:
             price_delta = 0.0
 
-        # 4. Listing quality (simple heuristic)
+        # 4. Listing quality heuristic
         quality = 50.0
         if listing.description and len(listing.description) > 100:
             quality += 20
@@ -56,7 +66,7 @@ class DealEngine:
             quality += 15
 
         # 5. Compute deal score
-        price_score = max(0, min(100, price_delta * 2))  # 0% delta = 0, 50% delta = 100
+        price_score = max(0, min(100, price_delta * 2))
         score = (
             self.W_PRICE * price_score
             - self.W_RISK * risk.score
@@ -64,7 +74,7 @@ class DealEngine:
         )
         score = max(0, min(100, score))
 
-        # 6. Determine recommendation
+        # 6. Recommendation
         if score >= settings.deal_score_threshold_buy:
             recommendation = "buy"
         elif score >= settings.deal_score_threshold_maybe:
@@ -72,9 +82,7 @@ class DealEngine:
         else:
             recommendation = "skip"
 
-        self.log_result(listing, score, price_delta, risk, recommendation)
-
-        return DealScore(
+        deal = DealScore(
             score=round(score, 1),
             market_price=round(market_price, 2),
             price_delta_pct=round(price_delta, 1),
@@ -83,7 +91,20 @@ class DealEngine:
             recommendation=recommendation,
         )
 
-    def log_result(
+        self._log_result(listing, score, price_delta, risk, recommendation)
+        return deal
+
+    async def evaluate_async(self, listing: RawListing, search_id: int) -> DealScore:
+        """Async evaluation: heuristics + optional AI enrichment."""
+        deal = self.evaluate(listing, search_id)
+
+        # Enrich with AI if configured
+        if self.ai_scorer and self.ai_scorer.enabled:
+            deal = await self.ai_scorer.enrich(deal, listing)
+
+        return deal
+
+    def _log_result(
         self,
         listing: RawListing,
         score: float,

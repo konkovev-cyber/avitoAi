@@ -1,4 +1,4 @@
-"""Configuration for Market Agent."""
+"""Configuration for Market Agent v2."""
 
 from __future__ import annotations
 
@@ -16,15 +16,15 @@ class Settings(BaseSettings):
     )
 
     # Project paths
-    data_dir: Path = Path("/opt/market_agent/data")
-    db_path: Path = data_dir / "market_agent.db"
+    data_dir: Path = Path("data")
+    db_path: Path = Path("data/market_agent.db")
 
     # Telegram
     telegram_bot_token: str = ""
     telegram_chat_id: str = ""
 
     # Collectors
-    collector_interval_sec: int = 300  # 5 min between search cycles
+    collector_interval_sec: int = 300        # 5 min between search cycles
     collector_avito_enabled: bool = True
     collector_youla_enabled: bool = True
 
@@ -33,21 +33,38 @@ class Settings(BaseSettings):
 
     # Playwright
     playwright_headless: bool = True
-    playwright_slow_mo: int = 500  # ms
+    playwright_slow_mo: int = 500            # ms
 
     # Analyzer
-    price_lookback_days: int = 7  # how far back for market price calc
-    min_listings_for_analysis: int = 5  # min similar listings to estimate price
-    deal_score_threshold_buy: float = 70.0  # ≥70 → 🔥 immediate alert
-    deal_score_threshold_maybe: float = 50.0  # ≥50 → standard alert
+    price_lookback_days: int = 7             # how far back for market price calc
+    min_listings_for_analysis: int = 5       # min similar listings to estimate price
+    deal_score_threshold_buy: float = 70.0   # ≥70 → 🔥 immediate alert
+    deal_score_threshold_maybe: float = 50.0 # ≥50 → standard alert
 
-    # Dashboard
+    # ── AI (all optional — system works without AI) ────────────────────────────
+    ai_provider: str = ""                    # "openai" | "gemini" | "anthropic" | ""
+    ai_model: str = ""                       # specific model override
+    ai_enabled: bool = False                 # explicit enable flag
+
+    openai_api_key: str = ""
+    gemini_api_key: str = ""
+    anthropic_api_key: str = ""
+
+    # ── Dashboard ─────────────────────────────────────────────────────────────
     dashboard_host: str = "0.0.0.0"
     dashboard_port: int = 8080
 
-    # Logging
+    # ── Logging ───────────────────────────────────────────────────────────────
     log_level: str = "INFO"
     log_format: str = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+
+    def is_ai_configured(self) -> bool:
+        """Returns True if at least one AI provider key is set."""
+        return bool(
+            self.openai_api_key
+            or self.gemini_api_key
+            or self.anthropic_api_key
+        )
 
 
 settings = Settings()
